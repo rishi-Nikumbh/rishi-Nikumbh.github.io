@@ -162,12 +162,15 @@ ul { list-style: none; }
   position: relative; height: 310px; border-radius: 14px; cursor: pointer;
   border: 1px solid var(--border); transition: border-color var(--tr);
   perspective: 1200px;
+  /* overflow:hidden must live here (perspective parent), NOT on skill-inner —
+     overflow:hidden on a preserve-3d element kills backface-visibility in all browsers */
+  overflow: hidden;
 }
 .skill-card:hover { border-color: var(--accent); }
 /* Inner wrapper is what actually rotates */
 .skill-inner {
-  position: absolute; inset: 0; border-radius: 14px; overflow: hidden;
-  transform-style: preserve-3d;
+  position: absolute; inset: 0;
+  transform-style: preserve-3d;   /* NO overflow:hidden here — would break 3D */
   transition: transform 0.65s cubic-bezier(.4,0,.2,1);
 }
 .skill-card:hover .skill-inner,
