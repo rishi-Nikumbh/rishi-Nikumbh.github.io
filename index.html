@@ -8,12 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-<canvas id="hero-canvas"></canvas>
 
 <!-- NAV -->
 <nav id="navbar">
@@ -34,6 +31,9 @@
 
 <!-- HERO -->
 <section id="hero">
+  <!-- canvas lives INSIDE hero so it doesn't affect other sections -->
+  <canvas id="hero-canvas"></canvas>
+
   <div class="hero-inner">
     <div class="hero-photo-wrap">
       <div class="photo-ring"></div>
@@ -53,18 +53,18 @@
       </div>
       <div class="hero-socials">
         <a href="https://www.linkedin.com/in/rushikesh-nikumbh" target="_blank" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45H7.1V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45H7.1V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
         </a>
         <a href="https://github.com/rishi-Nikumbh" target="_blank" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.72.08-.72 1.2.08 1.84 1.23 1.84 1.23 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.26 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0012 .3z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.72.08-.72 1.2.08 1.84 1.23 1.84 1.23 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.26 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0012 .3z"/></svg>
         </a>
         <a href="mailto:rishinikumbh28@gmail.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
     </div>
   </div>
-  <a class="scroll-hint" href="#about">
+  <a class="scroll-hint" href="#stats">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
   </a>
 </section>
@@ -132,7 +132,7 @@
     <p class="sec-sub">Real numbers from real projects — click any card for the full story.</p>
     <div class="charts-grid">
 
-      <div class="chart-card fade-up" data-modal="cnc" tabindex="0" role="button">
+      <div class="chart-card fade-up" data-modal="cnc">
         <div class="chart-header">
           <h3>CNC Throughput</h3>
           <span class="chart-badge">6×</span>
@@ -142,7 +142,7 @@
         <p class="click-hint">Click to explore →</p>
       </div>
 
-      <div class="chart-card fade-up" data-modal="co2" tabindex="0" role="button">
+      <div class="chart-card fade-up" data-modal="co2">
         <div class="chart-header">
           <h3>CO₂ Reduction</h3>
           <span class="chart-badge">21.2%</span>
@@ -152,7 +152,7 @@
         <p class="click-hint">Click to explore →</p>
       </div>
 
-      <div class="chart-card fade-up" data-modal="cost" tabindex="0" role="button">
+      <div class="chart-card fade-up" data-modal="cost">
         <div class="chart-header">
           <h3>Cost Savings</h3>
           <span class="chart-badge">~80%</span>
@@ -162,12 +162,12 @@
         <p class="click-hint">Click to explore →</p>
       </div>
 
-      <div class="chart-card fade-up" data-modal="bpp" tabindex="0" role="button">
+      <div class="chart-card fade-up" data-modal="bpp">
         <div class="chart-header">
           <h3>BPP Scale-Up</h3>
           <span class="chart-badge">342/day</span>
         </div>
-        <p class="chart-sub">Bipolar plate bonding & sealing · Freudenberg</p>
+        <p class="chart-sub">Bipolar plate bonding &amp; sealing · Freudenberg</p>
         <div class="chart-wrap"><canvas id="chart-bpp"></canvas></div>
         <p class="click-hint">Click to explore →</p>
       </div>
@@ -180,109 +180,108 @@
 <section id="skills" class="section">
   <div class="container">
     <h2 class="section-title">Skills</h2>
-    <p class="sec-sub">Hover or tap a card to reveal the full skill set.</p>
-    <div class="flip-grid">
+    <p class="sec-sub">Click a card to reveal the full skill set.</p>
+    <div class="skills-grid">
 
-      <div class="flip-card" tabindex="0">
-        <div class="flip-inner">
-          <div class="flip-front">
-            <svg class="skill-svg" viewBox="0 0 64 64" fill="none" stroke="var(--accent)" stroke-width="1.8">
-              <circle cx="32" cy="32" r="6" fill="var(--accent)" opacity="0.3"/>
-              <ellipse cx="32" cy="32" rx="22" ry="9"/>
-              <ellipse cx="32" cy="32" rx="22" ry="9" transform="rotate(60 32 32)"/>
-              <ellipse cx="32" cy="32" rx="22" ry="9" transform="rotate(120 32 32)"/>
-            </svg>
-            <h3>Hydrogen &amp;<br/>Electrochemical</h3>
-            <p>Fuel Cells · Electrolysis · BPP</p>
-            <span class="flip-hint">↻ flip</span>
+      <div class="skill-card">
+        <div class="skill-front">
+          <!-- Atom / electrochemical icon -->
+          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="#64ffda" stroke-width="2">
+            <circle cx="32" cy="32" r="5" fill="#64ffda" opacity="0.3"/>
+            <ellipse cx="32" cy="32" rx="20" ry="8"/>
+            <ellipse cx="32" cy="32" rx="20" ry="8" transform="rotate(60 32 32)"/>
+            <ellipse cx="32" cy="32" rx="20" ry="8" transform="rotate(120 32 32)"/>
+          </svg>
+          <h3>Hydrogen &amp;<br/>Electrochemical</h3>
+          <p>Fuel Cells · Electrolysis · BPP</p>
+          <span class="skill-hint">Tap to reveal skills</span>
+        </div>
+        <div class="skill-back">
+          <p class="skill-back-title">Hydrogen &amp; Electrochemical Systems</p>
+          <div class="skill-tags">
+            <span>Fuel Cells (PEM, Ceramic)</span><span>Alkaline Electrolysis</span>
+            <span>Bipolar Plates</span><span>Stack Assembly</span>
+            <span>Sealing &amp; Bonding</span><span>H₂ Production Testing</span>
+            <span>MEA Concepts</span><span>Electrochemical Hardware</span>
           </div>
-          <div class="flip-back">
-            <h4>Hydrogen &amp; Electrochemical</h4>
-            <div class="skill-tags">
-              <span>Fuel Cells (PEM, Ceramic)</span><span>Alkaline Electrolysis</span>
-              <span>Bipolar Plates</span><span>Stack Assembly</span>
-              <span>Sealing &amp; Bonding</span><span>H₂ Production Testing</span>
-              <span>MEA Concepts</span><span>Electrochemical Hardware</span>
-            </div>
-          </div>
+          <span class="skill-hint-back">Tap to flip back</span>
         </div>
       </div>
 
-      <div class="flip-card" tabindex="0">
-        <div class="flip-inner">
-          <div class="flip-front">
-            <svg class="skill-svg" viewBox="0 0 64 64" fill="none" stroke="var(--accent)" stroke-width="1.8">
-              <rect x="4" y="10" width="56" height="38" rx="4"/>
-              <polyline points="12,34 20,20 28,40 36,24 44,34 52,34" stroke-width="2.5"/>
-            </svg>
-            <h3>Testing &amp;<br/>Validation</h3>
-            <p>DVP&R · Failure Analysis · Leak Test</p>
-            <span class="flip-hint">↻ flip</span>
+      <div class="skill-card">
+        <div class="skill-front">
+          <!-- Waveform / oscilloscope icon -->
+          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="#64ffda" stroke-width="2">
+            <rect x="4" y="10" width="56" height="40" rx="4"/>
+            <polyline points="12,34 20,20 28,40 36,24 44,34 52,34" stroke-width="2.5"/>
+          </svg>
+          <h3>Testing &amp;<br/>Validation</h3>
+          <p>DVP&R · Failure Analysis · Leak Test</p>
+          <span class="skill-hint">Tap to reveal skills</span>
+        </div>
+        <div class="skill-back">
+          <p class="skill-back-title">Testing &amp; Validation</p>
+          <div class="skill-tags">
+            <span>DVP&R Planning</span><span>Failure Analysis</span>
+            <span>Root Cause Analysis</span><span>Leak Testing</span>
+            <span>Fuji Pressure Testing</span><span>Profilometer Analysis</span>
+            <span>Tensile &amp; Shear</span><span>Vickers Hardness</span>
+            <span>Accelerated Lifetime (Arrhenius)</span>
           </div>
-          <div class="flip-back">
-            <h4>Testing &amp; Validation</h4>
-            <div class="skill-tags">
-              <span>DVP&R Planning</span><span>Failure Analysis</span>
-              <span>Root Cause Analysis</span><span>Leak Testing</span>
-              <span>Fuji Pressure Testing</span><span>Profilometer Analysis</span>
-              <span>Tensile &amp; Shear</span><span>Vickers Hardness</span>
-              <span>Accelerated Lifetime (Arrhenius)</span>
-            </div>
-          </div>
+          <span class="skill-hint-back">Tap to flip back</span>
         </div>
       </div>
 
-      <div class="flip-card" tabindex="0">
-        <div class="flip-inner">
-          <div class="flip-front">
-            <svg class="skill-svg" viewBox="0 0 64 64" fill="none" stroke="var(--accent)" stroke-width="1.8">
-              <rect x="8" y="44" width="48" height="9" rx="2"/>
-              <rect x="12" y="33" width="40" height="9" rx="2"/>
-              <rect x="16" y="22" width="32" height="9" rx="2"/>
-              <rect x="20" y="11" width="24" height="9" rx="2"/>
-              <line x1="32" y1="8" x2="32" y2="4" stroke-width="2"/>
-            </svg>
-            <h3>Prototyping &amp;<br/>Workshop</h3>
-            <p>3D Printing · Fixtures · CNC</p>
-            <span class="flip-hint">↻ flip</span>
+      <div class="skill-card">
+        <div class="skill-front">
+          <!-- Layers / 3D printing icon -->
+          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="#64ffda" stroke-width="2">
+            <rect x="8" y="46" width="48" height="8" rx="2"/>
+            <rect x="12" y="34" width="40" height="8" rx="2"/>
+            <rect x="16" y="22" width="32" height="8" rx="2"/>
+            <rect x="20" y="10" width="24" height="8" rx="2"/>
+          </svg>
+          <h3>Prototyping &amp;<br/>Workshop</h3>
+          <p>3D Printing · Fixtures · CNC</p>
+          <span class="skill-hint">Tap to reveal skills</span>
+        </div>
+        <div class="skill-back">
+          <p class="skill-back-title">Prototyping &amp; Workshop Engineering</p>
+          <div class="skill-tags">
+            <span>3D Printing (FDM &amp; SLA)</span><span>PrusaSlicer · PreForm</span>
+            <span>Fixture Design</span><span>DATRON CNC</span>
+            <span>NC Programming</span><span>Test Rig Development</span>
+            <span>Vacuum Systems</span><span>Injection Moulding</span>
           </div>
-          <div class="flip-back">
-            <h4>Prototyping &amp; Workshop</h4>
-            <div class="skill-tags">
-              <span>3D Printing (FDM, SLA)</span><span>PrusaSlicer · PreForm</span>
-              <span>Fixture Design</span><span>DATRON CNC</span>
-              <span>NC Programming</span><span>Test Rig Development</span>
-              <span>Vacuum Systems</span><span>Injection Moulding</span>
-            </div>
-          </div>
+          <span class="skill-hint-back">Tap to flip back</span>
         </div>
       </div>
 
-      <div class="flip-card" tabindex="0">
-        <div class="flip-inner">
-          <div class="flip-front">
-            <svg class="skill-svg" viewBox="0 0 64 64" fill="none" stroke="var(--accent)" stroke-width="1.8">
-              <rect x="6" y="6" width="52" height="52" rx="4"/>
-              <line x1="6" y1="22" x2="58" y2="22"/>
-              <line x1="6" y1="42" x2="58" y2="42"/>
-              <line x1="22" y1="6" x2="22" y2="58"/>
-              <line x1="42" y1="6" x2="42" y2="58"/>
-              <circle cx="32" cy="32" r="7" fill="var(--accent)" opacity="0.2"/>
-            </svg>
-            <h3>CAD &amp;<br/>Documentation</h3>
-            <p>CATIA · SolidWorks · GD&T</p>
-            <span class="flip-hint">↻ flip</span>
+      <div class="skill-card">
+        <div class="skill-front">
+          <!-- Blueprint / CAD grid icon -->
+          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="#64ffda" stroke-width="2">
+            <rect x="6" y="6" width="52" height="52" rx="4"/>
+            <line x1="6" y1="22" x2="58" y2="22"/>
+            <line x1="6" y1="42" x2="58" y2="42"/>
+            <line x1="22" y1="6" x2="22" y2="58"/>
+            <line x1="42" y1="6" x2="42" y2="58"/>
+            <circle cx="32" cy="32" r="6" fill="#64ffda" opacity="0.2"/>
+          </svg>
+          <h3>CAD &amp;<br/>Documentation</h3>
+          <p>CATIA · SolidWorks · GD&T</p>
+          <span class="skill-hint">Tap to reveal skills</span>
+        </div>
+        <div class="skill-back">
+          <p class="skill-back-title">CAD &amp; Documentation</p>
+          <div class="skill-tags">
+            <span>SolidWorks</span><span>CATIA V5</span>
+            <span>PTC Creo</span><span>AutoCAD</span>
+            <span>GD&T</span><span>DFMA</span>
+            <span>Technical Drawings</span><span>Assembly Instructions</span>
+            <span>Test Protocols</span>
           </div>
-          <div class="flip-back">
-            <h4>CAD &amp; Documentation</h4>
-            <div class="skill-tags">
-              <span>SolidWorks</span><span>CATIA V5</span>
-              <span>PTC Creo</span><span>AutoCAD</span>
-              <span>GD&T</span><span>DFMA</span>
-              <span>Technical Drawings</span><span>Assembly Instructions</span>
-              <span>Test Protocols</span>
-            </div>
-          </div>
+          <span class="skill-hint-back">Tap to flip back</span>
         </div>
       </div>
 
@@ -297,57 +296,57 @@
     <p class="sec-sub">Click any role to read the full story.</p>
     <div class="exp-list">
 
-      <div class="exp-card fade-up" data-exp="tum" tabindex="0" role="button">
+      <div class="exp-card fade-up" data-exp="tum">
         <div class="exp-badge" style="--c:#4a9eff">TUM</div>
         <div class="exp-info">
           <h3>Working Student</h3>
           <p class="exp-co">Technical University Munich</p>
           <p class="exp-date">Nov – Dec 2025 · Munich</p>
-          <p class="exp-sum">3D-printed ceramic fuel-cell test fixture with custom sealing &amp; clamping concept.</p>
+          <p class="exp-sum">3D-printed ceramic fuel-cell test fixture with custom sealing &amp; clamping.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
 
-      <div class="exp-card fade-up" data-exp="freudenberg" tabindex="0" role="button">
+      <div class="exp-card fade-up" data-exp="freudenberg">
         <div class="exp-badge" style="--c:#64ffda">FPS</div>
         <div class="exp-info">
           <h3>Thesis Student &amp; Intern — R&amp;D</h3>
           <p class="exp-co">Freudenberg e-Power Systems</p>
           <p class="exp-date">Aug 2024 – Jun 2025 · Munich</p>
-          <p class="exp-sum">DVP&R validation &amp; bonding process for ~342 bipolar plates/day. 6× CNC throughput improvement.</p>
+          <p class="exp-sum">DVP&R validation &amp; bonding process for ~342 bipolar plates/day. 6× CNC throughput gain.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
 
-      <div class="exp-card fade-up" data-exp="lkt" tabindex="0" role="button">
+      <div class="exp-card fade-up" data-exp="lkt">
         <div class="exp-badge" style="--c:#a78bfa">LKT</div>
         <div class="exp-info">
           <h3>Working Student</h3>
           <p class="exp-co">FAU Erlangen — Lehrstuhl für Kunststofftechnik</p>
           <p class="exp-date">Mar – Jul 2024 · Erlangen</p>
-          <p class="exp-sum">Graphite/PP composite bipolar plates via injection moulding; MEA bonding research.</p>
+          <p class="exp-sum">Graphite/PP composite bipolar plates via injection moulding; MEA research.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
 
-      <div class="exp-card fade-up" data-exp="truetech" tabindex="0" role="button">
+      <div class="exp-card fade-up" data-exp="truetech">
         <div class="exp-badge" style="--c:#fb923c">TVI</div>
         <div class="exp-info">
           <h3>Graduate Trainee</h3>
           <p class="exp-co">Truetech Vision Industry Pvt. Ltd.</p>
           <p class="exp-date">Jul 2020 – Jan 2021 · Pune, India</p>
-          <p class="exp-sum">CAD-based tooling development and process planning for manufacturing operations.</p>
+          <p class="exp-sum">CAD-based tooling development and process planning for manufacturing.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
 
-      <div class="exp-card fade-up" data-exp="pragati" tabindex="0" role="button">
+      <div class="exp-card fade-up" data-exp="pragati">
         <div class="exp-badge" style="--c:#34d399">PPL</div>
         <div class="exp-info">
           <h3>Thesis Intern — Design Engineering</h3>
           <p class="exp-co">Pragati Pvt. Ltd.</p>
           <p class="exp-date">Jun 2019 – Apr 2020 · Nashik, India</p>
-          <p class="exp-sum">Injection mould design achieving ~80% cost reduction for solar-panel cleaning trolley.</p>
+          <p class="exp-sum">Injection mould design achieving ~80% cost reduction for solar-panel trolley.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
@@ -407,118 +406,98 @@
     <p class="sec-sub">Click any project to explore details &amp; diagrams.</p>
     <div class="proj-grid">
 
-      <!-- Project 1: CO2 -->
-      <div class="proj-card fade-up" data-proj="co2" tabindex="0" role="button">
+      <div class="proj-card fade-up" data-proj="co2">
         <div class="proj-art">
           <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a1628"/><stop offset="100%" stop-color="#0d2545"/></linearGradient></defs>
-            <rect width="280" height="160" fill="url(#sky)"/>
-            <!-- Stars -->
-            <circle cx="20" cy="18" r="1" fill="#64ffda" opacity="0.5"/><circle cx="55" cy="10" r="1" fill="#ccd6f6" opacity="0.4"/><circle cx="200" cy="14" r="1" fill="#64ffda" opacity="0.4"/><circle cx="255" cy="22" r="1" fill="#ccd6f6" opacity="0.3"/><circle cx="110" cy="8" r="1" fill="#64ffda" opacity="0.3"/>
-            <!-- Buildings -->
-            <rect x="8" y="95" width="28" height="65" fill="#112240"/><rect x="40" y="75" width="22" height="85" fill="#1a2d4e"/><rect x="66" y="85" width="32" height="75" fill="#112240"/><rect x="170" y="78" width="28" height="82" fill="#1a2d4e"/><rect x="202" y="62" width="24" height="98" fill="#112240"/><rect x="230" y="88" width="36" height="72" fill="#1a2d4e"/>
-            <!-- Windows -->
-            <rect x="14" y="102" width="6" height="5" fill="#64ffda" opacity="0.4"/><rect x="24" y="102" width="6" height="5" fill="#64ffda" opacity="0.2"/><rect x="44" y="82" width="5" height="4" fill="#64ffda" opacity="0.5"/><rect x="54" y="82" width="5" height="4" fill="#4a9eff" opacity="0.3"/>
-            <!-- Solar panels on roofs -->
-            <rect x="42" y="72" width="18" height="5" fill="#64ffda" opacity="0.7" rx="1"/><rect x="68" y="82" width="28" height="4" fill="#64ffda" opacity="0.6" rx="1"/><rect x="172" y="75" width="24" height="4" fill="#64ffda" opacity="0.7" rx="1"/>
-            <!-- Wind turbine centre -->
+            <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a1628"/><stop offset="100%" stop-color="#0d2545"/></linearGradient></defs>
+            <rect width="280" height="160" fill="url(#g1)"/>
+            <circle cx="20" cy="18" r="1" fill="#64ffda" opacity="0.5"/><circle cx="55" cy="10" r="1" fill="#ccd6f6" opacity="0.4"/>
+            <circle cx="200" cy="14" r="1" fill="#64ffda" opacity="0.4"/><circle cx="255" cy="22" r="1" fill="#ccd6f6" opacity="0.3"/>
+            <rect x="8" y="95" width="28" height="65" fill="#112240"/><rect x="40" y="75" width="22" height="85" fill="#1a2d4e"/>
+            <rect x="66" y="85" width="32" height="75" fill="#112240"/><rect x="170" y="78" width="28" height="82" fill="#1a2d4e"/>
+            <rect x="202" y="62" width="24" height="98" fill="#112240"/><rect x="230" y="88" width="36" height="72" fill="#1a2d4e"/>
+            <rect x="42" y="72" width="18" height="4" fill="#64ffda" opacity="0.7" rx="1"/>
+            <rect x="68" y="82" width="28" height="4" fill="#64ffda" opacity="0.6" rx="1"/>
+            <rect x="172" y="75" width="24" height="4" fill="#64ffda" opacity="0.7" rx="1"/>
             <line x1="140" y1="155" x2="140" y2="55" stroke="#64ffda" stroke-width="2" opacity="0.7"/>
-            <circle cx="140" cy="54" r="4" fill="#64ffda" opacity="0.9"/>
-            <!-- Blades -->
-            <line x1="140" y1="54" x2="118" y2="28" stroke="#64ffda" stroke-width="2" opacity="0.7"/><line x1="140" y1="54" x2="164" y2="38" stroke="#64ffda" stroke-width="2" opacity="0.7"/><line x1="140" y1="54" x2="138" y2="82" stroke="#64ffda" stroke-width="2" opacity="0.7"/>
-            <!-- CO2 text -->
+            <circle cx="140" cy="54" r="3" fill="#64ffda" opacity="0.9"/>
+            <line x1="140" y1="54" x2="118" y2="28" stroke="#64ffda" stroke-width="1.8" opacity="0.7"/>
+            <line x1="140" y1="54" x2="164" y2="38" stroke="#64ffda" stroke-width="1.8" opacity="0.7"/>
+            <line x1="140" y1="54" x2="138" y2="80" stroke="#64ffda" stroke-width="1.8" opacity="0.7"/>
             <text x="140" y="22" text-anchor="middle" fill="#64ffda" font-size="16" font-weight="700" font-family="Inter,sans-serif">21.2% CO₂</text>
             <text x="140" y="38" text-anchor="middle" fill="#8892b0" font-size="9" font-family="Inter,sans-serif" letter-spacing="2">REDUCTION · JENA</text>
-            <!-- Ground -->
             <rect x="0" y="155" width="280" height="5" fill="#0a2240"/>
           </svg>
         </div>
         <div class="proj-body">
           <span class="proj-tag">Mini-Project</span>
           <h3>Low-CO₂ Scenario · Jena City</h3>
-          <p>City-scale energy model integrating solar, EVs, fuel cells &amp; electrolysis. Quantified 21.2% CO₂ reduction.</p>
+          <p>City-scale energy model with solar, EVs, fuel cells &amp; electrolysis. 21.2% CO₂ reduction.</p>
           <span class="proj-explore">Explore details →</span>
         </div>
       </div>
 
-      <!-- Project 2: Electrolysis -->
-      <div class="proj-card fade-up" data-proj="electrolysis" tabindex="0" role="button">
+      <div class="proj-card fade-up" data-proj="electrolysis">
         <div class="proj-art">
           <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
             <rect width="280" height="160" fill="#0a1628"/>
-            <!-- Electrolyte bath -->
             <rect x="50" y="85" width="180" height="65" fill="#0a2240" rx="4" stroke="#1a3a5c" stroke-width="1"/>
             <text x="140" y="125" text-anchor="middle" fill="#4a9eff" font-size="10" font-family="Inter,sans-serif" opacity="0.6">Electrolyte — KOH solution</text>
-            <!-- Cathode electrode -->
             <rect x="88" y="55" width="12" height="95" fill="#64ffda" opacity="0.85" rx="2"/>
-            <!-- Anode electrode -->
             <rect x="180" y="55" width="12" height="95" fill="#fb923c" opacity="0.85" rx="2"/>
-            <!-- Electrode labels -->
             <text x="94" y="48" text-anchor="middle" fill="#64ffda" font-size="11" font-weight="700" font-family="Inter,sans-serif">−</text>
             <text x="186" y="48" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="700" font-family="Inter,sans-serif">+</text>
             <text x="94" y="40" text-anchor="middle" fill="#8892b0" font-size="8" font-family="Inter,sans-serif">Cathode</text>
             <text x="186" y="40" text-anchor="middle" fill="#8892b0" font-size="8" font-family="Inter,sans-serif">Anode</text>
-            <!-- H2 bubbles cathode -->
-            <circle cx="94" cy="100" r="5" fill="#64ffda" opacity="0.45"/><circle cx="86" cy="86" r="4" fill="#64ffda" opacity="0.3"/><circle cx="100" cy="74" r="6" fill="#64ffda" opacity="0.2"/><circle cx="88" cy="63" r="3" fill="#64ffda" opacity="0.15"/>
-            <!-- O2 bubbles anode -->
-            <circle cx="186" cy="95" r="6" fill="#fb923c" opacity="0.4"/><circle cx="194" cy="80" r="4" fill="#fb923c" opacity="0.3"/><circle cx="180" cy="68" r="5" fill="#fb923c" opacity="0.2"/>
-            <!-- Power line -->
+            <circle cx="94" cy="100" r="5" fill="#64ffda" opacity="0.45"/><circle cx="86" cy="86" r="4" fill="#64ffda" opacity="0.3"/>
+            <circle cx="100" cy="74" r="6" fill="#64ffda" opacity="0.2"/><circle cx="88" cy="63" r="3" fill="#64ffda" opacity="0.15"/>
+            <circle cx="186" cy="95" r="6" fill="#fb923c" opacity="0.4"/><circle cx="194" cy="80" r="4" fill="#fb923c" opacity="0.3"/>
+            <circle cx="180" cy="68" r="5" fill="#fb923c" opacity="0.2"/>
             <line x1="94" y1="30" x2="186" y2="30" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="5,3"/>
             <text x="140" y="27" text-anchor="middle" fill="#8892b0" font-size="8" font-family="Inter,sans-serif">DC Power</text>
-            <!-- Equation -->
             <text x="140" y="16" text-anchor="middle" fill="#ccd6f6" font-size="13" font-weight="700" font-family="Inter,sans-serif">2H₂O → 2H₂ + O₂</text>
-            <!-- Gas labels -->
-            <text x="68" y="65" text-anchor="middle" fill="#64ffda" font-size="11" font-weight="700" font-family="Inter,sans-serif">H₂↑</text>
+            <text x="66" y="65" text-anchor="middle" fill="#64ffda" font-size="11" font-weight="700" font-family="Inter,sans-serif">H₂↑</text>
             <text x="212" y="65" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="700" font-family="Inter,sans-serif">O₂↑</text>
           </svg>
         </div>
         <div class="proj-body">
           <span class="proj-tag">Self-Initiated</span>
           <h3>Alkaline Water Electrolysis</h3>
-          <p>Built H₂ production prototype from scratch — studied temperature, concentration &amp; electrode geometry effects.</p>
+          <p>Built H₂ production prototype — studied temperature, concentration &amp; geometry effects.</p>
           <span class="proj-explore">Explore details →</span>
         </div>
       </div>
 
-      <!-- Project 3: Connecting Rod -->
-      <div class="proj-card fade-up" data-proj="connrod" tabindex="0" role="button">
+      <div class="proj-card fade-up" data-proj="connrod">
         <div class="proj-art">
           <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
             <rect width="280" height="160" fill="#0a1628"/>
-            <!-- Title -->
             <text x="140" y="18" text-anchor="middle" fill="#ccd6f6" font-size="11" font-weight="700" font-family="Inter,sans-serif">Connecting Rod — Failure Analysis</text>
             <text x="140" y="32" text-anchor="middle" fill="#8892b0" font-size="8" font-family="Inter,sans-serif" letter-spacing="1">UTM · VICKERS · MICROSCOPY · INCLUSION ANALYSIS</text>
-            <!-- Rod body -->
             <rect x="55" y="72" width="170" height="18" rx="7" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
-            <!-- Big end -->
-            <circle cx="80" cy="81" r="30" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
-            <circle cx="80" cy="81" r="17" fill="#0d1f3c" stroke="#8892b0" stroke-width="1"/>
-            <!-- Small end -->
-            <circle cx="205" cy="81" r="20" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
+            <circle cx="80" cy="81" r="28" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
+            <circle cx="80" cy="81" r="16" fill="#0d1f3c" stroke="#8892b0" stroke-width="1"/>
+            <circle cx="205" cy="81" r="19" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
             <circle cx="205" cy="81" r="11" fill="#0d1f3c" stroke="#8892b0" stroke-width="1"/>
-            <!-- Force arrows -->
-            <line x1="26" y1="81" x2="46" y2="81" stroke="#fb923c" stroke-width="2.5" marker-end="url(#arrowR)"/>
-            <line x1="238" y1="81" x2="258" y2="81" stroke="#fb923c" stroke-width="2.5"/>
-            <polygon points="255,77 265,81 255,85" fill="#fb923c"/>
-            <polygon points="49,77 39,81 49,85" fill="#fb923c"/>
+            <polygon points="39,77 49,81 39,85" fill="#fb923c"/>
+            <line x1="25" y1="81" x2="48" y2="81" stroke="#fb923c" stroke-width="2.5"/>
+            <polygon points="241,77 251,81 241,85" fill="#fb923c"/>
+            <line x1="224" y1="81" x2="250" y2="81" stroke="#fb923c" stroke-width="2.5"/>
             <text x="20" y="75" fill="#fb923c" font-size="9" font-family="Inter,sans-serif">F</text>
-            <text x="268" y="75" fill="#fb923c" font-size="9" font-family="Inter,sans-serif">F</text>
-            <!-- Stress markers -->
+            <text x="255" y="75" fill="#fb923c" font-size="9" font-family="Inter,sans-serif">F</text>
             <line x1="138" y1="72" x2="132" y2="64" stroke="#fb923c" stroke-width="1.2" opacity="0.7"/>
             <line x1="148" y1="90" x2="154" y2="98" stroke="#fb923c" stroke-width="1" opacity="0.5"/>
-            <!-- Vickers diamond -->
             <polygon points="248,52 256,60 248,68 240,60" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.9"/>
             <text x="248" y="80" text-anchor="middle" fill="#a78bfa" font-size="8" font-family="Inter,sans-serif">HV</text>
-            <!-- Measurement points -->
-            <circle cx="110" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/><circle cx="140" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/><circle cx="170" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/>
-            <!-- Cross-section hatching at stress point -->
-            <line x1="132" y1="72" x2="136" y2="90" stroke="#64ffda" stroke-width="0.8" opacity="0.5" stroke-dasharray="2,2"/>
+            <circle cx="110" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/>
+            <circle cx="140" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/>
+            <circle cx="170" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/>
           </svg>
         </div>
         <div class="proj-body">
           <span class="proj-tag">B.E. Project</span>
           <h3>Connecting Rod Failure Study</h3>
-          <p>UTM tensile testing + Vickers hardness + microscopy to evaluate material toughness &amp; failure modes.</p>
+          <p>UTM testing + Vickers hardness + microscopy to evaluate toughness &amp; failure modes.</p>
           <span class="proj-explore">Explore details →</span>
         </div>
       </div>
@@ -547,22 +526,22 @@
     <div class="lang-list">
       <div class="lang-row fade-up">
         <span class="lang-name">English</span>
-        <div class="lang-bar"><div class="lang-fill" style="--w:90%"></div></div>
+        <div class="lang-bar"><div class="lang-fill" data-w="90"></div></div>
         <span class="lang-lvl">C1 · Business Fluent</span>
       </div>
       <div class="lang-row fade-up">
         <span class="lang-name">German</span>
-        <div class="lang-bar"><div class="lang-fill" style="--w:55%"></div></div>
+        <div class="lang-bar"><div class="lang-fill" data-w="55"></div></div>
         <span class="lang-lvl">B1 · Actively Improving</span>
       </div>
       <div class="lang-row fade-up">
         <span class="lang-name">Marathi</span>
-        <div class="lang-bar"><div class="lang-fill" style="--w:100%"></div></div>
+        <div class="lang-bar"><div class="lang-fill" data-w="100"></div></div>
         <span class="lang-lvl">Mother Tongue</span>
       </div>
       <div class="lang-row fade-up">
         <span class="lang-name">Hindi</span>
-        <div class="lang-bar"><div class="lang-fill" style="--w:90%"></div></div>
+        <div class="lang-bar"><div class="lang-fill" data-w="90"></div></div>
         <span class="lang-lvl">Business Fluent</span>
       </div>
     </div>
@@ -577,15 +556,15 @@
       <p>Open to roles in <strong>clean energy</strong>, <strong>fuel-cell R&D</strong>, and <strong>test &amp; validation engineering</strong>.</p>
       <div class="contact-links">
         <a href="mailto:rishinikumbh28@gmail.com" class="c-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           rishinikumbh28@gmail.com
         </a>
         <a href="tel:+4915782474735" class="c-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 015.19 12.9 19.79 19.79 0 012.12 4.27 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 015.19 12.9 19.79 19.79 0 012.12 4.27 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           +49 1578 2474 735
         </a>
         <a href="https://www.linkedin.com/in/rushikesh-nikumbh" target="_blank" class="c-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45H7.1V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#64ffda"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45H7.1V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
           LinkedIn Profile
         </a>
       </div>
@@ -594,22 +573,22 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="container">
-    <p>Designed &amp; built for Rushikesh Nikumbh · Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
-    <p style="margin-top:.3rem;font-size:.75rem">© 2026 Rushikesh Suresh Nikumbh</p>
+    <p>Rushikesh Nikumbh · © 2026 · Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
   </div>
 </footer>
 
 <!-- MODAL -->
-<div id="modal-overlay" aria-hidden="true">
-  <div id="modal-box" role="dialog" aria-modal="true">
-    <button id="modal-close" aria-label="Close">✕</button>
+<div id="modal-overlay">
+  <div id="modal-box">
+    <button id="modal-close">✕</button>
     <div id="modal-body"></div>
   </div>
 </div>
 
+<!-- Chart.js loaded at end of body so page renders first -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
