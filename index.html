@@ -185,12 +185,77 @@
 
       <div class="skill-card">
         <div class="skill-front">
-          <!-- Atom / electrochemical icon -->
-          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="#64ffda" stroke-width="2">
-            <circle cx="32" cy="32" r="5" fill="#64ffda" opacity="0.3"/>
-            <ellipse cx="32" cy="32" rx="20" ry="8"/>
-            <ellipse cx="32" cy="32" rx="20" ry="8" transform="rotate(60 32 32)"/>
-            <ellipse cx="32" cy="32" rx="20" ry="8" transform="rotate(120 32 32)"/>
+          <!-- PEM Fuel Cell Cross-Section -->
+          <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <rect width="200" height="140" fill="#070f1d"/>
+            <!-- Section label -->
+            <text x="100" y="10" text-anchor="middle" fill="#8892b0" font-size="6" font-family="Inter,sans-serif" letter-spacing="1.5">PEM FUEL CELL — CROSS SECTION</text>
+            <!-- External circuit arc (electron flow) -->
+            <path d="M24 20 Q100 4 176 20" stroke="#ccd6f6" stroke-width="1.4" stroke-dasharray="4,2.5"/>
+            <polygon points="172,18 176,23 168,22" fill="#ccd6f6"/>
+            <text x="100" y="16" text-anchor="middle" fill="#ccd6f6" font-size="6.5" font-family="Inter,sans-serif">e⁻  →  →  →  →</text>
+            <!-- H₂ fuel (left) -->
+            <text x="3" y="32" fill="#4a9eff" font-size="9" font-weight="700" font-family="Inter,sans-serif">H₂</text>
+            <line x1="7" y1="36" x2="7" y2="72" stroke="#4a9eff" stroke-width="1.2"/>
+            <polygon points="7,74 5,70 9,70" fill="#4a9eff"/>
+            <!-- ANODE BPP - left, blue tones -->
+            <rect x="12" y="22" width="26" height="104" fill="#0d2040" stroke="#4a9eff" stroke-width="1.2" rx="2"/>
+            <rect x="16" y="27" width="5" height="94" fill="#4a9eff" opacity="0.2" rx="1"/>
+            <rect x="24" y="27" width="5" height="94" fill="#4a9eff" opacity="0.2" rx="1"/>
+            <rect x="32" y="27" width="5" height="94" fill="#4a9eff" opacity="0.2" rx="1"/>
+            <text x="25" y="136" text-anchor="middle" fill="#4a9eff" font-size="5.5" font-family="Inter,sans-serif">ANODE BPP</text>
+            <!-- GDL Anode (porous carbon paper) -->
+            <rect x="38" y="22" width="9" height="104" fill="#091828"/>
+            <circle cx="41" cy="34" r="1" fill="#4a9eff" opacity="0.5"/><circle cx="44" cy="46" r="1" fill="#4a9eff" opacity="0.45"/>
+            <circle cx="41" cy="58" r="1" fill="#4a9eff" opacity="0.4"/><circle cx="44" cy="70" r="1" fill="#4a9eff" opacity="0.45"/>
+            <circle cx="41" cy="82" r="1" fill="#4a9eff" opacity="0.4"/><circle cx="44" cy="94" r="1" fill="#4a9eff" opacity="0.45"/>
+            <circle cx="41" cy="107" r="1" fill="#4a9eff" opacity="0.4"/><circle cx="44" cy="119" r="1" fill="#4a9eff" opacity="0.4"/>
+            <text x="42" y="136" text-anchor="middle" fill="#8892b0" font-size="4.5" font-family="Inter,sans-serif">GDL</text>
+            <!-- Catalyst Anode -->
+            <rect x="47" y="22" width="7" height="104" fill="#102a45" stroke="#4a9eff" stroke-width="0.4"/>
+            <text x="50" y="136" text-anchor="middle" fill="#8892b0" font-size="4" font-family="Inter,sans-serif">Cat.</text>
+            <!-- PEM Membrane (glowing teal) -->
+            <rect x="54" y="20" width="22" height="108" fill="rgba(100,255,218,0.1)" stroke="#64ffda" stroke-width="1.5" rx="1"/>
+            <line x1="57" y1="48" x2="74" y2="48" stroke="#64ffda" stroke-width="0.9" stroke-dasharray="2,1.5"/>
+            <polygon points="75,48 72,46 72,50" fill="#64ffda"/>
+            <line x1="57" y1="68" x2="74" y2="68" stroke="#64ffda" stroke-width="0.9" stroke-dasharray="2,1.5"/>
+            <polygon points="75,68 72,66 72,70" fill="#64ffda"/>
+            <line x1="57" y1="88" x2="74" y2="88" stroke="#64ffda" stroke-width="0.9" stroke-dasharray="2,1.5"/>
+            <polygon points="75,88 72,86 72,90" fill="#64ffda"/>
+            <text x="65" y="113" text-anchor="middle" fill="#64ffda" font-size="6" font-family="Inter,sans-serif" transform="rotate(-90 65 113)">MEMBRANE  H⁺</text>
+            <text x="65" y="136" text-anchor="middle" fill="#64ffda" font-size="5" font-family="Inter,sans-serif">PEM / Nafion</text>
+            <!-- Catalyst Cathode -->
+            <rect x="76" y="22" width="7" height="104" fill="#102a45" stroke="#fb923c" stroke-width="0.4"/>
+            <text x="79" y="136" text-anchor="middle" fill="#8892b0" font-size="4" font-family="Inter,sans-serif">Cat.</text>
+            <!-- GDL Cathode -->
+            <rect x="83" y="22" width="9" height="104" fill="#091828"/>
+            <circle cx="86" cy="36" r="1" fill="#fb923c" opacity="0.45"/><circle cx="89" cy="50" r="1" fill="#fb923c" opacity="0.4"/>
+            <circle cx="86" cy="64" r="1" fill="#fb923c" opacity="0.4"/><circle cx="89" cy="78" r="1" fill="#fb923c" opacity="0.45"/>
+            <circle cx="86" cy="92" r="1" fill="#fb923c" opacity="0.4"/><circle cx="89" cy="106" r="1" fill="#fb923c" opacity="0.4"/>
+            <circle cx="86" cy="118" r="1" fill="#fb923c" opacity="0.4"/>
+            <text x="87" y="136" text-anchor="middle" fill="#8892b0" font-size="4.5" font-family="Inter,sans-serif">GDL</text>
+            <!-- CATHODE BPP - right, orange tones -->
+            <rect x="92" y="22" width="26" height="104" fill="#1a0e00" stroke="#fb923c" stroke-width="1.2" rx="2"/>
+            <rect x="96" y="27" width="5" height="94" fill="#fb923c" opacity="0.2" rx="1"/>
+            <rect x="104" y="27" width="5" height="94" fill="#fb923c" opacity="0.2" rx="1"/>
+            <rect x="112" y="27" width="5" height="94" fill="#fb923c" opacity="0.2" rx="1"/>
+            <text x="105" y="136" text-anchor="middle" fill="#fb923c" font-size="5.5" font-family="Inter,sans-serif">CATHODE BPP</text>
+            <!-- O₂ and H₂O right side -->
+            <text x="128" y="32" fill="#fb923c" font-size="9" font-weight="700" font-family="Inter,sans-serif">O₂</text>
+            <line x1="132" y1="36" x2="132" y2="55" stroke="#fb923c" stroke-width="1.2"/>
+            <polygon points="132,57 130,53 134,53" fill="#fb923c"/>
+            <text x="126" y="90" fill="#8892b0" font-size="7.5" font-family="Inter,sans-serif">H₂O ↓</text>
+            <line x1="134" y1="94" x2="134" y2="118" stroke="#fb923c" stroke-width="1.2" stroke-dasharray="3,2"/>
+            <polygon points="134,120 132,116 136,116" fill="#fb923c"/>
+            <!-- Right side — key specs -->
+            <text x="148" y="38" fill="#64ffda" font-size="9" font-weight="700" font-family="Inter,sans-serif">FUEL CELL</text>
+            <text x="148" y="50" fill="#64ffda" font-size="7" font-family="Inter,sans-serif">STACK</text>
+            <line x1="148" y1="54" x2="197" y2="54" stroke="#64ffda" stroke-width="0.4" opacity="0.3"/>
+            <text x="148" y="65" fill="#ccd6f6" font-size="6" font-family="Inter,sans-serif">H₂ + ½O₂ → H₂O</text>
+            <text x="148" y="80" fill="#8892b0" font-size="6" font-family="Inter,sans-serif">7 Layers / cell</text>
+            <text x="148" y="93" fill="#8892b0" font-size="6" font-family="Inter,sans-serif">η ≈ 55–65%</text>
+            <text x="148" y="108" fill="#4a9eff" font-size="5.5" font-family="Inter,sans-serif">342 BPP / day</text>
+            <text x="148" y="120" fill="#34d399" font-size="5.5" font-family="Inter,sans-serif">6× throughput ↑</text>
           </svg>
           <h3>Hydrogen &amp;<br/>Electrochemical</h3>
           <p>Fuel Cells · Electrolysis · BPP</p>
@@ -210,10 +275,53 @@
 
       <div class="skill-card">
         <div class="skill-front">
-          <!-- Waveform / oscilloscope icon -->
-          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="#64ffda" stroke-width="2">
-            <rect x="4" y="10" width="56" height="40" rx="4"/>
-            <polyline points="12,34 20,20 28,40 36,24 44,34 52,34" stroke-width="2.5"/>
+          <!-- DVP&R Test Network (hexagonal web) inspired by thesis DVP&R tree -->
+          <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <rect width="200" height="140" fill="#070f1d"/>
+            <text x="100" y="10" text-anchor="middle" fill="#8892b0" font-size="6" font-family="Inter,sans-serif" letter-spacing="1.5">DESIGN VERIFICATION PLAN &amp; REPORT</text>
+            <!-- Center hexagon DVP&R -->
+            <polygon points="100,40 116,49.5 116,68.5 100,78 84,68.5 84,49.5" fill="#112240" stroke="#64ffda" stroke-width="1.5"/>
+            <text x="100" y="57" text-anchor="middle" fill="#64ffda" font-size="8" font-weight="700" font-family="Inter,sans-serif">DVP</text>
+            <text x="100" y="69" text-anchor="middle" fill="#64ffda" font-size="8" font-weight="700" font-family="Inter,sans-serif">&amp;R</text>
+            <!-- Spokes from hexagon corners to nodes -->
+            <line x1="100" y1="40" x2="100" y2="22" stroke="#64ffda" stroke-width="0.7" opacity="0.4"/>
+            <line x1="116" y1="49.5" x2="152" y2="30" stroke="#64ffda" stroke-width="0.7" opacity="0.4"/>
+            <line x1="116" y1="68.5" x2="152" y2="90" stroke="#64ffda" stroke-width="0.7" opacity="0.4"/>
+            <line x1="100" y1="78" x2="100" y2="96" stroke="#64ffda" stroke-width="0.7" opacity="0.4"/>
+            <line x1="84" y1="68.5" x2="48" y2="90" stroke="#64ffda" stroke-width="0.7" opacity="0.4"/>
+            <line x1="84" y1="49.5" x2="48" y2="30" stroke="#64ffda" stroke-width="0.7" opacity="0.4"/>
+            <!-- Node 1 — Tensile Test (top) -->
+            <circle cx="100" cy="18" r="11" fill="#112240" stroke="#4a9eff" stroke-width="1.2"/>
+            <line x1="94" y1="18" x2="97.5" y2="18" stroke="#4a9eff" stroke-width="1.4"/>
+            <polygon points="93,18 96,16.3 96,19.7" fill="#4a9eff"/>
+            <line x1="106" y1="18" x2="102.5" y2="18" stroke="#4a9eff" stroke-width="1.4"/>
+            <polygon points="107,18 104,16.3 104,19.7" fill="#4a9eff"/>
+            <text x="100" y="34" text-anchor="middle" fill="#ccd6f6" font-size="6" font-family="Inter,sans-serif">Tensile</text>
+            <!-- Node 2 — Lap Shear (top-right) -->
+            <circle cx="156" cy="27" r="11" fill="#112240" stroke="#a78bfa" stroke-width="1.2"/>
+            <line x1="150" y1="25" x2="157" y2="25" stroke="#a78bfa" stroke-width="1.3"/>
+            <polygon points="158,25 155,23.3 155,26.7" fill="#a78bfa"/>
+            <line x1="162" y1="29" x2="155" y2="29" stroke="#a78bfa" stroke-width="1.3"/>
+            <polygon points="154,29 157,27.3 157,30.7" fill="#a78bfa"/>
+            <text x="156" y="43" text-anchor="middle" fill="#ccd6f6" font-size="6" font-family="Inter,sans-serif">Lap Shear</text>
+            <!-- Node 3 — Leak Test (bottom-right) -->
+            <circle cx="156" cy="94" r="11" fill="#112240" stroke="#34d399" stroke-width="1.2"/>
+            <text x="156" y="98" text-anchor="middle" fill="#34d399" font-size="11" font-weight="700" font-family="Inter,sans-serif">P</text>
+            <text x="156" y="110" text-anchor="middle" fill="#ccd6f6" font-size="6" font-family="Inter,sans-serif">Leak Test</text>
+            <!-- Node 4 — Shore Hardness (bottom) -->
+            <circle cx="100" cy="110" r="11" fill="#112240" stroke="#fb923c" stroke-width="1.2"/>
+            <polygon points="100,103 105.5,110 100,117 94.5,110" fill="none" stroke="#fb923c" stroke-width="1.3"/>
+            <text x="100" y="126" text-anchor="middle" fill="#ccd6f6" font-size="6" font-family="Inter,sans-serif">Hardness</text>
+            <!-- Node 5 — Leaching ICP (bottom-left) -->
+            <circle cx="44" cy="94" r="11" fill="#112240" stroke="#fbbf24" stroke-width="1.2"/>
+            <path d="M44,87 Q39,94 41,100 Q44,104 47,100 Q49,94 44,87Z" fill="none" stroke="#fbbf24" stroke-width="1.3"/>
+            <text x="44" y="110" text-anchor="middle" fill="#ccd6f6" font-size="6" font-family="Inter,sans-serif">Leaching</text>
+            <!-- Node 6 — H₂ Permeability (top-left) -->
+            <circle cx="44" cy="27" r="11" fill="#112240" stroke="#64ffda" stroke-width="1.2"/>
+            <text x="44" y="31" text-anchor="middle" fill="#64ffda" font-size="9" font-weight="700" font-family="Inter,sans-serif">H₂</text>
+            <text x="44" y="43" text-anchor="middle" fill="#ccd6f6" font-size="5.5" font-family="Inter,sans-serif">H₂ Perm.</text>
+            <!-- Arrhenius label bottom -->
+            <text x="100" y="136" text-anchor="middle" fill="#8892b0" font-size="6" font-family="Inter,sans-serif">Arrhenius ALT · ICP-OES · ISO 527 / 4578 / 868</text>
           </svg>
           <h3>Testing &amp;<br/>Validation</h3>
           <p>DVP&R · Failure Analysis · Leak Test</p>
@@ -234,12 +342,77 @@
 
       <div class="skill-card">
         <div class="skill-front">
-          <!-- Layers / 3D printing icon -->
-          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="#64ffda" stroke-width="2">
-            <rect x="8" y="46" width="48" height="8" rx="2"/>
-            <rect x="12" y="34" width="40" height="8" rx="2"/>
-            <rect x="16" y="22" width="32" height="8" rx="2"/>
-            <rect x="20" y="10" width="24" height="8" rx="2"/>
+          <!-- 3D Printing + CNC Dispensing — dual process panel inspired by thesis Zusammenfassung -->
+          <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <rect width="200" height="140" fill="#070f1d"/>
+            <!-- Section titles -->
+            <text x="47" y="10" text-anchor="middle" fill="#4a9eff" font-size="5.5" font-family="Inter,sans-serif" letter-spacing="1">3D PRINTING</text>
+            <text x="153" y="10" text-anchor="middle" fill="#64ffda" font-size="5.5" font-family="Inter,sans-serif" letter-spacing="1">DISPENSING</text>
+            <!-- Divider -->
+            <line x1="100" y1="6" x2="100" y2="134" stroke="#64ffda" stroke-width="0.5" opacity="0.15"/>
+            <!-- === LEFT: FDM 3D Printer === -->
+            <!-- Printer frame -->
+            <rect x="6" y="14" width="86" height="112" fill="none" stroke="#4a9eff" stroke-width="0.8" rx="3" stroke-dasharray="5,3"/>
+            <!-- Z-axis rods -->
+            <line x1="18" y1="16" x2="18" y2="120" stroke="#4a9eff" stroke-width="1.2"/>
+            <line x1="80" y1="16" x2="80" y2="120" stroke="#4a9eff" stroke-width="1.2"/>
+            <!-- Print head carriage rail -->
+            <rect x="18" y="42" width="62" height="4" fill="#4a9eff" opacity="0.4" rx="1"/>
+            <!-- Nozzle assembly hanging from rail -->
+            <rect x="43" y="46" width="12" height="8" fill="#1a3060" stroke="#4a9eff" stroke-width="0.8" rx="1"/>
+            <polygon points="44,54 49,62 54,54" fill="#4a9eff" opacity="0.8"/>
+            <circle cx="49" cy="63" r="2" fill="#64ffda"/>
+            <!-- Filament spool & feed line -->
+            <circle cx="80" cy="22" r="8" fill="none" stroke="#4a9eff" stroke-width="1.2"/>
+            <circle cx="80" cy="22" r="3" fill="#4a9eff" opacity="0.3"/>
+            <line x1="73" y1="28" x2="55" y2="46" stroke="#4a9eff" stroke-width="0.8" stroke-dasharray="2,2"/>
+            <!-- Layers building up (part on print bed) -->
+            <rect x="25" y="120" width="48" height="3" fill="#4a9eff" opacity="0.75" rx="0.5"/>
+            <rect x="25" y="116" width="48" height="3" fill="#4a9eff" opacity="0.7" rx="0.5"/>
+            <rect x="25" y="112" width="48" height="3" fill="#4a9eff" opacity="0.65" rx="0.5"/>
+            <rect x="25" y="108" width="48" height="3" fill="#4a9eff" opacity="0.6" rx="0.5"/>
+            <rect x="25" y="104" width="48" height="3" fill="#4a9eff" opacity="0.55" rx="0.5"/>
+            <rect x="25" y="100" width="48" height="3" fill="#4a9eff" opacity="0.5" rx="0.5"/>
+            <rect x="25" y="96" width="48" height="3" fill="#4a9eff" opacity="0.45" rx="0.5"/>
+            <rect x="25" y="92" width="48" height="3" fill="#4a9eff" opacity="0.4" rx="0.5"/>
+            <rect x="25" y="88" width="48" height="3" fill="#4a9eff" opacity="0.35" rx="0.5"/>
+            <rect x="25" y="84" width="48" height="3" fill="#4a9eff" opacity="0.3" rx="0.5"/>
+            <!-- Current layer being printed (shorter, teal highlight) -->
+            <rect x="25" y="80" width="30" height="3" fill="#64ffda" opacity="0.9" rx="0.5"/>
+            <!-- Print bed -->
+            <rect x="20" y="123" width="58" height="3" fill="#1a2d4e" stroke="#8892b0" stroke-width="0.5" rx="1"/>
+            <!-- === RIGHT: CNC Sealant Dispensing (from Zusammenfassung A/B factor diagrams) === -->
+            <!-- BPP plate on vacuum table -->
+            <rect x="107" y="88" width="82" height="24" fill="#1a2d4e" stroke="#64ffda" stroke-width="1" rx="2"/>
+            <!-- BPP flow channels engraved -->
+            <rect x="113" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="119" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="125" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="131" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="137" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="143" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="149" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="155" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="161" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="167" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="173" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <rect x="179" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
+            <!-- CNC dispensing arm / Z-axis -->
+            <line x1="148" y1="14" x2="148" y2="88" stroke="#8892b0" stroke-width="2"/>
+            <rect x="140" y="10" width="16" height="10" fill="#112240" stroke="#8892b0" stroke-width="1" rx="2"/>
+            <text x="148" y="18" text-anchor="middle" fill="#8892b0" font-size="5.5" font-family="Inter,sans-serif">DATRON</text>
+            <!-- Dispensing nozzle head -->
+            <rect x="143" y="70" width="10" height="20" fill="#2a3a50" stroke="#64ffda" stroke-width="1" rx="2"/>
+            <polygon points="143,90 148,96 153,90" fill="#64ffda" opacity="0.8"/>
+            <!-- Sealant bead being dispensed (uniform = optimum A/B factor) -->
+            <rect x="107" y="86" width="40" height="3.5" fill="#64ffda" opacity="0.75" rx="1"/>
+            <!-- A/B factor label -->
+            <text x="148" y="60" text-anchor="middle" fill="#64ffda" font-size="5.5" font-family="Inter,sans-serif">A=530 · B=195</text>
+            <text x="148" y="70" text-anchor="middle" fill="#8892b0" font-size="5" font-family="Inter,sans-serif">Optimum bead</text>
+            <!-- Vacuum table base -->
+            <rect x="107" y="112" width="82" height="5" fill="#1a2d4e" stroke="#8892b0" stroke-width="0.5" rx="1"/>
+            <!-- Speed label -->
+            <text x="148" y="125" text-anchor="middle" fill="#fb923c" font-size="6" font-family="Inter,sans-serif">3 m/min · 342 BPP/day</text>
           </svg>
           <h3>Prototyping &amp;<br/>Workshop</h3>
           <p>3D Printing · Fixtures · CNC</p>
@@ -259,14 +432,72 @@
 
       <div class="skill-card">
         <div class="skill-front">
-          <!-- Blueprint / CAD grid icon -->
-          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="#64ffda" stroke-width="2">
-            <rect x="6" y="6" width="52" height="52" rx="4"/>
-            <line x1="6" y1="22" x2="58" y2="22"/>
-            <line x1="6" y1="42" x2="58" y2="42"/>
-            <line x1="22" y1="6" x2="22" y2="58"/>
-            <line x1="42" y1="6" x2="42" y2="58"/>
-            <circle cx="32" cy="32" r="6" fill="#64ffda" opacity="0.2"/>
+          <!-- CAD Technical Drawing of Bipolar Plate (inspired by A3_sheet_Thesis_Topic plate drawings) -->
+          <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <rect width="200" height="140" fill="#040c18"/>
+            <!-- Drawing border (engineering standard) -->
+            <rect x="2" y="2" width="196" height="136" fill="none" stroke="#4a9eff" stroke-width="0.7" opacity="0.35"/>
+            <rect x="4" y="4" width="192" height="132" fill="none" stroke="#4a9eff" stroke-width="0.25" opacity="0.2"/>
+            <!-- Title block bottom -->
+            <line x1="2" y1="120" x2="198" y2="120" stroke="#4a9eff" stroke-width="0.6" opacity="0.4"/>
+            <line x1="2" y1="128" x2="198" y2="128" stroke="#4a9eff" stroke-width="0.4" opacity="0.3"/>
+            <line x1="120" y1="120" x2="120" y2="138" stroke="#4a9eff" stroke-width="0.4" opacity="0.3"/>
+            <line x1="160" y1="120" x2="160" y2="138" stroke="#4a9eff" stroke-width="0.4" opacity="0.3"/>
+            <text x="8" y="127" fill="#ccd6f6" font-size="5" font-family="Inter,sans-serif">BIPOLAR PLATE — Anode Half</text>
+            <text x="8" y="135" fill="#8892b0" font-size="4.5" font-family="Inter,sans-serif">CATIA V5 · Scale 1:1</text>
+            <text x="125" y="127" fill="#4a9eff" font-size="5" font-family="Inter,sans-serif">GD&amp;T · ISO 10579</text>
+            <text x="165" y="127" fill="#8892b0" font-size="5" font-family="Inter,sans-serif">Rev A3</text>
+            <!-- Bipolar plate main body (top view) -->
+            <rect x="32" y="14" width="130" height="100" fill="#0c2040" stroke="#64ffda" stroke-width="1.4" rx="4"/>
+            <!-- Flow channels (parallel vertical slots) — inspired by thesis plate dimensions -->
+            <rect x="40" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="47" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="54" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="61" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="68" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="75" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="82" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="89" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="96" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="103" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="110" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="117" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="124" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="131" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="138" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="145" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <rect x="152" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
+            <!-- Corner reference holes (from thesis diagrams: 4 dowel pin positions) -->
+            <circle cx="40" cy="22" r="4.5" fill="#040c18" stroke="#64ffda" stroke-width="1"/>
+            <circle cx="152" cy="22" r="4.5" fill="#040c18" stroke="#64ffda" stroke-width="1"/>
+            <circle cx="40" cy="108" r="4.5" fill="#040c18" stroke="#64ffda" stroke-width="1"/>
+            <circle cx="152" cy="108" r="4.5" fill="#040c18" stroke="#64ffda" stroke-width="1"/>
+            <!-- Inlet/Outlet manifold holes (from thesis: central leak test connection) -->
+            <circle cx="96" cy="18" r="6" fill="#4a9eff" opacity="0.35" stroke="#4a9eff" stroke-width="1"/>
+            <circle cx="96" cy="112" r="6" fill="#fb923c" opacity="0.35" stroke="#fb923c" stroke-width="1"/>
+            <text x="96" y="11" text-anchor="middle" fill="#4a9eff" font-size="4.5" font-family="Inter,sans-serif">IN</text>
+            <!-- Groove profile (from thesis 1.5×0.1 mm groove for sealant) -->
+            <rect x="34" y="14" width="124" height="4" fill="none" stroke="#64ffda" stroke-width="0.6" stroke-dasharray="3,2" opacity="0.6"/>
+            <rect x="34" y="110" width="124" height="4" fill="none" stroke="#64ffda" stroke-width="0.6" stroke-dasharray="3,2" opacity="0.6"/>
+            <!-- Horizontal dimension arrow (top) -->
+            <line x1="32" y1="8" x2="162" y2="8" stroke="#ccd6f6" stroke-width="0.6"/>
+            <polygon points="32,8 35,6.5 35,9.5" fill="#ccd6f6"/>
+            <polygon points="162,8 159,6.5 159,9.5" fill="#ccd6f6"/>
+            <text x="97" y="7" text-anchor="middle" fill="#ccd6f6" font-size="5" font-family="Inter,sans-serif">50 mm</text>
+            <!-- Vertical dimension arrow (right) -->
+            <line x1="168" y1="14" x2="168" y2="114" stroke="#ccd6f6" stroke-width="0.6"/>
+            <polygon points="168,14 166.5,17 169.5,17" fill="#ccd6f6"/>
+            <polygon points="168,114 166.5,111 169.5,111" fill="#ccd6f6"/>
+            <text x="172" y="66" fill="#ccd6f6" font-size="5" font-family="Inter,sans-serif">50</text>
+            <text x="172" y="73" fill="#ccd6f6" font-size="5" font-family="Inter,sans-serif">mm</text>
+            <!-- GD&T flatness callout (from thesis dimensional tolerancing) -->
+            <rect x="4" y="40" width="24" height="12" fill="none" stroke="#64ffda" stroke-width="0.6"/>
+            <line x1="28" y1="46" x2="34" y2="46" stroke="#64ffda" stroke-width="0.6"/>
+            <text x="6" y="48" fill="#64ffda" font-size="4.5" font-family="Inter,sans-serif">⏥ 0.05</text>
+            <!-- Surface finish callout -->
+            <rect x="4" y="58" width="24" height="12" fill="none" stroke="#a78bfa" stroke-width="0.6"/>
+            <line x1="28" y1="64" x2="34" y2="64" stroke="#a78bfa" stroke-width="0.6"/>
+            <text x="6" y="66" fill="#a78bfa" font-size="4.5" font-family="Inter,sans-serif">Ra 0.8 µm</text>
           </svg>
           <h3>CAD &amp;<br/>Documentation</h3>
           <p>CATIA · SolidWorks · GD&T</p>
@@ -408,25 +639,94 @@
 
       <div class="proj-card fade-up" data-proj="co2">
         <div class="proj-art">
-          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a1628"/><stop offset="100%" stop-color="#0d2545"/></linearGradient></defs>
-            <rect width="280" height="160" fill="url(#g1)"/>
-            <circle cx="20" cy="18" r="1" fill="#64ffda" opacity="0.5"/><circle cx="55" cy="10" r="1" fill="#ccd6f6" opacity="0.4"/>
-            <circle cx="200" cy="14" r="1" fill="#64ffda" opacity="0.4"/><circle cx="255" cy="22" r="1" fill="#ccd6f6" opacity="0.3"/>
-            <rect x="8" y="95" width="28" height="65" fill="#112240"/><rect x="40" y="75" width="22" height="85" fill="#1a2d4e"/>
-            <rect x="66" y="85" width="32" height="75" fill="#112240"/><rect x="170" y="78" width="28" height="82" fill="#1a2d4e"/>
-            <rect x="202" y="62" width="24" height="98" fill="#112240"/><rect x="230" y="88" width="36" height="72" fill="#1a2d4e"/>
-            <rect x="42" y="72" width="18" height="4" fill="#64ffda" opacity="0.7" rx="1"/>
-            <rect x="68" y="82" width="28" height="4" fill="#64ffda" opacity="0.6" rx="1"/>
-            <rect x="172" y="75" width="24" height="4" fill="#64ffda" opacity="0.7" rx="1"/>
-            <line x1="140" y1="155" x2="140" y2="55" stroke="#64ffda" stroke-width="2" opacity="0.7"/>
-            <circle cx="140" cy="54" r="3" fill="#64ffda" opacity="0.9"/>
-            <line x1="140" y1="54" x2="118" y2="28" stroke="#64ffda" stroke-width="1.8" opacity="0.7"/>
-            <line x1="140" y1="54" x2="164" y2="38" stroke="#64ffda" stroke-width="1.8" opacity="0.7"/>
-            <line x1="140" y1="54" x2="138" y2="80" stroke="#64ffda" stroke-width="1.8" opacity="0.7"/>
-            <text x="140" y="22" text-anchor="middle" fill="#64ffda" font-size="16" font-weight="700" font-family="Inter,sans-serif">21.2% CO₂</text>
-            <text x="140" y="38" text-anchor="middle" fill="#8892b0" font-size="9" font-family="Inter,sans-serif" letter-spacing="2">REDUCTION · JENA</text>
-            <rect x="0" y="155" width="280" height="5" fill="#0a2240"/>
+          <!-- Before/After energy transition — inspired by A3_Stage3 bar chart + city scale-up narrative -->
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <defs>
+              <linearGradient id="gLeft" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#180410"/><stop offset="100%" stop-color="#100a1a"/></linearGradient>
+              <linearGradient id="gRight" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#041218"/><stop offset="100%" stop-color="#071a10"/></linearGradient>
+            </defs>
+            <!-- Split background -->
+            <rect width="140" height="160" fill="url(#gLeft)"/>
+            <rect x="140" width="140" height="160" fill="url(#gRight)"/>
+            <!-- Split divider line -->
+            <line x1="140" y1="0" x2="140" y2="160" stroke="#64ffda" stroke-width="0.6" opacity="0.2"/>
+            <!-- === LEFT: 2020 Industrial === -->
+            <!-- Industrial buildings (gray/dark) -->
+            <rect x="5" y="90" width="22" height="70" fill="#1e1424" stroke="#332244" stroke-width="0.5"/>
+            <rect x="30" y="76" width="18" height="84" fill="#1a1028" stroke="#332244" stroke-width="0.5"/>
+            <rect x="52" y="82" width="26" height="78" fill="#1e1424" stroke="#332244" stroke-width="0.5"/>
+            <rect x="82" y="72" width="18" height="88" fill="#1a1028" stroke="#332244" stroke-width="0.5"/>
+            <rect x="104" y="85" width="24" height="75" fill="#1e1424" stroke="#332244" stroke-width="0.5"/>
+            <!-- Smokestacks -->
+            <rect x="37" y="54" width="5" height="24" fill="#2a2a3a"/>
+            <rect x="46" y="60" width="5" height="18" fill="#2a2a3a"/>
+            <rect x="90" y="52" width="5" height="22" fill="#2a2a3a"/>
+            <!-- Smoke clouds (red-tinted pollution) -->
+            <circle cx="40" cy="50" r="8" fill="#ff4040" opacity="0.14"/>
+            <circle cx="50" cy="45" r="10" fill="#ff5530" opacity="0.11"/>
+            <circle cx="35" cy="43" r="7" fill="#ff3030" opacity="0.1"/>
+            <circle cx="56" cy="42" r="8" fill="#ff4020" opacity="0.1"/>
+            <circle cx="44" cy="35" r="11" fill="#cc2020" opacity="0.08"/>
+            <circle cx="92" cy="46" r="9" fill="#ff5030" opacity="0.12"/>
+            <circle cx="86" cy="40" r="7" fill="#ff3020" opacity="0.09"/>
+            <!-- CO2 text -->
+            <text x="50" y="24" text-anchor="middle" fill="#ff5050" font-size="10" font-weight="700" font-family="Inter,sans-serif" opacity="0.65">CO₂</text>
+            <!-- 2020 bar chart (full height = 100%) -->
+            <rect x="8" y="62" width="14" height="28" fill="#ff5050" opacity="0.55" rx="1"/>
+            <text x="15" y="59" text-anchor="middle" fill="#ff5050" font-size="6.5" font-family="Inter,sans-serif">100%</text>
+            <text x="15" y="155" text-anchor="middle" fill="#8892b0" font-size="6" font-family="Inter,sans-serif">2020</text>
+            <!-- Left label -->
+            <text x="70" y="155" text-anchor="middle" fill="#8892b0" font-size="6.5" font-family="Inter,sans-serif">Industrial Baseline</text>
+            <!-- === RIGHT: 2035 Renewable === -->
+            <!-- Clean buildings -->
+            <rect x="147" y="94" width="22" height="66" fill="#0a2030" stroke="#1a3a4a" stroke-width="0.5"/>
+            <rect x="172" y="86" width="18" height="74" fill="#081a28" stroke="#1a3a4a" stroke-width="0.5"/>
+            <rect x="194" y="90" width="24" height="70" fill="#0a2030" stroke="#1a3a4a" stroke-width="0.5"/>
+            <rect x="222" y="82" width="22" height="78" fill="#081a28" stroke="#1a3a4a" stroke-width="0.5"/>
+            <rect x="248" y="96" width="26" height="64" fill="#0a2030" stroke="#1a3a4a" stroke-width="0.5"/>
+            <!-- Solar panels on rooftops (teal grid) -->
+            <rect x="148" y="90" width="20" height="5" fill="#1a3560" rx="1"/>
+            <line x1="152" y1="90" x2="152" y2="95" stroke="#4a9eff" stroke-width="0.5"/>
+            <line x1="157" y1="90" x2="157" y2="95" stroke="#4a9eff" stroke-width="0.5"/>
+            <line x1="162" y1="90" x2="162" y2="95" stroke="#4a9eff" stroke-width="0.5"/>
+            <rect x="195" y="86" width="22" height="5" fill="#1a3560" rx="1"/>
+            <line x1="200" y1="86" x2="200" y2="91" stroke="#4a9eff" stroke-width="0.5"/>
+            <line x1="206" y1="86" x2="206" y2="91" stroke="#4a9eff" stroke-width="0.5"/>
+            <line x1="212" y1="86" x2="212" y2="91" stroke="#4a9eff" stroke-width="0.5"/>
+            <rect x="223" y="78" width="20" height="5" fill="#1a3560" rx="1"/>
+            <line x1="228" y1="78" x2="228" y2="83" stroke="#4a9eff" stroke-width="0.5"/>
+            <line x1="234" y1="78" x2="234" y2="83" stroke="#4a9eff" stroke-width="0.5"/>
+            <!-- Wind turbine 1 -->
+            <line x1="192" y1="22" x2="192" y2="60" stroke="#64ffda" stroke-width="1.5"/>
+            <line x1="192" y1="32" x2="181" y2="14" stroke="#64ffda" stroke-width="1.2"/>
+            <line x1="192" y1="32" x2="203" y2="14" stroke="#64ffda" stroke-width="1.2"/>
+            <line x1="192" y1="32" x2="192" y2="12" stroke="#64ffda" stroke-width="1.2"/>
+            <circle cx="192" cy="32" r="2.5" fill="#64ffda"/>
+            <!-- Wind turbine 2 -->
+            <line x1="248" y1="14" x2="248" y2="56" stroke="#64ffda" stroke-width="1.5"/>
+            <line x1="248" y1="25" x2="237" y2="8" stroke="#64ffda" stroke-width="1.2"/>
+            <line x1="248" y1="25" x2="259" y2="8" stroke="#64ffda" stroke-width="1.2"/>
+            <line x1="248" y1="25" x2="248" y2="6" stroke="#64ffda" stroke-width="1.2"/>
+            <circle cx="248" cy="25" r="2.5" fill="#64ffda"/>
+            <!-- Sun symbol (top-right) -->
+            <circle cx="164" cy="22" r="9" fill="#fbbf24" opacity="0.75"/>
+            <line x1="164" y1="9" x2="164" y2="6" stroke="#fbbf24" stroke-width="1.2"/>
+            <line x1="164" y1="35" x2="164" y2="38" stroke="#fbbf24" stroke-width="1.2"/>
+            <line x1="151" y1="22" x2="148" y2="22" stroke="#fbbf24" stroke-width="1.2"/>
+            <line x1="177" y1="22" x2="180" y2="22" stroke="#fbbf24" stroke-width="1.2"/>
+            <line x1="154" y1="13" x2="152" y2="11" stroke="#fbbf24" stroke-width="1.2"/>
+            <line x1="174" y1="31" x2="176" y2="33" stroke="#fbbf24" stroke-width="1.2"/>
+            <!-- 2035 bar (78.8% of 100% = ~22px out of 28px) -->
+            <rect x="258" y="68" width="14" height="22" fill="#64ffda" opacity="0.65" rx="1"/>
+            <text x="265" y="65" text-anchor="middle" fill="#64ffda" font-size="6.5" font-family="Inter,sans-serif">78.8%</text>
+            <text x="265" y="155" text-anchor="middle" fill="#8892b0" font-size="6" font-family="Inter,sans-serif">2035</text>
+            <text x="210" y="155" text-anchor="middle" fill="#8892b0" font-size="6.5" font-family="Inter,sans-serif">Clean Energy Mix</text>
+            <!-- Centre callout badge -->
+            <rect x="107" y="46" width="66" height="32" fill="#0a2030" stroke="#64ffda" stroke-width="1.2" rx="5"/>
+            <text x="140" y="60" text-anchor="middle" fill="#64ffda" font-size="14" font-weight="700" font-family="Inter,sans-serif">21.2%</text>
+            <text x="140" y="72" text-anchor="middle" fill="#ccd6f6" font-size="7" font-family="Inter,sans-serif">CO₂ Reduction</text>
+            <!-- Ground -->
+            <line x1="0" y1="158" x2="280" y2="158" stroke="#1a3a5c" stroke-width="1"/>
           </svg>
         </div>
         <div class="proj-body">
@@ -439,25 +739,82 @@
 
       <div class="proj-card fade-up" data-proj="electrolysis">
         <div class="proj-art">
-          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
-            <rect width="280" height="160" fill="#0a1628"/>
-            <rect x="50" y="85" width="180" height="65" fill="#0a2240" rx="4" stroke="#1a3a5c" stroke-width="1"/>
-            <text x="140" y="125" text-anchor="middle" fill="#4a9eff" font-size="10" font-family="Inter,sans-serif" opacity="0.6">Electrolyte — KOH solution</text>
-            <rect x="88" y="55" width="12" height="95" fill="#64ffda" opacity="0.85" rx="2"/>
-            <rect x="180" y="55" width="12" height="95" fill="#fb923c" opacity="0.85" rx="2"/>
-            <text x="94" y="48" text-anchor="middle" fill="#64ffda" font-size="11" font-weight="700" font-family="Inter,sans-serif">−</text>
-            <text x="186" y="48" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="700" font-family="Inter,sans-serif">+</text>
-            <text x="94" y="40" text-anchor="middle" fill="#8892b0" font-size="8" font-family="Inter,sans-serif">Cathode</text>
-            <text x="186" y="40" text-anchor="middle" fill="#8892b0" font-size="8" font-family="Inter,sans-serif">Anode</text>
-            <circle cx="94" cy="100" r="5" fill="#64ffda" opacity="0.45"/><circle cx="86" cy="86" r="4" fill="#64ffda" opacity="0.3"/>
-            <circle cx="100" cy="74" r="6" fill="#64ffda" opacity="0.2"/><circle cx="88" cy="63" r="3" fill="#64ffda" opacity="0.15"/>
-            <circle cx="186" cy="95" r="6" fill="#fb923c" opacity="0.4"/><circle cx="194" cy="80" r="4" fill="#fb923c" opacity="0.3"/>
-            <circle cx="180" cy="68" r="5" fill="#fb923c" opacity="0.2"/>
-            <line x1="94" y1="30" x2="186" y2="30" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <text x="140" y="27" text-anchor="middle" fill="#8892b0" font-size="8" font-family="Inter,sans-serif">DC Power</text>
-            <text x="140" y="16" text-anchor="middle" fill="#ccd6f6" font-size="13" font-weight="700" font-family="Inter,sans-serif">2H₂O → 2H₂ + O₂</text>
-            <text x="66" y="65" text-anchor="middle" fill="#64ffda" font-size="11" font-weight="700" font-family="Inter,sans-serif">H₂↑</text>
-            <text x="212" y="65" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="700" font-family="Inter,sans-serif">O₂↑</text>
+          <!-- Alkaline Electrolyzer Cell — inspired by thesis diagrams: cathode/anode setup, KOH electrolyte, gas collection -->
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <rect width="280" height="160" fill="#070f1d"/>
+            <!-- Equation at top -->
+            <text x="140" y="13" text-anchor="middle" fill="#ccd6f6" font-size="11" font-weight="700" font-family="Inter,sans-serif">2H₂O → 2H₂ + O₂</text>
+            <!-- DC Power supply block -->
+            <rect x="104" y="16" width="72" height="18" fill="#112240" stroke="#ccd6f6" stroke-width="1" rx="3"/>
+            <text x="130" y="27" text-anchor="middle" fill="#ccd6f6" font-size="7.5" font-weight="700" font-family="Inter,sans-serif">DC POWER</text>
+            <text x="173" y="27" fill="#fb923c" font-size="11" font-weight="700" font-family="Inter,sans-serif">+</text>
+            <text x="105" y="27" fill="#4a9eff" font-size="11" font-weight="700" font-family="Inter,sans-serif">−</text>
+            <!-- Wire from power supply: negative to cathode (left) -->
+            <line x1="104" y1="25" x2="76" y2="25" stroke="#4a9eff" stroke-width="1.5"/>
+            <line x1="76" y1="25" x2="76" y2="42" stroke="#4a9eff" stroke-width="1.5"/>
+            <!-- Wire: positive to anode (right) -->
+            <line x1="176" y1="25" x2="204" y2="25" stroke="#fb923c" stroke-width="1.5"/>
+            <line x1="204" y1="25" x2="204" y2="42" stroke="#fb923c" stroke-width="1.5"/>
+            <!-- H₂ gas collection chamber (cathode side, top-left) -->
+            <rect x="48" y="38" width="80" height="20" fill="rgba(74,158,255,0.18)" stroke="#4a9eff" stroke-width="1" rx="2"/>
+            <text x="88" y="51" text-anchor="middle" fill="#4a9eff" font-size="9" font-weight="700" font-family="Inter,sans-serif">H₂ ↑↑↑</text>
+            <!-- O₂ gas collection chamber (anode side, top-right) -->
+            <rect x="152" y="38" width="80" height="20" fill="rgba(251,146,60,0.18)" stroke="#fb923c" stroke-width="1" rx="2"/>
+            <text x="192" y="51" text-anchor="middle" fill="#fb923c" font-size="9" font-weight="700" font-family="Inter,sans-serif">O₂ ↑↑↑</text>
+            <!-- Cell body / electrolyte vessel -->
+            <rect x="48" y="58" width="184" height="78" fill="#070f1d" stroke="#1a3a5c" stroke-width="1" rx="2"/>
+            <!-- KOH electrolyte fill zone (bottom portion of cell) -->
+            <rect x="50" y="108" width="180" height="26" fill="rgba(100,255,218,0.07)"/>
+            <text x="140" y="126" text-anchor="middle" fill="#64ffda" font-size="7" font-family="Inter,sans-serif">KOH Electrolyte — 30 wt% · 80°C</text>
+            <!-- CATHODE electrode plate (stainless steel — from thesis: SS mesh) -->
+            <rect x="64" y="58" width="10" height="78" fill="#0d3050" stroke="#4a9eff" stroke-width="1.5" rx="1"/>
+            <text x="69" y="54" text-anchor="middle" fill="#4a9eff" font-size="6.5" font-family="Inter,sans-serif">CATHODE (−)</text>
+            <!-- Cathode zone fill -->
+            <rect x="74" y="58" width="64" height="78" fill="rgba(74,158,255,0.05)"/>
+            <!-- H₂ bubbles rising in cathode zone (various sizes, rising upward) -->
+            <circle cx="82" cy="120" r="4.5" fill="#4a9eff" opacity="0.4"/>
+            <circle cx="94" cy="108" r="3.5" fill="#4a9eff" opacity="0.35"/>
+            <circle cx="86" cy="95" r="5" fill="#4a9eff" opacity="0.3"/>
+            <circle cx="100" cy="84" r="3" fill="#4a9eff" opacity="0.28"/>
+            <circle cx="80" cy="78" r="4" fill="#4a9eff" opacity="0.25"/>
+            <circle cx="112" cy="100" r="4" fill="#4a9eff" opacity="0.3"/>
+            <circle cx="106" cy="72" r="3.5" fill="#4a9eff" opacity="0.22"/>
+            <circle cx="92" cy="68" r="2.5" fill="#4a9eff" opacity="0.2"/>
+            <circle cx="120" cy="86" r="2.5" fill="#4a9eff" opacity="0.2"/>
+            <circle cx="76" cy="64" r="3" fill="#4a9eff" opacity="0.18"/>
+            <!-- Membrane / Separator (centre) -->
+            <rect x="138" y="58" width="8" height="78" fill="rgba(100,255,218,0.12)" stroke="#64ffda" stroke-width="1.2"/>
+            <text x="142" y="96" text-anchor="middle" fill="#64ffda" font-size="6" transform="rotate(-90 142 96)" font-family="Inter,sans-serif">SEPARATOR</text>
+            <!-- OH⁻ arrow through membrane (right to left) -->
+            <line x1="138" y1="84" x2="146" y2="84" stroke="#64ffda" stroke-width="0.9" stroke-dasharray="2,1.5"/>
+            <polygon points="137,84 140,82 140,86" fill="#64ffda"/>
+            <text x="125" y="82" text-anchor="end" fill="#64ffda" font-size="5.5" font-family="Inter,sans-serif">OH⁻</text>
+            <!-- ANODE zone fill -->
+            <rect x="146" y="58" width="64" height="78" fill="rgba(251,146,60,0.05)"/>
+            <!-- O₂ bubbles rising in anode zone (Ni foam — larger pore structure, bigger bubbles) -->
+            <circle cx="158" cy="118" r="5.5" fill="#fb923c" opacity="0.4"/>
+            <circle cx="172" cy="104" r="4" fill="#fb923c" opacity="0.35"/>
+            <circle cx="162" cy="90" r="6" fill="#fb923c" opacity="0.3"/>
+            <circle cx="184" cy="110" r="4.5" fill="#fb923c" opacity="0.3"/>
+            <circle cx="178" cy="78" r="5" fill="#fb923c" opacity="0.28"/>
+            <circle cx="155" cy="76" r="3" fill="#fb923c" opacity="0.22"/>
+            <circle cx="196" cy="92" r="4" fill="#fb923c" opacity="0.25"/>
+            <circle cx="168" cy="66" r="4" fill="#fb923c" opacity="0.22"/>
+            <circle cx="192" cy="66" r="3" fill="#fb923c" opacity="0.18"/>
+            <circle cx="204" cy="80" r="3.5" fill="#fb923c" opacity="0.2"/>
+            <!-- ANODE electrode plate (Ni foam — from thesis) -->
+            <rect x="210" y="58" width="10" height="78" fill="#2a1000" stroke="#fb923c" stroke-width="1.5" rx="1"/>
+            <text x="215" y="54" text-anchor="middle" fill="#fb923c" font-size="6.5" font-family="Inter,sans-serif">ANODE (+)</text>
+            <!-- Ni foam texture on anode (small circles representing porosity) -->
+            <circle cx="213" cy="68" r="1.2" fill="#fb923c" opacity="0.35"/>
+            <circle cx="217" cy="78" r="1.2" fill="#fb923c" opacity="0.35"/>
+            <circle cx="213" cy="90" r="1.2" fill="#fb923c" opacity="0.35"/>
+            <circle cx="217" cy="100" r="1.2" fill="#fb923c" opacity="0.35"/>
+            <circle cx="213" cy="112" r="1.2" fill="#fb923c" opacity="0.35"/>
+            <!-- Bottom labels -->
+            <text x="88" y="142" text-anchor="middle" fill="#8892b0" font-size="6.5" font-family="Inter,sans-serif">Stainless Steel Mesh</text>
+            <text x="192" y="142" text-anchor="middle" fill="#8892b0" font-size="6.5" font-family="Inter,sans-serif">Nickel Foam</text>
+            <text x="140" y="155" text-anchor="middle" fill="#64ffda" font-size="7" font-weight="700" font-family="Inter,sans-serif">Alkaline Water Electrolysis — FAU Erlangen LKT</text>
           </svg>
         </div>
         <div class="proj-body">
@@ -470,28 +827,75 @@
 
       <div class="proj-card fade-up" data-proj="connrod">
         <div class="proj-art">
-          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
-            <rect width="280" height="160" fill="#0a1628"/>
-            <text x="140" y="18" text-anchor="middle" fill="#ccd6f6" font-size="11" font-weight="700" font-family="Inter,sans-serif">Connecting Rod — Failure Analysis</text>
-            <text x="140" y="32" text-anchor="middle" fill="#8892b0" font-size="8" font-family="Inter,sans-serif" letter-spacing="1">UTM · VICKERS · MICROSCOPY · INCLUSION ANALYSIS</text>
-            <rect x="55" y="72" width="170" height="18" rx="7" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
-            <circle cx="80" cy="81" r="28" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
-            <circle cx="80" cy="81" r="16" fill="#0d1f3c" stroke="#8892b0" stroke-width="1"/>
-            <circle cx="205" cy="81" r="19" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
-            <circle cx="205" cy="81" r="11" fill="#0d1f3c" stroke="#8892b0" stroke-width="1"/>
-            <polygon points="39,77 49,81 39,85" fill="#fb923c"/>
-            <line x1="25" y1="81" x2="48" y2="81" stroke="#fb923c" stroke-width="2.5"/>
-            <polygon points="241,77 251,81 241,85" fill="#fb923c"/>
-            <line x1="224" y1="81" x2="250" y2="81" stroke="#fb923c" stroke-width="2.5"/>
-            <text x="20" y="75" fill="#fb923c" font-size="9" font-family="Inter,sans-serif">F</text>
-            <text x="255" y="75" fill="#fb923c" font-size="9" font-family="Inter,sans-serif">F</text>
-            <line x1="138" y1="72" x2="132" y2="64" stroke="#fb923c" stroke-width="1.2" opacity="0.7"/>
-            <line x1="148" y1="90" x2="154" y2="98" stroke="#fb923c" stroke-width="1" opacity="0.5"/>
-            <polygon points="248,52 256,60 248,68 240,60" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.9"/>
-            <text x="248" y="80" text-anchor="middle" fill="#a78bfa" font-size="8" font-family="Inter,sans-serif">HV</text>
-            <circle cx="110" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/>
-            <circle cx="140" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/>
-            <circle cx="170" cy="81" r="2.5" fill="#64ffda" opacity="0.8"/>
+          <!-- Connecting Rod Failure Study — inspired by thesis: UTM tensile test, Vickers hardness mapping, ISO 527-2 dogbone specimen -->
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <rect width="280" height="160" fill="#070f1d"/>
+            <!-- Title -->
+            <text x="140" y="11" text-anchor="middle" fill="#ccd6f6" font-size="9" font-weight="700" font-family="Inter,sans-serif">Connecting Rod — 40Cr4 Alloy Steel</text>
+            <text x="140" y="21" text-anchor="middle" fill="#8892b0" font-size="6.5" font-family="Inter,sans-serif" letter-spacing="0.8">UTM · VICKERS HARDNESS · SEM MICROSCOPY</text>
+            <!-- === UTM Frame (universal testing machine schematic) === -->
+            <!-- Upper crosshead -->
+            <rect x="12" y="26" width="256" height="7" fill="#1a2d4e" stroke="#8892b0" stroke-width="0.8" rx="1"/>
+            <!-- Lower crosshead -->
+            <rect x="12" y="120" width="256" height="7" fill="#1a2d4e" stroke="#8892b0" stroke-width="0.8" rx="1"/>
+            <!-- Side columns -->
+            <rect x="12" y="26" width="8" height="101" fill="#112240" stroke="#8892b0" stroke-width="0.6"/>
+            <rect x="260" y="26" width="8" height="101" fill="#112240" stroke="#8892b0" stroke-width="0.6"/>
+            <!-- Force arrows (from crossheads inward — tensile load) -->
+            <line x1="140" y1="33" x2="140" y2="48" stroke="#fb923c" stroke-width="2"/>
+            <polygon points="140,49 137,44 143,44" fill="#fb923c"/>
+            <text x="152" y="43" fill="#fb923c" font-size="7" font-weight="700" font-family="Inter,sans-serif">F ↓</text>
+            <line x1="140" y1="118" x2="140" y2="103" stroke="#fb923c" stroke-width="2"/>
+            <polygon points="140,102 137,107 143,107" fill="#fb923c"/>
+            <text x="152" y="112" fill="#fb923c" font-size="7" font-weight="700" font-family="Inter,sans-serif">F ↑</text>
+            <!-- === Connecting Rod Shape (main view, center) === -->
+            <!-- Big end (crank pin end) — left side -->
+            <circle cx="78" cy="80" r="32" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
+            <circle cx="78" cy="80" r="20" fill="#0a1628" stroke="#64ffda" stroke-width="1"/>
+            <!-- Small end (piston pin end) — right side -->
+            <circle cx="208" cy="80" r="22" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.5"/>
+            <circle cx="208" cy="80" r="13" fill="#0a1628" stroke="#64ffda" stroke-width="1"/>
+            <!-- Rod shank connecting the two ends -->
+            <rect x="105" y="72" width="85" height="16" fill="#1a2d4e" stroke="#64ffda" stroke-width="1.2"/>
+            <!-- Web fillet lines (taper from big end into shank) -->
+            <line x1="108" y1="72" x2="108" y2="88" stroke="#64ffda" stroke-width="0.5" opacity="0.3"/>
+            <line x1="188" y1="72" x2="188" y2="88" stroke="#64ffda" stroke-width="0.5" opacity="0.3"/>
+            <!-- Bolt holes in big end cap -->
+            <circle cx="64" cy="68" r="4.5" fill="#0a1628" stroke="#8892b0" stroke-width="1"/>
+            <circle cx="92" cy="68" r="4.5" fill="#0a1628" stroke="#8892b0" stroke-width="1"/>
+            <!-- Parting line (big end split cap — common feature) -->
+            <line x1="46" y1="80" x2="110" y2="80" stroke="#8892b0" stroke-width="0.6" stroke-dasharray="4,2" opacity="0.5"/>
+            <!-- === Vickers Hardness Measurement Points (from thesis: 15-point grid) === -->
+            <!-- 5 points along shank (from thesis: edge to center to edge) -->
+            <polygon points="115,74 119,80 115,86 111,80" fill="none" stroke="#a78bfa" stroke-width="1.2"/>
+            <text x="115" y="95" text-anchor="middle" fill="#a78bfa" font-size="5" font-family="Inter,sans-serif">310 HV</text>
+            <polygon points="130,74 134,80 130,86 126,80" fill="none" stroke="#a78bfa" stroke-width="1.2"/>
+            <text x="130" y="95" text-anchor="middle" fill="#a78bfa" font-size="5" font-family="Inter,sans-serif">297 HV</text>
+            <polygon points="145,73 149,80 145,87 141,80" fill="none" stroke="#ff5050" stroke-width="1.5"/>
+            <text x="145" y="96" text-anchor="middle" fill="#ff5050" font-size="5.5" font-weight="700" font-family="Inter,sans-serif">285 HV</text>
+            <polygon points="160,74 164,80 160,86 156,80" fill="none" stroke="#a78bfa" stroke-width="1.2"/>
+            <text x="160" y="95" text-anchor="middle" fill="#a78bfa" font-size="5" font-family="Inter,sans-serif">291 HV</text>
+            <polygon points="175,74 179,80 175,86 171,80" fill="none" stroke="#a78bfa" stroke-width="1.2"/>
+            <text x="175" y="95" text-anchor="middle" fill="#a78bfa" font-size="5" font-family="Inter,sans-serif">308 HV</text>
+            <!-- Critical zone annotation -->
+            <line x1="145" y1="70" x2="145" y2="60" stroke="#ff5050" stroke-width="0.8" stroke-dasharray="2,1.5" opacity="0.7"/>
+            <text x="145" y="57" text-anchor="middle" fill="#ff5050" font-size="5.5" font-family="Inter,sans-serif">Min. HV Zone</text>
+            <!-- === ISO 527-2 Dogbone Specimen (bottom, as per thesis sample geometry slide) === -->
+            <text x="140" y="113" text-anchor="middle" fill="#8892b0" font-size="5.5" font-family="Inter,sans-serif">Test Specimen — ISO 527-2 / 1A</text>
+            <!-- Dogbone shape (top view) -->
+            <path d="M96,128 Q96,122 106,122 L118,123 L134,124 L146,124 L162,123 L174,122 Q184,122 184,128 Q184,134 174,134 L162,133 L146,132 L134,132 L118,133 L106,134 Q96,134 96,128 Z" fill="#1a2d4e" stroke="#4a9eff" stroke-width="1"/>
+            <!-- Gauge section (narrow middle of dogbone) -->
+            <rect x="132" y="124" width="16" height="8" fill="#112240" rx="1"/>
+            <!-- Gauge length dimension -->
+            <line x1="132" y1="138" x2="148" y2="138" stroke="#4a9eff" stroke-width="0.6"/>
+            <polygon points="132,138 134,136.5 134,139.5" fill="#4a9eff"/>
+            <polygon points="148,138 146,136.5 146,139.5" fill="#4a9eff"/>
+            <text x="140" y="148" text-anchor="middle" fill="#4a9eff" font-size="5" font-family="Inter,sans-serif">L₀=25mm</text>
+            <!-- Fracture zone highlight on gauge -->
+            <line x1="139" y1="122" x2="141" y2="134" stroke="#ff5050" stroke-width="1" stroke-dasharray="2,1" opacity="0.7"/>
+            <!-- Material callout -->
+            <text x="50" y="148" text-anchor="middle" fill="#64ffda" font-size="5.5" font-family="Inter,sans-serif">40Cr4 · 285–310 HV</text>
+            <text x="230" y="148" text-anchor="middle" fill="#64ffda" font-size="5.5" font-family="Inter,sans-serif">UTM + Microscopy</text>
           </svg>
         </div>
         <div class="proj-body">
