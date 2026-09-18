@@ -85,7 +85,7 @@
     <div class="stat-div"></div>
     <div class="stat fade-up">
       <span class="stat-num" data-target="342" data-suffix="">0</span>
-      <p data-i18n="stats.bpp">Bipolar Plates<br/>per Day</p>
+      <p data-i18n="stats.bpp">Bipolar Plates<br/>Bonded / Day</p>
     </div>
     <div class="stat-div"></div>
     <div class="stat fade-up">
@@ -107,17 +107,19 @@
     <div class="about-grid">
       <div class="about-left fade-up">
         <p class="about-bio" data-i18n="about.bio1">
-          Mechanical &amp; Clean Energy Engineer completing an <strong>M.Sc. at FAU Erlangen</strong> (thesis grade 1.8).
-          I specialise in <strong>fuel-cell stack testing, DVP&amp;R validation</strong>, and hands-on hardware
-          development — operating test benches, evaluating measurement data, and turning results into robust process improvements.
+          Mechanical &amp; Clean Energy Engineer completing an <strong>M.Sc. at FAU Erlangen</strong> (thesis grade 1.8),
+          with hands-on range across <strong>fuel-cell stack testing, DVP&amp;R validation, tooling and process design</strong>.
+          I move comfortably between the lab bench and the CAD screen — operating test rigs, building fixtures,
+          evaluating measurement data, and turning results into manufacturing-ready process improvements.
         </p>
         <p class="about-bio about-bio-sub" data-i18n="about.bio2">
-          Beyond the lab, I led a large technical event as event head during my bachelor studies —
-          working directly with sponsors, managing expectations, and delivering on commitments under pressure.
+          What I enjoy most is the range of a problem: one week it's diagnosing a bonding defect under a microscope,
+          the next it's designing a fixture in CAD or optimising a CNC program — I pick up new tools and systems
+          quickly and stay methodical when something doesn't behave as expected.
         </p>
         <div class="tag-cloud">
           <span data-i18n="tag.stackTesting">Stack Testing</span><span>DVP&R</span><span data-i18n="tag.testBench">Test Bench Operation</span>
-          <span data-i18n="tag.calibration">Calibration</span><span data-i18n="tag.printing">3D Printing</span><span>CATIA · SolidWorks</span>
+          <span data-i18n="tag.printing">3D Printing</span><span>CATIA · SolidWorks</span>
           <span data-i18n="tag.electrolysis">Electrolysis</span><span>CNC</span><span data-i18n="tag.bpp">Bipolar Plates</span>
           <span data-i18n="tag.leak">Leak Testing</span><span data-i18n="tag.polarisation">Polarisation Curves</span>
         </div>
@@ -358,78 +360,7 @@
       <div class="skill-card">
         <div class="skill-inner">
         <div class="skill-front">
-          <!-- 3D Printing + CNC Dispensing — dual process panel inspired by thesis Zusammenfassung -->
-          <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" fill="none">
-            <rect width="200" height="140" fill="#070f1d"/>
-            <!-- Section titles -->
-            <text x="47" y="10" text-anchor="middle" fill="#4a9eff" font-size="5.5" font-family="Inter,sans-serif" letter-spacing="1">3D PRINTING</text>
-            <text x="153" y="10" text-anchor="middle" fill="#64ffda" font-size="5.5" font-family="Inter,sans-serif" letter-spacing="1">DISPENSING</text>
-            <!-- Divider -->
-            <line x1="100" y1="6" x2="100" y2="134" stroke="#64ffda" stroke-width="0.5" opacity="0.15"/>
-            <!-- === LEFT: FDM 3D Printer === -->
-            <!-- Printer frame -->
-            <rect x="6" y="14" width="86" height="112" fill="none" stroke="#4a9eff" stroke-width="0.8" rx="3" stroke-dasharray="5,3"/>
-            <!-- Z-axis rods -->
-            <line x1="18" y1="16" x2="18" y2="120" stroke="#4a9eff" stroke-width="1.2"/>
-            <line x1="80" y1="16" x2="80" y2="120" stroke="#4a9eff" stroke-width="1.2"/>
-            <!-- Print head carriage rail -->
-            <rect x="18" y="42" width="62" height="4" fill="#4a9eff" opacity="0.4" rx="1"/>
-            <!-- Nozzle assembly hanging from rail -->
-            <rect x="43" y="46" width="12" height="8" fill="#1a3060" stroke="#4a9eff" stroke-width="0.8" rx="1"/>
-            <polygon points="44,54 49,62 54,54" fill="#4a9eff" opacity="0.8"/>
-            <circle cx="49" cy="63" r="2" fill="#64ffda"/>
-            <!-- Filament spool & feed line -->
-            <circle cx="80" cy="22" r="8" fill="none" stroke="#4a9eff" stroke-width="1.2"/>
-            <circle cx="80" cy="22" r="3" fill="#4a9eff" opacity="0.3"/>
-            <line x1="73" y1="28" x2="55" y2="46" stroke="#4a9eff" stroke-width="0.8" stroke-dasharray="2,2"/>
-            <!-- Layers building up (part on print bed) -->
-            <rect x="25" y="120" width="48" height="3" fill="#4a9eff" opacity="0.75" rx="0.5"/>
-            <rect x="25" y="116" width="48" height="3" fill="#4a9eff" opacity="0.7" rx="0.5"/>
-            <rect x="25" y="112" width="48" height="3" fill="#4a9eff" opacity="0.65" rx="0.5"/>
-            <rect x="25" y="108" width="48" height="3" fill="#4a9eff" opacity="0.6" rx="0.5"/>
-            <rect x="25" y="104" width="48" height="3" fill="#4a9eff" opacity="0.55" rx="0.5"/>
-            <rect x="25" y="100" width="48" height="3" fill="#4a9eff" opacity="0.5" rx="0.5"/>
-            <rect x="25" y="96" width="48" height="3" fill="#4a9eff" opacity="0.45" rx="0.5"/>
-            <rect x="25" y="92" width="48" height="3" fill="#4a9eff" opacity="0.4" rx="0.5"/>
-            <rect x="25" y="88" width="48" height="3" fill="#4a9eff" opacity="0.35" rx="0.5"/>
-            <rect x="25" y="84" width="48" height="3" fill="#4a9eff" opacity="0.3" rx="0.5"/>
-            <!-- Current layer being printed (shorter, teal highlight) -->
-            <rect x="25" y="80" width="30" height="3" fill="#64ffda" opacity="0.9" rx="0.5"/>
-            <!-- Print bed -->
-            <rect x="20" y="123" width="58" height="3" fill="#1a2d4e" stroke="#8892b0" stroke-width="0.5" rx="1"/>
-            <!-- === RIGHT: CNC Sealant Dispensing (from Zusammenfassung A/B factor diagrams) === -->
-            <!-- BPP plate on vacuum table -->
-            <rect x="107" y="88" width="82" height="24" fill="#1a2d4e" stroke="#64ffda" stroke-width="1" rx="2"/>
-            <!-- BPP flow channels engraved -->
-            <rect x="113" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="119" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="125" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="131" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="137" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="143" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="149" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="155" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="161" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="167" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="173" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <rect x="179" y="93" width="3" height="14" fill="#070f1d" rx="0.5"/>
-            <!-- CNC dispensing arm / Z-axis -->
-            <line x1="148" y1="14" x2="148" y2="88" stroke="#8892b0" stroke-width="2"/>
-            <rect x="140" y="10" width="16" height="10" fill="#112240" stroke="#8892b0" stroke-width="1" rx="2"/>
-            <text x="148" y="18" text-anchor="middle" fill="#8892b0" font-size="5.5" font-family="Inter,sans-serif">DATRON</text>
-            <!-- Dispensing nozzle head -->
-            <rect x="143" y="70" width="10" height="20" fill="#2a3a50" stroke="#64ffda" stroke-width="1" rx="2"/>
-            <polygon points="143,90 148,96 153,90" fill="#64ffda" opacity="0.8"/>
-            <!-- Sealant bead being dispensed (uniform = optimum A/B factor) -->
-            <rect x="107" y="86" width="40" height="3.5" fill="#64ffda" opacity="0.75" rx="1"/>
-            <!-- A/B factor label -->
-            <text x="148" y="60" text-anchor="middle" fill="#64ffda" font-size="5.5" font-family="Inter,sans-serif">A=530 · B=195</text>
-            <text x="148" y="70" text-anchor="middle" fill="#8892b0" font-size="5" font-family="Inter,sans-serif">Optimum bead</text>
-            <!-- Vacuum table base -->
-            <rect x="107" y="112" width="82" height="5" fill="#1a2d4e" stroke="#8892b0" stroke-width="0.5" rx="1"/>
-            <!-- Speed label -->
-            <text x="148" y="125" text-anchor="middle" fill="#fb923c" font-size="6" font-family="Inter,sans-serif">3 m/min · 342 BPP/day</text>
-          </svg>
+          <img src="assets/skills/prototyping-fixture.jpg" alt="3D-printed alignment fixture with bipolar plates" loading="lazy"/>
           <h3 data-i18n="skill3.title">Prototyping &amp;<br/>Workshop</h3>
           <p data-i18n="skill3.tagline">3D Printing · Fixtures · CNC</p>
           <span class="skill-hint" data-i18n="skill.tapFront">Tap to reveal skills</span>
@@ -450,73 +381,7 @@
       <div class="skill-card">
         <div class="skill-inner">
         <div class="skill-front">
-          <!-- CAD Technical Drawing of Bipolar Plate (inspired by A3_sheet_Thesis_Topic plate drawings) -->
-          <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" fill="none">
-            <rect width="200" height="140" fill="#040c18"/>
-            <!-- Drawing border (engineering standard) -->
-            <rect x="2" y="2" width="196" height="136" fill="none" stroke="#4a9eff" stroke-width="0.7" opacity="0.35"/>
-            <rect x="4" y="4" width="192" height="132" fill="none" stroke="#4a9eff" stroke-width="0.25" opacity="0.2"/>
-            <!-- Title block bottom -->
-            <line x1="2" y1="120" x2="198" y2="120" stroke="#4a9eff" stroke-width="0.6" opacity="0.4"/>
-            <line x1="2" y1="128" x2="198" y2="128" stroke="#4a9eff" stroke-width="0.4" opacity="0.3"/>
-            <line x1="120" y1="120" x2="120" y2="138" stroke="#4a9eff" stroke-width="0.4" opacity="0.3"/>
-            <line x1="160" y1="120" x2="160" y2="138" stroke="#4a9eff" stroke-width="0.4" opacity="0.3"/>
-            <text x="8" y="127" fill="#ccd6f6" font-size="5" font-family="Inter,sans-serif">BIPOLAR PLATE — Anode Half</text>
-            <text x="8" y="135" fill="#8892b0" font-size="4.5" font-family="Inter,sans-serif">CATIA V5 · Scale 1:1</text>
-            <text x="125" y="127" fill="#4a9eff" font-size="5" font-family="Inter,sans-serif">GD&amp;T · ISO 10579</text>
-            <text x="165" y="127" fill="#8892b0" font-size="5" font-family="Inter,sans-serif">Rev A3</text>
-            <!-- Bipolar plate main body (top view) -->
-            <rect x="32" y="14" width="130" height="100" fill="#0c2040" stroke="#64ffda" stroke-width="1.4" rx="4"/>
-            <!-- Flow channels (parallel vertical slots) — inspired by thesis plate dimensions -->
-            <rect x="40" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="47" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="54" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="61" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="68" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="75" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="82" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="89" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="96" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="103" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="110" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="117" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="124" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="131" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="138" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="145" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <rect x="152" y="20" width="4" height="88" fill="#4a9eff" opacity="0.22" rx="1"/>
-            <!-- Corner reference holes (from thesis diagrams: 4 dowel pin positions) -->
-            <circle cx="40" cy="22" r="4.5" fill="#040c18" stroke="#64ffda" stroke-width="1"/>
-            <circle cx="152" cy="22" r="4.5" fill="#040c18" stroke="#64ffda" stroke-width="1"/>
-            <circle cx="40" cy="108" r="4.5" fill="#040c18" stroke="#64ffda" stroke-width="1"/>
-            <circle cx="152" cy="108" r="4.5" fill="#040c18" stroke="#64ffda" stroke-width="1"/>
-            <!-- Inlet/Outlet manifold holes (from thesis: central leak test connection) -->
-            <circle cx="96" cy="18" r="6" fill="#4a9eff" opacity="0.35" stroke="#4a9eff" stroke-width="1"/>
-            <circle cx="96" cy="112" r="6" fill="#fb923c" opacity="0.35" stroke="#fb923c" stroke-width="1"/>
-            <text x="96" y="11" text-anchor="middle" fill="#4a9eff" font-size="4.5" font-family="Inter,sans-serif">IN</text>
-            <!-- Groove profile (from thesis 1.5×0.1 mm groove for sealant) -->
-            <rect x="34" y="14" width="124" height="4" fill="none" stroke="#64ffda" stroke-width="0.6" stroke-dasharray="3,2" opacity="0.6"/>
-            <rect x="34" y="110" width="124" height="4" fill="none" stroke="#64ffda" stroke-width="0.6" stroke-dasharray="3,2" opacity="0.6"/>
-            <!-- Horizontal dimension arrow (top) -->
-            <line x1="32" y1="8" x2="162" y2="8" stroke="#ccd6f6" stroke-width="0.6"/>
-            <polygon points="32,8 35,6.5 35,9.5" fill="#ccd6f6"/>
-            <polygon points="162,8 159,6.5 159,9.5" fill="#ccd6f6"/>
-            <text x="97" y="7" text-anchor="middle" fill="#ccd6f6" font-size="5" font-family="Inter,sans-serif">50 mm</text>
-            <!-- Vertical dimension arrow (right) -->
-            <line x1="168" y1="14" x2="168" y2="114" stroke="#ccd6f6" stroke-width="0.6"/>
-            <polygon points="168,14 166.5,17 169.5,17" fill="#ccd6f6"/>
-            <polygon points="168,114 166.5,111 169.5,111" fill="#ccd6f6"/>
-            <text x="172" y="66" fill="#ccd6f6" font-size="5" font-family="Inter,sans-serif">50</text>
-            <text x="172" y="73" fill="#ccd6f6" font-size="5" font-family="Inter,sans-serif">mm</text>
-            <!-- GD&T flatness callout (from thesis dimensional tolerancing) -->
-            <rect x="4" y="40" width="24" height="12" fill="none" stroke="#64ffda" stroke-width="0.6"/>
-            <line x1="28" y1="46" x2="34" y2="46" stroke="#64ffda" stroke-width="0.6"/>
-            <text x="6" y="48" fill="#64ffda" font-size="4.5" font-family="Inter,sans-serif">⏥ 0.05</text>
-            <!-- Surface finish callout -->
-            <rect x="4" y="58" width="24" height="12" fill="none" stroke="#a78bfa" stroke-width="0.6"/>
-            <line x1="28" y1="64" x2="34" y2="64" stroke="#a78bfa" stroke-width="0.6"/>
-            <text x="6" y="66" fill="#a78bfa" font-size="4.5" font-family="Inter,sans-serif">Ra 0.8 µm</text>
-          </svg>
+          <img src="assets/skills/wheel-mould-cad.jpg" alt="Wheel mould CAD drawing with dimensioned views" loading="lazy"/>
           <h3 data-i18n="skill4.title">CAD &amp;<br/>Documentation</h3>
           <p data-i18n="skill4.tagline">CATIA · SolidWorks · GD&T</p>
           <span class="skill-hint" data-i18n="skill.tapFront">Tap to reveal skills</span>
@@ -543,128 +408,82 @@
 <section id="experience" class="section section-alt">
   <div class="container">
     <h2 class="section-title" data-i18n="exp.title">Experience</h2>
-    <p class="sec-sub" data-i18n="exp.sub">Click any role to read the full story.</p>
-    <div class="exp-list">
+    <p class="sec-sub" data-i18n="exp.sub">Click any stop on the road for the full story.</p>
+    <div class="tl-wrap" id="tl-wrap">
+      <svg class="tl-svg" id="tl-svg" aria-hidden="true"><path id="tl-path" class="tl-path" d=""/></svg>
+      <div class="tl-track">
 
-      <div class="exp-card fade-up" data-exp="tum">
-        <div class="exp-badge" style="--c:#0065bd">
-          <!-- TUM — Technische Universität München -->
-          <svg viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
-            <rect width="58" height="58" rx="10" fill="#0065bd"/>
-            <!-- White bar accent at top (TUM brand element) -->
-            <rect x="0" y="0" width="58" height="6" rx="10" fill="rgba(255,255,255,0.15)"/>
-            <rect x="0" y="3" width="58" height="3" fill="rgba(255,255,255,0.1)"/>
-            <!-- TUM letters -->
-            <text x="29" y="28" text-anchor="middle" fill="white" font-size="15" font-weight="900" font-family="Arial Black,Arial,sans-serif" letter-spacing="-0.5">TUM</text>
-            <!-- Divider line -->
-            <line x1="10" y1="33" x2="48" y2="33" stroke="rgba(255,255,255,0.35)" stroke-width="0.7"/>
-            <!-- Subtitle -->
-            <text x="29" y="41" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="4.5" font-family="Arial,sans-serif" letter-spacing="0.3">MÜNCHEN</text>
-            <text x="29" y="50" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="3.8" font-family="Arial,sans-serif">Tech. University</text>
-          </svg>
+        <div class="tl-node side-left fade-up" data-exp="tum">
+          <div class="tl-dot"><img src="assets/logos/tum.png" alt="TUM logo" loading="lazy"/></div>
+          <div class="tl-card">
+            <span class="tl-date">Nov &ndash; Dec 2025 &middot; Munich</span>
+            <h3 data-i18n="exp.tum.role">Working Student</h3>
+            <p class="tl-co">Technical University Munich</p>
+            <p class="tl-sum" data-i18n="exp.tum.sum">3D-printed ceramic fuel-cell test fixture with custom sealing &amp; clamping.</p>
+          </div>
         </div>
-        <div class="exp-info">
-          <h3 data-i18n="exp.tum.role">Working Student</h3>
-          <p class="exp-co">Technical University Munich</p>
-          <p class="exp-date">Nov – Dec 2025 · Munich</p>
-          <p class="exp-sum" data-i18n="exp.tum.sum">3D-printed ceramic fuel-cell test fixture with custom sealing &amp; clamping.</p>
+
+        <div class="tl-node side-right fade-up" data-exp="freudenberg">
+          <div class="tl-dot"><img src="assets/logos/freudenberg.png" alt="Freudenberg logo" loading="lazy"/></div>
+          <div class="tl-card">
+            <span class="tl-date">Aug 2024 &ndash; Jun 2025 &middot; Munich</span>
+            <h3 data-i18n="exp.freudenberg.role">Thesis Student &amp; Intern &mdash; R&amp;D</h3>
+            <p class="tl-co">Freudenberg e-Power Systems</p>
+            <p class="tl-sum" data-i18n="exp.freudenberg.sum">DVP&R validation &amp; bonding process for ~342 bipolar plates/day. 6&times; CNC throughput gain.</p>
+          </div>
         </div>
-        <div class="exp-arrow">→</div>
+
+        <div class="tl-node side-left fade-up" data-exp="lkt">
+          <div class="tl-dot"><img src="assets/logos/lkt.png" alt="LKT &mdash; Institute of Polymer Technology logo" loading="lazy"/></div>
+          <div class="tl-card">
+            <span class="tl-date">Mar &ndash; Jul 2024 &middot; Erlangen</span>
+            <h3 data-i18n="exp.lkt.role">Working Student</h3>
+            <p class="tl-co">FAU Erlangen &mdash; Lehrstuhl f&uuml;r Kunststofftechnik</p>
+            <p class="tl-sum" data-i18n="exp.lkt.sum">Graphite/PP composite bipolar plates (80% graphite / 20% PP) via injection moulding; MEA research.</p>
+          </div>
+        </div>
+
+        <div class="tl-node side-right fade-up" data-exp="truetech">
+          <div class="tl-dot"><img src="assets/logos/truetech-vision.png" alt="True-Tech Vision logo" loading="lazy"/></div>
+          <div class="tl-card">
+            <span class="tl-date">Jul 2020 &ndash; Jan 2021 &middot; Pune, India</span>
+            <h3 data-i18n="exp.truetech.role">Graduate Trainee</h3>
+            <p class="tl-co">Truetech Vision Industry Pvt. Ltd.</p>
+            <p class="tl-sum" data-i18n="exp.truetech.sum">CAD-based tooling development and process planning for manufacturing.</p>
+          </div>
+        </div>
+
+        <div class="tl-node side-left fade-up" data-exp="pragati">
+          <div class="tl-dot"><img src="assets/logos/pragati.jpeg" alt="Pragati Gruh Udyog Nashik logo" loading="lazy"/></div>
+          <div class="tl-card">
+            <span class="tl-date">Jun 2019 &ndash; Apr 2020 &middot; Nashik, India</span>
+            <h3 data-i18n="exp.pragati.role">Thesis Intern &mdash; Design Engineering</h3>
+            <p class="tl-co">Pragati Pvt. Ltd.</p>
+            <p class="tl-sum" data-i18n="exp.pragati.sum">Injection mould design achieving ~80% cost reduction for a nylon wheel component.</p>
+          </div>
+        </div>
+
+        <div class="tl-node side-right fade-up" data-exp="shreyas">
+          <div class="tl-dot"><img src="assets/logos/shreyas.png" alt="Shreyas Industries logo" loading="lazy"/></div>
+          <div class="tl-card">
+            <span class="tl-date">Jun 2019 &middot; India</span>
+            <h3 data-i18n="exp.shreyas.role">Trainee Engineer</h3>
+            <p class="tl-co">Shreyas Industries</p>
+            <p class="tl-sum" data-i18n="exp.shreyas.sum">Process flow mapping and quality checks on the manufacturing floor per ISO norms.</p>
+          </div>
+        </div>
+
+        <div class="tl-node side-left fade-up" data-exp="kalpataru">
+          <div class="tl-dot"><img src="assets/logos/kalpataru.png" alt="Kalpataru Precision Tools logo" loading="lazy"/></div>
+          <div class="tl-card">
+            <span class="tl-date">May &ndash; Jun 2016 &middot; India</span>
+            <h3 data-i18n="exp.kalpataru.role">Manufacturing Intern</h3>
+            <p class="tl-co">Kalpataru Precision Tools</p>
+            <p class="tl-sum" data-i18n="exp.kalpataru.sum">Surface finishing and dimensional accuracy in drilling, tapping, and lathe operations.</p>
+          </div>
+        </div>
+
       </div>
-
-      <div class="exp-card fade-up" data-exp="freudenberg">
-        <div class="exp-badge" style="--c:#00a878">
-          <!-- Freudenberg e-Power Systems -->
-          <svg viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
-            <rect width="58" height="58" rx="10" fill="#0a1e14"/>
-            <!-- Lightning bolt / e-power icon -->
-            <polygon points="33,10 22,30 30,30 25,48 38,26 30,26" fill="#00c896" opacity="0.9"/>
-            <!-- Brand text -->
-            <text x="29" y="54" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="4" font-family="Arial,sans-serif" letter-spacing="0.5">FREUDENBERG</text>
-          </svg>
-        </div>
-        <div class="exp-info">
-          <h3 data-i18n="exp.freudenberg.role">Thesis Student &amp; Intern — R&amp;D</h3>
-          <p class="exp-co">Freudenberg e-Power Systems</p>
-          <p class="exp-date">Aug 2024 – Jun 2025 · Munich</p>
-          <p class="exp-sum" data-i18n="exp.freudenberg.sum">DVP&R validation &amp; bonding process for ~342 bipolar plates/day. 6× CNC throughput gain.</p>
-        </div>
-        <div class="exp-arrow">→</div>
-      </div>
-
-      <div class="exp-card fade-up" data-exp="lkt">
-        <div class="exp-badge" style="--c:#003466">
-          <!-- FAU Erlangen-Nürnberg -->
-          <svg viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
-            <rect width="58" height="58" rx="10" fill="#003466"/>
-            <!-- FAU shield-like emblem (simplified) -->
-            <path d="M29,8 L40,14 L40,28 Q40,38 29,44 Q18,38 18,28 L18,14 Z" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"/>
-            <!-- FAU text -->
-            <text x="29" y="30" text-anchor="middle" fill="white" font-size="13" font-weight="900" font-family="Arial Black,Arial,sans-serif" letter-spacing="-0.3">FAU</text>
-            <!-- Divider -->
-            <line x1="11" y1="35" x2="47" y2="35" stroke="rgba(255,255,255,0.25)" stroke-width="0.6"/>
-            <text x="29" y="43" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-size="3.8" font-family="Arial,sans-serif" letter-spacing="0.2">ERLANGEN</text>
-            <text x="29" y="51" text-anchor="middle" fill="rgba(167,139,250,0.8)" font-size="3.8" font-family="Arial,sans-serif">LKT Chair</text>
-          </svg>
-        </div>
-        <div class="exp-info">
-          <h3 data-i18n="exp.lkt.role">Working Student</h3>
-          <p class="exp-co">FAU Erlangen — Lehrstuhl für Kunststofftechnik</p>
-          <p class="exp-date">Mar – Jul 2024 · Erlangen</p>
-          <p class="exp-sum" data-i18n="exp.lkt.sum">Graphite/PP composite bipolar plates (80% graphite / 20% PP) via injection moulding; MEA research.</p>
-        </div>
-        <div class="exp-arrow">→</div>
-      </div>
-
-      <div class="exp-card fade-up" data-exp="truetech">
-        <div class="exp-badge" style="--c:#fb923c">
-          <!-- Truetech Vision Industry -->
-          <svg viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
-            <rect width="58" height="58" rx="10" fill="#1a1008"/>
-            <!-- Eye / vision icon -->
-            <ellipse cx="29" cy="24" rx="14" ry="8" fill="none" stroke="#fb923c" stroke-width="1.5"/>
-            <circle cx="29" cy="24" r="5" fill="#fb923c" opacity="0.5"/>
-            <circle cx="29" cy="24" r="2.5" fill="#fb923c"/>
-            <!-- Small sparkle / precision dot -->
-            <circle cx="34" cy="20" r="1" fill="white" opacity="0.6"/>
-            <!-- Text -->
-            <text x="29" y="40" text-anchor="middle" fill="white" font-size="6" font-weight="700" font-family="Arial,sans-serif" letter-spacing="0.3">TRUETECH</text>
-            <text x="29" y="50" text-anchor="middle" fill="#fb923c" font-size="5.5" font-family="Arial,sans-serif" letter-spacing="0.5">VISION</text>
-          </svg>
-        </div>
-        <div class="exp-info">
-          <h3 data-i18n="exp.truetech.role">Graduate Trainee</h3>
-          <p class="exp-co">Truetech Vision Industry Pvt. Ltd.</p>
-          <p class="exp-date">Jul 2020 – Jan 2021 · Pune, India</p>
-          <p class="exp-sum" data-i18n="exp.truetech.sum">CAD-based tooling development and process planning for manufacturing.</p>
-        </div>
-        <div class="exp-arrow">→</div>
-      </div>
-
-      <div class="exp-card fade-up" data-exp="pragati">
-        <div class="exp-badge" style="--c:#34d399">
-          <!-- Pragati Pvt. Ltd. — "pragati" means progress in Sanskrit -->
-          <svg viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
-            <rect width="58" height="58" rx="10" fill="#061a10"/>
-            <!-- Rising steps = progress / pragati -->
-            <rect x="10" y="38" width="9" height="8" fill="#34d399" opacity="0.7" rx="1.5"/>
-            <rect x="21" y="30" width="9" height="16" fill="#34d399" opacity="0.8" rx="1.5"/>
-            <rect x="32" y="22" width="9" height="24" fill="#34d399" opacity="0.9" rx="1.5"/>
-            <!-- Upward arrow tip above the steps -->
-            <polygon points="36.5,18 41,22 32,22" fill="#34d399"/>
-            <!-- Text -->
-            <text x="29" y="54" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-size="4.5" font-family="Arial,sans-serif" letter-spacing="0.5">PRAGATI</text>
-          </svg>
-        </div>
-        <div class="exp-info">
-          <h3 data-i18n="exp.pragati.role">Thesis Intern — Design Engineering</h3>
-          <p class="exp-co">Pragati Pvt. Ltd.</p>
-          <p class="exp-date">Jun 2019 – Apr 2020 · Nashik, India</p>
-          <p class="exp-sum" data-i18n="exp.pragati.sum">Injection mould design achieving ~80% cost reduction for a nylon wheel component.</p>
-        </div>
-        <div class="exp-arrow">→</div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -702,7 +521,7 @@
       <div class="edu-card fade-up">
         <div class="edu-year">2014 – 2017</div>
         <div class="edu-body">
-          <span class="edu-deg">Dip.</span>
+          <span class="edu-deg">Diploma</span>
           <h3 data-i18n="edu.dip.name">Mechanical Engineering</h3>
           <p data-i18n="edu.dip.uni">MSBTE · India</p>
           <div class="edu-pills">

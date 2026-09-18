@@ -73,13 +73,13 @@
     'nav.projects': 'Projekte', 'nav.documents': 'Dokumente', 'nav.contact': 'Kontakt', 'nav.resume': 'Lebenslauf ↗',
     'hero.greeting': 'Hallo, ich bin', 'hero.location': 'Erlangen, Deutschland &nbsp;·&nbsp; Offen für neue Möglichkeiten',
     'hero.hireMe': 'Kontakt aufnehmen', 'hero.downloadCV': 'Lebenslauf herunterladen',
-    'stats.cnc': 'CNC-Durchsatz<br/>Steigerung', 'stats.bpp': 'Bipolarplatten<br/>pro Tag',
+    'stats.cnc': 'CNC-Durchsatz<br/>Steigerung', 'stats.bpp': 'Bipolarplatten<br/>Verklebt / Tag',
     'stats.cost': 'Formkosten<br/>Einsparung', 'stats.co2': 'CO₂-Reduktion<br/>modelliert',
     'about.title': 'Über mich',
-    'about.bio1': 'Maschinenbauingenieur, der einen <strong>M.Sc. an der FAU Erlangen</strong> abschließt (Abschlussnote 1,8). Ich bin spezialisiert auf <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung</strong> und praktische Hardware-Entwicklung — vom Betrieb von Prüfständen über die Auswertung von Messdaten bis zur Umsetzung der Ergebnisse in robuste Prozessverbesserungen.',
-    'about.bio2': 'Neben dem Labor habe ich während meines Bachelorstudiums als Veranstaltungsleiter eine große technische Veranstaltung organisiert — mit direkter Zusammenarbeit mit Sponsoren, Erwartungsmanagement und zuverlässiger Umsetzung unter Zeitdruck.',
+    'about.bio1': 'Maschinenbau- und Clean-Energy-Ingenieur, der einen <strong>M.Sc. an der FAU Erlangen</strong> abschließt (Abschlussnote 1,8) — mit praktischer Erfahrung in <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung, Vorrichtungs- und Prozessentwicklung</strong>. Ich bewege mich sicher zwischen Prüfstand und CAD-Bildschirm — betreibe Testaufbauten, baue Vorrichtungen, werte Messdaten aus und setze Ergebnisse in fertigungsreife Prozessverbesserungen um.',
+    'about.bio2': 'Am meisten schätze ich die Bandbreite an Aufgaben: in einer Woche analysiere ich einen Klebefehler unter dem Mikroskop, in der nächsten entwerfe ich eine Vorrichtung im CAD oder optimiere ein CNC-Programm — ich arbeite mich schnell in neue Systeme ein und bleibe methodisch, wenn etwas nicht wie erwartet funktioniert.',
     'about.radar': 'Kompetenz-Radar',
-    'tag.stackTesting': 'Stack-Tests', 'tag.testBench': 'Prüfstandsbetrieb', 'tag.calibration': 'Kalibrierung',
+    'tag.stackTesting': 'Stack-Tests', 'tag.testBench': 'Prüfstandsbetrieb',
     'tag.printing': '3D-Druck', 'tag.electrolysis': 'Elektrolyse', 'tag.bpp': 'Bipolarplatten',
     'tag.leak': 'Dichtheitsprüfung', 'tag.polarisation': 'Polarisationskurven',
     'impact.title': 'Technische Erfolge', 'impact.sub': 'Echte Zahlen aus echten Projekten — für die volle Geschichte auf eine Karte klicken.',
@@ -107,12 +107,14 @@
     'skill4.title': 'CAD &amp;<br/>Dokumentation', 'skill4.tagline': 'CATIA · SolidWorks · GD&T',
     'skill4.backTitle': 'CAD &amp; Dokumentation',
     'skill4.t7': 'Technische Zeichnungen', 'skill4.t8': 'Montageanleitungen', 'skill4.t9': 'Prüfprotokolle',
-    'exp.title': 'Erfahrung', 'exp.sub': 'Für die volle Geschichte auf eine Station klicken.',
+    'exp.title': 'Erfahrung', 'exp.sub': 'Für die volle Geschichte auf eine Station am Weg klicken.',
     'exp.tum.role': 'Werkstudent', 'exp.tum.sum': '3D-gedruckte keramische Brennstoffzellen-Prüfvorrichtung mit eigener Abdichtung &amp; Klemmung.',
     'exp.freudenberg.role': 'Masterand &amp; Praktikant — F&amp;E', 'exp.freudenberg.sum': 'DVP&R-Validierung &amp; Klebeprozess für ~342 Bipolarplatten/Tag. 6-fache CNC-Durchsatzsteigerung.',
     'exp.lkt.role': 'Werkstudent', 'exp.lkt.sum': 'Graphit/PP-Verbund-Bipolarplatten (80% Graphit / 20% PP) im Spritzgussverfahren; MEA-Forschung.',
     'exp.truetech.role': 'Trainee', 'exp.truetech.sum': 'CAD-basierte Werkzeugentwicklung und Prozessplanung für die Fertigung.',
     'exp.pragati.role': 'Praktikant Abschlussarbeit — Konstruktion', 'exp.pragati.sum': 'Spritzgussform-Design mit ~80% Kostensenkung für ein Nylon-Radbauteil.',
+    'exp.shreyas.role': 'Trainee-Ingenieur', 'exp.shreyas.sum': 'Prozessablaufplanung und Qualitätsprüfungen in der Fertigung nach ISO-Normen.',
+    'exp.kalpataru.role': 'Fertigungspraktikant', 'exp.kalpataru.sum': 'Oberflächenbearbeitung und Maßgenauigkeit beim Bohren, Gewindeschneiden und Drehen.',
     'edu.title': 'Ausbildung',
     'edu.msc.name': 'Clean Energy Technologies', 'edu.msc.uni': 'Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) · Deutschland',
     'edu.msc.grade': 'Abschlussnote: 1,8 (sehr gut)',
@@ -183,6 +185,7 @@
     localStorage.setItem('site-lang', lang);
     if (window.__setTypedRoles) window.__setTypedRoles(ROLES[lang]);
     if (window.__setModalLang) window.__setModalLang(lang);
+    if (window.__redrawTimeline) setTimeout(window.__redrawTimeline, 50);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -204,17 +207,22 @@ document.addEventListener('DOMContentLoaded', function () {
   var typedEl = document.getElementById('typed');
   if (typedEl) {
     var roles = window.__i18n.ROLES[window.__i18n.getLang()];
-    var ri = 0, ci = 0, deleting = false, typeTimer = null;
+    var ri = 0, wi = 0, deleting = false, typeTimer = null;
     function type() {
-      var word = roles[ri];
-      typedEl.textContent = deleting ? word.slice(0, ci--) : word.slice(0, ci++);
-      if (!deleting && ci > word.length) { deleting = true; typeTimer = setTimeout(type, 1800); return; }
-      if (deleting && ci < 0) { deleting = false; ri = (ri + 1) % roles.length; ci = 0; }
-      typeTimer = setTimeout(type, deleting ? 55 : 90);
+      var words = roles[ri].split(' ');
+      wi = Math.max(0, Math.min(wi, words.length));
+      typedEl.textContent = deleting ? words.slice(0, wi).join(' ') : words.slice(0, wi + 1).join(' ');
+      if (!deleting) {
+        if (wi < words.length - 1) { wi++; typeTimer = setTimeout(type, 200); return; }
+        deleting = true; typeTimer = setTimeout(type, 1400); return;
+      }
+      if (wi > 0) { wi--; typeTimer = setTimeout(type, 130); return; }
+      deleting = false; ri = (ri + 1) % roles.length; wi = 0;
+      typeTimer = setTimeout(type, 300);
     }
     type();
     window.__setTypedRoles = function (newRoles) {
-      roles = newRoles; ri = 0; ci = 0; deleting = false;
+      roles = newRoles; ri = 0; wi = 0; deleting = false;
       if (typeTimer) clearTimeout(typeTimer);
       typedEl.textContent = '';
       type();
@@ -250,6 +258,56 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  /* ── Experience timeline path (winding road connecting the logo stops) ──
+     Draws an S-curve through the actual rendered center of each .tl-dot,
+     so it always lines up regardless of screen width, text length/language,
+     or how the fade-up cards have settled. */
+  (function () {
+    var wrap = document.getElementById('tl-wrap');
+    var svg = document.getElementById('tl-svg');
+    var path = document.getElementById('tl-path');
+    if (!wrap || !svg || !path) return;
+
+    function draw() {
+      var dots = wrap.querySelectorAll('.tl-dot');
+      if (!dots.length) return;
+      var wrapRect = wrap.getBoundingClientRect();
+      var w = wrapRect.width, h = wrapRect.height;
+      svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      var pts = Array.prototype.map.call(dots, function (d) {
+        var r = d.getBoundingClientRect();
+        return { x: r.left + r.width / 2 - wrapRect.left, y: r.top + r.height / 2 - wrapRect.top };
+      });
+      if (pts.length < 2) { path.setAttribute('d', ''); return; }
+      var d = 'M ' + pts[0].x.toFixed(1) + ' ' + pts[0].y.toFixed(1);
+      for (var i = 0; i < pts.length - 1; i++) {
+        var p0 = pts[i], p1 = pts[i + 1];
+        var midY = (p0.y + p1.y) / 2;
+        d += ' C ' + p0.x.toFixed(1) + ' ' + midY.toFixed(1) + ', ' + p1.x.toFixed(1) + ' ' + midY.toFixed(1) + ', ' + p1.x.toFixed(1) + ' ' + p1.y.toFixed(1);
+      }
+      path.setAttribute('d', d);
+    }
+
+    window.__redrawTimeline = draw;
+    window.addEventListener('resize', function () {
+      clearTimeout(window.__tlResizeT);
+      window.__tlResizeT = setTimeout(draw, 120);
+    });
+    window.addEventListener('load', draw);
+    // Catch late layout shifts (web fonts, fade-up reveal, logo image loads)
+    var tries = 0;
+    var settleTimer = setInterval(function () {
+      draw();
+      tries++;
+      if (tries > 20) clearInterval(settleTimer);
+    }, 150);
+    wrap.querySelectorAll('.tl-dot img').forEach(function (img) {
+      if (img.complete) return;
+      img.addEventListener('load', draw);
+    });
+    draw();
+  })();
 
   /* ── Fade-up on scroll ────────────────────────────────────────────────── */
   var fadeObs = new IntersectionObserver(function (entries) {
@@ -530,7 +588,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  document.querySelectorAll('.exp-card[data-exp]').forEach(function (card) {
+  document.querySelectorAll('.tl-node[data-exp]').forEach(function (card) {
     card.addEventListener('click', function () {
       var lang = window.__i18n ? window.__i18n.getLang() : 'en';
       var d = (lang === 'de' ? expDataDE : expData)[card.dataset.exp];
@@ -694,7 +752,7 @@ document.addEventListener('DOMContentLoaded', function () {
       new Chart(radarEl, {
         type: 'radar',
         data: {
-          labels: ['Fuel Cell Stack Testing', 'DVP&R Validation', '3D Print / CAD', 'Test Bench & Calibration', 'Electrochemistry', 'Data Evaluation'],
+          labels: ['Fuel Cell Stack Testing', 'DVP&R Validation', '3D Print / CAD', 'Test Bench Ops', 'Electrochemistry', 'Data Evaluation'],
           datasets: [{
             data: [95, 90, 85, 82, 78, 75],
             backgroundColor: 'rgba(100,255,218,.1)',
@@ -708,9 +766,10 @@ document.addEventListener('DOMContentLoaded', function () {
               min: 0, max: 100,
               grid: { color: 'rgba(255,255,255,.08)' },
               ticks: { display: false },
-              pointLabels: { color: '#ccd6f6', font: { size: 10 } }
+              pointLabels: { color: '#ccd6f6', font: { size: 9 } }
             }
-          }
+          },
+          layout: { padding: 6 }
         })
       });
     }
