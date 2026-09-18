@@ -58,28 +58,167 @@
   draw();
 })();
 
+/* ── i18n ─────────────────────────────────────────────────────────────────
+   EN strings live inline in index.html and are captured on load as the
+   fallback/default dictionary; DE strings are provided here. Switching
+   language rewrites every [data-i18n] element's HTML in place. */
+(function () {
+  var ROLES = {
+    en: ['Mechanical Engineer', 'Fuel Cell & Hydrogen Technologies', 'R&D / Validation Engineer', 'Process & Manufacturing Engineer', 'Clean Energy Technologies'],
+    de: ['Maschinenbauingenieur', 'Brennstoffzellen- & Wasserstofftechnik', 'F&E- / Validierungsingenieur', 'Prozess- & Fertigungstechnik', 'Clean Energy Technologies']
+  };
+
+  var DE = {
+    'nav.about': 'Über mich', 'nav.impact': 'Erfolge', 'nav.skills': 'Skills', 'nav.experience': 'Erfahrung',
+    'nav.projects': 'Projekte', 'nav.documents': 'Dokumente', 'nav.contact': 'Kontakt', 'nav.resume': 'Lebenslauf ↗',
+    'hero.greeting': 'Hallo, ich bin', 'hero.location': 'Erlangen, Deutschland &nbsp;·&nbsp; Offen für neue Möglichkeiten',
+    'hero.hireMe': 'Kontakt aufnehmen', 'hero.downloadCV': 'Lebenslauf herunterladen',
+    'stats.cnc': 'CNC-Durchsatz<br/>Steigerung', 'stats.bpp': 'Bipolarplatten<br/>pro Tag',
+    'stats.cost': 'Formkosten<br/>Einsparung', 'stats.co2': 'CO₂-Reduktion<br/>modelliert',
+    'about.title': 'Über mich',
+    'about.bio1': 'Maschinenbauingenieur, der einen <strong>M.Sc. an der FAU Erlangen</strong> abschließt (Abschlussnote 1,8). Ich bin spezialisiert auf <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung</strong> und praktische Hardware-Entwicklung — vom Betrieb von Prüfständen über die Auswertung von Messdaten bis zur Umsetzung der Ergebnisse in robuste Prozessverbesserungen.',
+    'about.bio2': 'Neben dem Labor habe ich während meines Bachelorstudiums als Veranstaltungsleiter eine große technische Veranstaltung organisiert — mit direkter Zusammenarbeit mit Sponsoren, Erwartungsmanagement und zuverlässiger Umsetzung unter Zeitdruck.',
+    'about.radar': 'Kompetenz-Radar',
+    'tag.stackTesting': 'Stack-Tests', 'tag.testBench': 'Prüfstandsbetrieb', 'tag.calibration': 'Kalibrierung',
+    'tag.printing': '3D-Druck', 'tag.electrolysis': 'Elektrolyse', 'tag.bpp': 'Bipolarplatten',
+    'tag.leak': 'Dichtheitsprüfung', 'tag.polarisation': 'Polarisationskurven',
+    'impact.title': 'Technische Erfolge', 'impact.sub': 'Echte Zahlen aus echten Projekten — für die volle Geschichte auf eine Karte klicken.',
+    'impact.clickHint': 'Zum Entdecken klicken →',
+    'impact.cnc.title': 'CNC-Durchsatz', 'impact.cnc.sub': 'NC-Programmoptimierung · Freudenberg e-Power Systems',
+    'impact.co2.title': 'CO₂-Reduktion', 'impact.co2.sub': 'Städtisches Energiewende-Modell · Jena',
+    'impact.cost.title': 'Kosteneinsparung', 'impact.cost.sub': 'Spritzgussform-Neukonstruktion · Pragati Pvt. Ltd.',
+    'impact.bpp.title': 'BPP-Skalierung', 'impact.bpp.sub': 'Bipolarplatten-Verklebung &amp; -Abdichtung · Freudenberg',
+    'skills.title': 'Skills', 'skills.sub': 'Auf eine Karte klicken, um alle Skills zu sehen.',
+    'skill.tapFront': 'Antippen für Skills', 'skill.tapBack': 'Zurück antippen',
+    'skill1.title': 'Wasserstoff &amp;<br/>Elektrochemie', 'skill1.tagline': 'Brennstoffzellen · Elektrolyse · BPP',
+    'skill1.backTitle': 'Wasserstoff &amp; Elektrochemische Systeme',
+    'skill1.t1': 'Brennstoffzellen (PEM, Keramik)', 'skill1.t2': 'Alkalische Elektrolyse', 'skill1.t3': 'Bipolarplatten',
+    'skill1.t4': 'Stack-Montage', 'skill1.t5': 'Verklebung &amp; Abdichtung', 'skill1.t6': 'H₂-Produktionstests',
+    'skill1.t7': 'MEA-Konzepte', 'skill1.t8': 'Elektrochemische Hardware',
+    'skill2.title': 'Test &amp;<br/>Validierung', 'skill2.tagline': 'DVP&R · Fehleranalyse · Dichtheitsprüfung',
+    'skill2.backTitle': 'Test &amp; Validierung',
+    'skill2.t2': 'Fehleranalyse', 'skill2.t3': 'Ursachenanalyse', 'skill2.t4': 'Dichtheitsprüfung',
+    'skill2.t5': 'Fuji-Drucktest', 'skill2.t6': 'Profilometer-Analyse', 'skill2.t7': 'Zug- &amp; Scherversuch',
+    'skill2.t8': 'Vickers-Härte', 'skill2.t9': 'Beschleunigte Lebensdauertests (Arrhenius)',
+    'skill3.title': 'Prototypenbau &amp;<br/>Werkstatt', 'skill3.tagline': '3D-Druck · Vorrichtungen · CNC',
+    'skill3.backTitle': 'Prototypenbau &amp; Werkstatttechnik',
+    'skill3.t1': '3D-Druck (FDM &amp; SLA)', 'skill3.t3': 'Vorrichtungskonstruktion',
+    'skill3.t5': 'NC-Programmierung', 'skill3.t6': 'Prüfstandsbau', 'skill3.t7': 'Vakuumsysteme', 'skill3.t8': 'Spritzguss',
+    'skill4.title': 'CAD &amp;<br/>Dokumentation', 'skill4.tagline': 'CATIA · SolidWorks · GD&T',
+    'skill4.backTitle': 'CAD &amp; Dokumentation',
+    'skill4.t7': 'Technische Zeichnungen', 'skill4.t8': 'Montageanleitungen', 'skill4.t9': 'Prüfprotokolle',
+    'exp.title': 'Erfahrung', 'exp.sub': 'Für die volle Geschichte auf eine Station klicken.',
+    'exp.tum.role': 'Werkstudent', 'exp.tum.sum': '3D-gedruckte keramische Brennstoffzellen-Prüfvorrichtung mit eigener Abdichtung &amp; Klemmung.',
+    'exp.freudenberg.role': 'Masterand &amp; Praktikant — F&amp;E', 'exp.freudenberg.sum': 'DVP&R-Validierung &amp; Klebeprozess für ~342 Bipolarplatten/Tag. 6-fache CNC-Durchsatzsteigerung.',
+    'exp.lkt.role': 'Werkstudent', 'exp.lkt.sum': 'Graphit/PP-Verbund-Bipolarplatten (80% Graphit / 20% PP) im Spritzgussverfahren; MEA-Forschung.',
+    'exp.truetech.role': 'Trainee', 'exp.truetech.sum': 'CAD-basierte Werkzeugentwicklung und Prozessplanung für die Fertigung.',
+    'exp.pragati.role': 'Praktikant Abschlussarbeit — Konstruktion', 'exp.pragati.sum': 'Spritzgussform-Design mit ~80% Kostensenkung für ein Nylon-Radbauteil.',
+    'edu.title': 'Ausbildung',
+    'edu.msc.name': 'Clean Energy Technologies', 'edu.msc.uni': 'Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) · Deutschland',
+    'edu.msc.grade': 'Abschlussnote: 1,8 (sehr gut)',
+    'edu.msc.p1': 'Brennstoffzellen', 'edu.msc.p2': 'Elektrolyse', 'edu.msc.p3': 'Energiespeicher',
+    'edu.msc.p5': 'Polymerwissenschaft', 'edu.msc.p6': 'PV-Systeme',
+    'edu.be.name': 'Maschinenbau', 'edu.be.uni': 'Pune University · Indien',
+    'edu.be.p2': 'Maschinenkonstruktion', 'edu.be.p3': 'Thermodynamik', 'edu.be.p4': 'Werkstoffkunde &amp; Metallurgie', 'edu.be.p5': 'Automatisierung',
+    'edu.dip.name': 'Maschinenbau', 'edu.dip.uni': 'MSBTE · Indien',
+    'edu.dip.p1': 'Fertigungstechnik', 'edu.dip.p2': 'Technische Grundlagen',
+    'proj.title': 'Projekte', 'proj.sub': 'Für Details &amp; Diagramme auf ein Projekt klicken.', 'proj.explore': 'Details entdecken →',
+    'proj.co2.tag': 'Miniprojekt', 'proj.co2.title': 'CO₂-armes Szenario · Stadt Jena',
+    'proj.co2.desc': 'Städtisches Energiemodell mit Solar, E-Fahrzeugen, Brennstoffzellen &amp; Elektrolyse. 21,2% CO₂-Reduktion.',
+    'proj.elec.tag': 'Eigeninitiative', 'proj.elec.title': 'Alkalische Wasserelektrolyse',
+    'proj.elec.desc': 'H₂-Produktionsprototyp gebaut — Temperatur-, Konzentrations- &amp; Geometrieeffekte untersucht.',
+    'proj.rod.tag': 'B.E.-Projekt', 'proj.rod.title': 'Pleuelstangen-Versagensstudie',
+    'proj.rod.desc': 'Zugversuch (UTM) + Vickers-Härte + Mikroskopie zur Bewertung von Zähigkeit &amp; Versagensverhalten.',
+    'pub.title': 'Publikationen',
+    'docs.title': 'Dokumente', 'docs.sub': 'Offizielle akademische Dokumente, zur Ansicht verfügbar.',
+    'docs.view': 'Ansehen ↗', 'docs.request': 'Anfragen ↗',
+    'docs.transcript.title': 'Notenübersicht', 'docs.transcript.desc': 'M.Sc. Clean Energy Technologies — FAU Erlangen-Nürnberg',
+    'docs.modules.title': 'Liste bestandener Module', 'docs.modules.desc': 'Detaillierte Modulübersicht — FAU Erlangen-Nürnberg',
+    'docs.degree.title': 'Abschlussurkunde', 'docs.degree.desc': 'Auf Anfrage verfügbar — wird nach Studienabschluss ausgestellt.',
+    'lang.title': 'Sprachen',
+    'lang.en': 'Englisch', 'lang.en.lvl': 'C1 · Verhandlungssicher',
+    'lang.de': 'Deutsch', 'lang.de.lvl': 'B1 · Aktiv in Verbesserung',
+    'lang.mr': 'Marathi', 'lang.mr.lvl': 'Muttersprache',
+    'lang.hi': 'Hindi', 'lang.hi.lvl': 'Verhandlungssicher',
+    'contact.title': 'Kontakt aufnehmen',
+    'contact.text': 'Ich bewerbe mich derzeit auf <strong>Maschinenbauingenieur</strong>- und <strong>F&amp;E- / Validierungsingenieur</strong>-Stellen in der deutschen Wasserstoff- und Brennstoffzellenbranche. Sofort verfügbar.',
+    'contact.linkedin': 'LinkedIn-Profil', 'contact.sayHello': 'Hallo sagen →',
+    'footer.text': 'Rushikesh Nikumbh · © 2026'
+  };
+
+  var EN = {}; // captured from the live DOM on first load
+  var current = localStorage.getItem('site-lang') || 'en';
+
+  function captureEN() {
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (!(key in EN)) EN[key] = el.innerHTML;
+    });
+  }
+
+  function applyLanguage(lang) {
+    var dict = lang === 'de' ? DE : EN;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (dict[key] != null) el.innerHTML = dict[key];
+    });
+    document.documentElement.setAttribute('lang', lang);
+    var titleEl = document.getElementById('page-title');
+    var descEl = document.getElementById('page-desc');
+    if (titleEl) titleEl.textContent = lang === 'de'
+      ? 'Rushikesh Nikumbh | Maschinenbauingenieur — Clean Energy & Wasserstoff'
+      : 'Rushikesh Nikumbh | Mechanical Engineer — Clean Energy & Hydrogen';
+    if (descEl) descEl.setAttribute('content', lang === 'de'
+      ? 'Portfolio von Rushikesh Nikumbh – M.Sc. Clean Energy Technologies, Maschinenbauingenieur mit Schwerpunkt Brennstoffzellen-, Wasserstoff- und Fertigungstechnik.'
+      : 'Portfolio of Rushikesh Nikumbh – M.Sc. Clean Energy Technologies, Mechanical Engineer specialising in fuel cell, hydrogen & manufacturing engineering.');
+    var enBtn = document.getElementById('lang-en');
+    var deBtn = document.getElementById('lang-de');
+    if (enBtn && deBtn) {
+      enBtn.classList.toggle('active', lang === 'en');
+      deBtn.classList.toggle('active', lang === 'de');
+      enBtn.setAttribute('aria-pressed', lang === 'en');
+      deBtn.setAttribute('aria-pressed', lang === 'de');
+    }
+    current = lang;
+    localStorage.setItem('site-lang', lang);
+    if (window.__setTypedRoles) window.__setTypedRoles(ROLES[lang]);
+    if (window.__setModalLang) window.__setModalLang(lang);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    captureEN();
+    var enBtn = document.getElementById('lang-en');
+    var deBtn = document.getElementById('lang-de');
+    if (enBtn) enBtn.addEventListener('click', function () { applyLanguage('en'); });
+    if (deBtn) deBtn.addEventListener('click', function () { applyLanguage('de'); });
+    if (current !== 'en') applyLanguage(current);
+  });
+
+  window.__i18n = { ROLES: ROLES, applyLanguage: applyLanguage, getLang: function () { return current; } };
+})();
+
 /* ── All setup after DOM ready ───────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function () {
 
   /* ── Typed effect ─────────────────────────────────────────────────────── */
-  var roles = [
-    'Clean Energy Engineer',
-    'Fuel Cell Systems Specialist',
-    'DVP&R Validation Expert',
-    'Hydrogen Technology Researcher',
-    'Mechanical Design Engineer'
-  ];
   var typedEl = document.getElementById('typed');
   if (typedEl) {
-    var ri = 0, ci = 0, deleting = false;
+    var roles = window.__i18n.ROLES[window.__i18n.getLang()];
+    var ri = 0, ci = 0, deleting = false, typeTimer = null;
     function type() {
       var word = roles[ri];
       typedEl.textContent = deleting ? word.slice(0, ci--) : word.slice(0, ci++);
-      if (!deleting && ci > word.length) { deleting = true; setTimeout(type, 1800); return; }
+      if (!deleting && ci > word.length) { deleting = true; typeTimer = setTimeout(type, 1800); return; }
       if (deleting && ci < 0) { deleting = false; ri = (ri + 1) % roles.length; ci = 0; }
-      setTimeout(type, deleting ? 55 : 90);
+      typeTimer = setTimeout(type, deleting ? 55 : 90);
     }
     type();
+    window.__setTypedRoles = function (newRoles) {
+      roles = newRoles; ri = 0; ci = 0; deleting = false;
+      if (typeTimer) clearTimeout(typeTimer);
+      typedEl.textContent = '';
+      type();
+    };
   }
 
   /* ── Navbar scroll / highlight ────────────────────────────────────────── */
@@ -230,32 +369,32 @@ document.addEventListener('DOMContentLoaded', function () {
     'freudenberg': {
       role: 'Thesis Student & Research Intern', co: 'Freudenberg e-Power Systems GmbH',
       date: 'Aug 2024 – Jun 2025',
-      thesis: 'M.Sc. Thesis: Optimization of Bipolar Plate Manufacturing — 342 BPP/day throughput and 80% cost reduction through CNC parameter optimization and DVP&R validation.',
+      thesis: 'M.Sc. Thesis: Bonding & Sealing Process Optimisation for PEM Fuel Cell Bipolar Plates — 342 BPP/day production layout and 6× CNC dispensing throughput through structured DVP&R validation.',
       bullets: [
-        '<strong>342 BPP/day</strong> throughput — 6× improvement over baseline via CNC studies',
-        '<strong>80% cost reduction</strong> in bipolar plate manufacturing',
-        'Designed & executed DVP&R validation plans for PEM fuel cell components',
+        '<strong>342 BPP/day</strong> production layout designed — 12-station curing concept scaled from a 20/day single-station baseline',
+        '<strong>6× CNC dispensing throughput</strong> via NC-program optimisation and parameter tuning',
+        'Operated test benches for functional, performance, and accelerated lifetime testing (1,000 h at 95°C)',
+        'Installed test specimens and measurement equipment; evaluated measurement data and wrote structured test reports',
+        'Learned the DATRON dispensing system\'s code structure independently — no formal training — and wrote new programs for specific dispensing outputs, troubleshooting by tracing patterns in the output back to the code',
         'Fuji Pressure Film testing for contact pressure distribution analysis',
-        'Surface characterization using profilometer &amp; SEM microscopy',
-        'Accelerated Lifetime Testing (ALT) protocols for stack durability',
+        'Surface characterization using profilometer &amp; 3D scanning',
+        'Calibration checks on measurement equipment before test execution',
         'CATIA V5 &amp; SolidWorks fixture design for test-rig development',
-        'Technical documentation: FMEA, test reports, process flowcharts'
+        'Technical documentation: DVP&amp;R reports, test protocols, process flowcharts'
       ],
       chartLabel: 'BPP Daily Output (units)',
       chartLabels: ['Baseline', 'Study 1', 'Study 2', 'Study 3', 'Optimised'],
-      chartValues: [57, 120, 198, 270, 342]
+      chartValues: [20, 110, 200, 280, 342]
     },
     'lkt': {
-      role: 'Working Student — Alkaline Electrolysis', co: 'FAU Erlangen — LKT Chair',
+      role: 'Working Student — Bipolar Plate Materials Research', co: 'FAU Erlangen — Lehrstuhl für Kunststofftechnik (LKT)',
       date: 'Mar 2024 – Jul 2024',
-      intro: 'Built and characterized a full alkaline water electrolysis prototype from scratch.',
+      intro: 'Materials research into composite bipolar plates and scalable bonding concepts for fuel cell stacks.',
       bullets: [
-        'Designed &amp; built complete alkaline electrolysis prototype (2H₂O → 2H₂ + O₂)',
-        'Fabricated cathode (stainless steel) and anode (Ni foam) electrode assemblies',
-        'Assembled KOH electrolyte circulation system',
-        'Electrochemical characterization: I-V curves, EIS, overpotential analysis',
-        'SolidWorks 3D printed custom housing &amp; electrode frames',
-        'Documented results for integration into faculty research publications'
+        'Developed graphite/PP composite bipolar plates (80% graphite / 20% PP) via injection moulding',
+        'Investigated material behaviour and manufacturing constraints of composite BPPs',
+        'Researched frame-integrated MEA bonding and sealing concepts for scalable stack assembly',
+        'Coordinated experimental work and documented results for research outputs'
       ]
     },
     'truetech': {
@@ -303,9 +442,98 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
+  /* ── Experience modal data — German ───────────────────────────────────── */
+  var expDataDE = {
+    'tum': {
+      role: 'Werkstudent', co: 'Technische Universität München (TUM)',
+      date: 'Nov 2025 – Dez 2025',
+      intro: 'Kurzzeitiger Einsatz zur Unterstützung laufender Brennstoffzellenforschung.',
+      bullets: [
+        'Laufende Brennstoffzellenforschung durch Dokumentation und Testunterstützung begleitet',
+        'DVP&R-Validierungsmethoden im akademischen Forschungskontext angewendet',
+        'Mit Doktoranden bei der Planung experimenteller Tests koordiniert'
+      ]
+    },
+    'freudenberg': {
+      role: 'Masterand &amp; Forschungspraktikant', co: 'Freudenberg e-Power Systems GmbH',
+      date: 'Aug 2024 – Jun 2025',
+      thesis: 'Masterarbeit: Prozessoptimierung für Verklebung &amp; Abdichtung von PEM-Brennstoffzellen-Bipolarplatten — Produktionslayout für 342 BPP/Tag und 6-fache CNC-Dosierdurchsatzsteigerung durch strukturierte DVP&R-Validierung.',
+      bullets: [
+        '<strong>Produktionslayout für 342 BPP/Tag</strong> entworfen — 12-Stationen-Aushärtungskonzept, skaliert von einer Basis von 20/Tag mit einer Station',
+        '<strong>6-fache Steigerung des CNC-Dosierdurchsatzes</strong> durch NC-Programmoptimierung und Parameteranpassung',
+        'Prüfstände für Funktions-, Leistungs- und beschleunigte Lebensdauertests betrieben (1.000 h bei 95 °C)',
+        'Prüflinge und Messtechnik installiert; Messdaten ausgewertet und strukturierte Prüfberichte verfasst',
+        'Den Code-Aufbau des DATRON-Dosiersystems selbstständig gelernt — ohne formale Schulung — und neue Programme für bestimmte Dosierausgaben geschrieben, mit Fehlersuche anhand der Ausgabemuster',
+        'Fuji-Drucktests zur Analyse der Kontaktdruckverteilung',
+        'Oberflächencharakterisierung mittels Profilometer &amp; 3D-Scanning',
+        'Kalibrierprüfungen der Messtechnik vor jeder Testdurchführung',
+        'CATIA V5 &amp; SolidWorks Vorrichtungskonstruktion für den Prüfstandsbau',
+        'Technische Dokumentation: DVP&amp;R-Berichte, Prüfprotokolle, Prozessablaufpläne'
+      ],
+      chartLabel: 'BPP Tagesausstoß (Stück)',
+      chartLabels: ['Basis', 'Studie 1', 'Studie 2', 'Studie 3', 'Optimiert'],
+      chartValues: [20, 110, 200, 280, 342]
+    },
+    'lkt': {
+      role: 'Werkstudent — Materialforschung Bipolarplatten', co: 'FAU Erlangen — Lehrstuhl für Kunststofftechnik (LKT)',
+      date: 'Mär 2024 – Jul 2024',
+      intro: 'Materialforschung an Verbund-Bipolarplatten und skalierbaren Verklebungskonzepten für Brennstoffzellen-Stacks.',
+      bullets: [
+        'Graphit/PP-Verbund-Bipolarplatten (80% Graphit / 20% PP) im Spritzgussverfahren entwickelt',
+        'Materialverhalten und Fertigungsgrenzen von Verbund-BPPs untersucht',
+        'Rahmenintegrierte MEA-Verklebungs- und Abdichtungskonzepte für skalierbare Stack-Montage erforscht',
+        'Versuchsarbeit koordiniert und Ergebnisse für Forschungszwecke dokumentiert'
+      ]
+    },
+    'truetech': {
+      role: 'Trainee', co: 'Truetech Vision — Pune, Indien',
+      date: 'Jul 2020 – Jan 2021',
+      intro: 'Rolle in industrieller Automatisierung und Maschinenbau mit Fokus auf Konstruktion und Inbetriebnahme.',
+      bullets: [
+        'Mechanische Montage und Inbetriebnahme automatisierter Prüflinien geleitet',
+        'CNC-Maschinen gewartet und erste Fehlersuche durchgeführt',
+        'CATIA- &amp; AutoCAD-Zeichnungen für kundenspezifische Werkzeugadapter erstellt',
+        'Kundenseitige Maschinenübergabe und Bedienerschulung'
+      ]
+    },
+    'pragati': {
+      role: 'Praktikant Abschlussarbeit — Konstruktion', co: 'Pragati Pvt. Ltd.',
+      date: 'Jun 2019 – Apr 2020',
+      thesis: 'Bachelorarbeit: Entwurf und Fertigung einer Radform — vollständiger Lebenszyklus von der Entwurfsidee bis zum produktionsreifen Werkzeug.',
+      bullets: [
+        'Radform-Geometrie in CATIA V5 mit GD&amp;T-Tolerierung entworfen',
+        'Materialauswahl und Optimierung des Entformungswinkels durchgeführt',
+        'CNC-Bearbeitung von Formkavität und Formkernen koordiniert',
+        'Maßprüfung und Passungstests durchgeführt',
+        'Vollständige Abschlussarbeit verfasst: Literaturrecherche, Konstruktionsbegründung, Fertigungsprozess'
+      ]
+    },
+    'shreyas': {
+      role: 'Trainee-Ingenieur', co: 'Shreyas Industry',
+      date: 'Jun 2019',
+      intro: 'Kurzer Einblick in Fertigungsbetrieb und Qualitätsprüfung.',
+      bullets: [
+        'Dreh-, Fräs- und Schleifarbeiten beobachtet und begleitet',
+        'Qualitätsteam bei Maßprüfungen unterstützt',
+        'Prozessparameter für Standardarbeitsanweisungen dokumentiert'
+      ]
+    },
+    'kalpataru': {
+      role: 'Fertigungspraktikant', co: 'Kalpataru Precision Tools',
+      date: 'Mai 2016 – Jun 2016',
+      intro: 'Erstes Industriepraktikum — Einblick in Präzisionswerkzeugbau und Zerspanung.',
+      bullets: [
+        'Konventionelle und CNC-Bearbeitung von Präzisionswerkzeugen beobachtet',
+        'Grundlagen von Spannmitteln, Werkzeugwegplanung und G-Code gelernt',
+        'An Qualitätsprüfungen teilgenommen: Härteprüfung, Oberflächenmessung'
+      ]
+    }
+  };
+
   document.querySelectorAll('.exp-card[data-exp]').forEach(function (card) {
     card.addEventListener('click', function () {
-      var d = expData[card.dataset.exp];
+      var lang = window.__i18n ? window.__i18n.getLang() : 'en';
+      var d = (lang === 'de' ? expDataDE : expData)[card.dataset.exp];
       if (!d) return;
       var html = '<button id="modal-close">&#x2715;</button>'
         + '<div class="m-role">' + d.role + '</div>'
@@ -376,9 +604,61 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
+  /* ── Project modal data — German ──────────────────────────────────────── */
+  var projDataDE = {
+    'co2': {
+      title: 'CO₂-arme Szenariomodellierung — Stadt Jena',
+      tag: 'Energiesystemanalyse',
+      intro: 'Umfassende Energiewende-Studie zur Analyse von CO₂-Reduktionspfaden für die Stadt Jena.',
+      bullets: [
+        '<strong>21,2% CO₂-Reduktion</strong> im modellierten Szenario bis 2035 erreicht',
+        'Wind-, Solar-PV-, Biomasse- und Wärmepumpen-Integrationspfade analysiert',
+        'Sektorkopplung zwischen Strom, Wärme und Verkehr bewertet',
+        'EnergyPLAN und Python für Szenariomodellierung und Sensitivitätsanalyse eingesetzt',
+        'Ergebnisse mit Visualisierungs-Dashboards für die Stakeholder-Kommunikation präsentiert'
+      ],
+      chartLabel: 'CO₂-Index (Basis=100)',
+      chartLabels: ['2020', '2025', '2028', '2031', '2035'],
+      chartValues: [100, 91, 83, 82.3, 78.8]
+    },
+    'electrolysis': {
+      title: 'Alkalischer Wasserelektrolyse-Prototyp',
+      tag: 'Wasserstoffproduktion',
+      intro: 'Vollständiger Entwurf und Bau einer alkalischen Elektrolysezelle mit systematischer elektrochemischer Charakterisierung.',
+      bullets: [
+        'Reaktion: <strong>2H₂O → 2H₂ + O₂</strong> mit 30 Gew.-% KOH-Elektrolyt',
+        'Kathode: Edelstahlgeflecht; Anode: Nickelschaum für katalytische Oberfläche',
+        'Eigens 3D-gedrucktes PLA-Gehäuse und Elektrodenabstandshalter (SolidWorks)',
+        'Elektrochemische Tests: Polarisationskurven, EIS, Tafel-Steigungsanalyse',
+        'Faraday-Wirkungsgrad und H₂-Reinheit bei verschiedenen Stromdichten gemessen',
+        'Ergebnisse in die Publikationspipeline der FAU-Forschungsgruppe eingeflossen'
+      ],
+      chartLabel: 'Zellspannung (V)',
+      chartLabels: ['10 mA/cm²', '50 mA/cm²', '100 mA/cm²', '200 mA/cm²', '400 mA/cm²'],
+      chartValues: [1.52, 1.68, 1.82, 1.98, 2.15]
+    },
+    'connrod': {
+      title: 'Pleuelstangen-Versagensuntersuchung',
+      tag: 'Werkstoffe &amp; Prüftechnik',
+      intro: 'Experimentelle Untersuchung von mechanischen Eigenschaften und Versagensverhalten mittels UTM und Vickers-Härtekartierung.',
+      bullets: [
+        'Zugversuch (UTM): Streckgrenze, Zugfestigkeit, Bruchdehnung im Vergleich zu DIN-EN-Normen',
+        'Vickers-Härtekartierung: 15-Punkte-Profil über den Querschnitt',
+        'Bruchflächenanalyse: spröde vs. duktile Versagensarten mittels Makro- und Mikroskopie',
+        'CATIA V5 FE-Vernetzung zur Verifikation von Spannungskonzentrationen',
+        'Werkstoff: 40Cr4-Legierungsstahl — Härte 285–310 HV über den Messbereich',
+        'Ergebnisse in strukturiertem technischen Bericht mit Bestehen/Nicht-Bestehen-Bewertung dokumentiert'
+      ],
+      chartLabel: 'Härte (HV)',
+      chartLabels: ['Kante 1', 'Zone 2', 'Zone 3', 'Mitte', 'Zone 5', 'Zone 6', 'Kante 7'],
+      chartValues: [310, 302, 297, 285, 291, 299, 308]
+    }
+  };
+
   document.querySelectorAll('.proj-card[data-proj]').forEach(function (card) {
     card.addEventListener('click', function () {
-      var d = projData[card.dataset.proj];
+      var __lang = window.__i18n ? window.__i18n.getLang() : 'en';
+      var d = (__lang === 'de' ? projDataDE : projData)[card.dataset.proj];
       if (!d) return;
       var html = '<button id="modal-close">&#x2715;</button>'
         + '<div class="m-role">' + d.tag + '</div>'
@@ -414,9 +694,9 @@ document.addEventListener('DOMContentLoaded', function () {
       new Chart(radarEl, {
         type: 'radar',
         data: {
-          labels: ['Fuel Cell Systems', 'DVP&R Testing', '3D Print / CAD', 'CNC / Workshop', 'Electrochemistry', 'Data Analysis'],
+          labels: ['Fuel Cell Stack Testing', 'DVP&R Validation', '3D Print / CAD', 'Test Bench & Calibration', 'Electrochemistry', 'Data Evaluation'],
           datasets: [{
-            data: [95, 90, 85, 80, 78, 72],
+            data: [95, 90, 85, 82, 78, 75],
             backgroundColor: 'rgba(100,255,218,.1)',
             borderColor: '#64ffda', borderWidth: 2,
             pointBackgroundColor: '#64ffda', pointRadius: 4
@@ -507,7 +787,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
           labels: ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jun'],
           datasets: [{
-            data: [57, 120, 198, 240, 310, 342],
+            data: [20, 120, 198, 240, 310, 342],
             backgroundColor: 'rgba(100,255,218,.25)',
             borderColor: '#64ffda', borderWidth: 1.5, borderRadius: 6
           }]

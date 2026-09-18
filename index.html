@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rushikesh Nikumbh | Clean Energy Engineer</title>
-  <meta name="description" content="Portfolio of Rushikesh Nikumbh – M.Sc. Clean Energy Technologies, Fuel Cell & DVP&R Engineer."/>
+  <title id="page-title">Rushikesh Nikumbh | Mechanical Engineer — Clean Energy & Hydrogen</title>
+  <meta id="page-desc" name="description" content="Portfolio of Rushikesh Nikumbh – M.Sc. Clean Energy Technologies, Mechanical Engineer specialising in fuel cell, hydrogen & manufacturing engineering."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
@@ -17,14 +17,23 @@
   <div class="nav-inner">
     <a class="nav-logo" href="#hero">RN<span>.</span></a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#impact">Impact</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#impact" data-i18n="nav.impact">Impact</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#documents" data-i18n="nav.documents">Documents</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="assets/Rushikesh_CV.pdf" target="_blank">Resume ↗</a>
+    <div class="lang-switch" id="lang-switch" role="group" aria-label="Language switch">
+      <button class="lang-flag active" id="lang-en" data-lang="en" aria-label="English" aria-pressed="true" title="English">
+        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="circleEN"><circle cx="30" cy="30" r="30"/></clipPath></defs><g clip-path="url(#circleEN)"><rect width="60" height="60" fill="#00247d"/><path d="M0 0L60 60M60 0L0 60" stroke="#fff" stroke-width="12"/><path d="M0 0L60 60M60 0L0 60" stroke="#cf142b" stroke-width="5"/><path d="M30 0V60M0 30H60" stroke="#fff" stroke-width="20"/><path d="M30 0V60M0 30H60" stroke="#cf142b" stroke-width="10"/></g></svg>
+      </button>
+      <button class="lang-flag" id="lang-de" data-lang="de" aria-label="Deutsch" aria-pressed="false" title="Deutsch">
+        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="circleDE"><circle cx="30" cy="30" r="30"/></clipPath></defs><g clip-path="url(#circleDE)"><rect width="60" height="20" y="0" fill="#000"/><rect width="60" height="20" y="20" fill="#dd0000"/><rect width="60" height="20" y="40" fill="#ffce00"/></g></svg>
+      </button>
+    </div>
+    <a class="nav-cta" href="assets/Rushikesh_CV.pdf" target="_blank" data-i18n="nav.resume">Resume ↗</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -40,23 +49,20 @@
       <img src="assets/profile.jpg" alt="Rushikesh Nikumbh" class="hero-photo"/>
     </div>
     <div class="hero-text">
-      <p class="greeting">Hello, I'm</p>
+      <p class="greeting" data-i18n="hero.greeting">Hello, I'm</p>
       <h1 class="hero-name">Rushikesh<br/>Nikumbh</h1>
       <p class="hero-role"><span id="typed"></span><span class="cursor">|</span></p>
       <p class="hero-loc">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
-        Erlangen, Germany &nbsp;·&nbsp; Open to Opportunities
+        <span data-i18n="hero.location">Erlangen, Germany &nbsp;·&nbsp; Open to Opportunities</span>
       </p>
       <div class="hero-btns">
-        <a class="btn-primary" href="#contact">Hire Me</a>
-        <a class="btn-outline" href="assets/Rushikesh_CV.pdf" target="_blank">Download CV</a>
+        <a class="btn-primary" href="#contact" data-i18n="hero.hireMe">Hire Me</a>
+        <a class="btn-outline" href="assets/Rushikesh_CV.pdf" target="_blank" data-i18n="hero.downloadCV">Download CV</a>
       </div>
       <div class="hero-socials">
-        <a href="https://www.linkedin.com/in/rushikesh-nikumbh" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/rushikesh-nikumbh-b336b3152/" target="_blank" aria-label="LinkedIn">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45H7.1V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
-        </a>
-        <a href="https://github.com/rishi-Nikumbh" target="_blank" aria-label="GitHub">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.72.08-.72 1.2.08 1.84 1.23 1.84 1.23 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.26 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0012 .3z"/></svg>
         </a>
         <a href="mailto:rishinikumbh28@gmail.com" aria-label="Email">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -74,22 +80,22 @@
   <div class="stats-inner">
     <div class="stat fade-up">
       <span class="stat-num" data-target="6" data-suffix="×">0×</span>
-      <p>CNC Throughput<br/>Increase</p>
+      <p data-i18n="stats.cnc">CNC Throughput<br/>Increase</p>
     </div>
     <div class="stat-div"></div>
     <div class="stat fade-up">
       <span class="stat-num" data-target="342" data-suffix="">0</span>
-      <p>Bipolar Plates<br/>per Day</p>
+      <p data-i18n="stats.bpp">Bipolar Plates<br/>per Day</p>
     </div>
     <div class="stat-div"></div>
     <div class="stat fade-up">
       <span class="stat-num" data-target="80" data-suffix="%">0%</span>
-      <p>Mould Cost<br/>Reduction</p>
+      <p data-i18n="stats.cost">Mould Cost<br/>Reduction</p>
     </div>
     <div class="stat-div"></div>
     <div class="stat fade-up">
       <span class="stat-num" data-target="21.2" data-suffix="%" data-decimal="1">0%</span>
-      <p>CO₂ Reduction<br/>Modelled</p>
+      <p data-i18n="stats.co2">CO₂ Reduction<br/>Modelled</p>
     </div>
   </div>
 </div>
@@ -97,18 +103,23 @@
 <!-- ABOUT -->
 <section id="about" class="section">
   <div class="container">
-    <h2 class="section-title">About</h2>
+    <h2 class="section-title" data-i18n="about.title">About</h2>
     <div class="about-grid">
       <div class="about-left fade-up">
-        <p class="about-bio">
-          Mechanical &amp; Clean Energy Engineer completing an <strong>M.Sc. at FAU Erlangen</strong>.
-          I specialise in <strong>fuel-cell testing, DVP&amp;R validation</strong>, and hands-on hardware
-          development — bridging R&amp;D and production by turning test data into robust process improvements.
+        <p class="about-bio" data-i18n="about.bio1">
+          Mechanical &amp; Clean Energy Engineer completing an <strong>M.Sc. at FAU Erlangen</strong> (thesis grade 1.8).
+          I specialise in <strong>fuel-cell stack testing, DVP&amp;R validation</strong>, and hands-on hardware
+          development — operating test benches, evaluating measurement data, and turning results into robust process improvements.
+        </p>
+        <p class="about-bio about-bio-sub" data-i18n="about.bio2">
+          Beyond the lab, I led a large technical event as event head during my bachelor studies —
+          working directly with sponsors, managing expectations, and delivering on commitments under pressure.
         </p>
         <div class="tag-cloud">
-          <span>Fuel Cells</span><span>DVP&R</span><span>3D Printing</span>
-          <span>CATIA · SolidWorks</span><span>Electrolysis</span><span>CNC</span>
-          <span>Bipolar Plates</span><span>Leak Testing</span>
+          <span data-i18n="tag.stackTesting">Stack Testing</span><span>DVP&R</span><span data-i18n="tag.testBench">Test Bench Operation</span>
+          <span data-i18n="tag.calibration">Calibration</span><span data-i18n="tag.printing">3D Printing</span><span>CATIA · SolidWorks</span>
+          <span data-i18n="tag.electrolysis">Electrolysis</span><span>CNC</span><span data-i18n="tag.bpp">Bipolar Plates</span>
+          <span data-i18n="tag.leak">Leak Testing</span><span data-i18n="tag.polarisation">Polarisation Curves</span>
         </div>
         <div class="about-meta">
           <a href="mailto:rishinikumbh28@gmail.com">rishinikumbh28@gmail.com</a>
@@ -119,7 +130,7 @@
         <div class="radar-wrap">
           <canvas id="radar-chart"></canvas>
         </div>
-        <p class="chart-note">Expertise Radar</p>
+        <p class="chart-note" data-i18n="about.radar">Expertise Radar</p>
       </div>
     </div>
   </div>
@@ -128,48 +139,48 @@
 <!-- IMPACT CHARTS -->
 <section id="impact" class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Engineering Impact</h2>
-    <p class="sec-sub">Real numbers from real projects — click any card for the full story.</p>
+    <h2 class="section-title" data-i18n="impact.title">Engineering Impact</h2>
+    <p class="sec-sub" data-i18n="impact.sub">Real numbers from real projects — click any card for the full story.</p>
     <div class="charts-grid">
 
       <div class="chart-card fade-up" data-modal="cnc">
         <div class="chart-header">
-          <h3>CNC Throughput</h3>
+          <h3 data-i18n="impact.cnc.title">CNC Throughput</h3>
           <span class="chart-badge">6×</span>
         </div>
-        <p class="chart-sub">NC-program optimisation · Freudenberg e-Power Systems</p>
+        <p class="chart-sub" data-i18n="impact.cnc.sub">NC-program optimisation · Freudenberg e-Power Systems</p>
         <div class="chart-wrap"><canvas id="chart-cnc"></canvas></div>
-        <p class="click-hint">Click to explore →</p>
+        <p class="click-hint" data-i18n="impact.clickHint">Click to explore →</p>
       </div>
 
       <div class="chart-card fade-up" data-modal="co2">
         <div class="chart-header">
-          <h3>CO₂ Reduction</h3>
+          <h3 data-i18n="impact.co2.title">CO₂ Reduction</h3>
           <span class="chart-badge">21.2%</span>
         </div>
-        <p class="chart-sub">City-scale energy transition model · Jena</p>
+        <p class="chart-sub" data-i18n="impact.co2.sub">City-scale energy transition model · Jena</p>
         <div class="chart-wrap"><canvas id="chart-co2"></canvas></div>
-        <p class="click-hint">Click to explore →</p>
+        <p class="click-hint" data-i18n="impact.clickHint">Click to explore →</p>
       </div>
 
       <div class="chart-card fade-up" data-modal="cost">
         <div class="chart-header">
-          <h3>Cost Savings</h3>
+          <h3 data-i18n="impact.cost.title">Cost Savings</h3>
           <span class="chart-badge">~80%</span>
         </div>
-        <p class="chart-sub">Injection mould redesign · Pragati Pvt. Ltd.</p>
+        <p class="chart-sub" data-i18n="impact.cost.sub">Injection mould redesign · Pragati Pvt. Ltd.</p>
         <div class="chart-wrap"><canvas id="chart-cost"></canvas></div>
-        <p class="click-hint">Click to explore →</p>
+        <p class="click-hint" data-i18n="impact.clickHint">Click to explore →</p>
       </div>
 
       <div class="chart-card fade-up" data-modal="bpp">
         <div class="chart-header">
-          <h3>BPP Scale-Up</h3>
+          <h3 data-i18n="impact.bpp.title">BPP Scale-Up</h3>
           <span class="chart-badge">342/day</span>
         </div>
-        <p class="chart-sub">Bipolar plate bonding &amp; sealing · Freudenberg</p>
+        <p class="chart-sub" data-i18n="impact.bpp.sub">Bipolar plate bonding &amp; sealing · Freudenberg</p>
         <div class="chart-wrap"><canvas id="chart-bpp"></canvas></div>
-        <p class="click-hint">Click to explore →</p>
+        <p class="click-hint" data-i18n="impact.clickHint">Click to explore →</p>
       </div>
 
     </div>
@@ -179,8 +190,8 @@
 <!-- SKILLS -->
 <section id="skills" class="section">
   <div class="container">
-    <h2 class="section-title">Skills</h2>
-    <p class="sec-sub">Click a card to reveal the full skill set.</p>
+    <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+    <p class="sec-sub" data-i18n="skills.sub">Click a card to reveal the full skill set.</p>
     <div class="skills-grid">
 
       <div class="skill-card">
@@ -258,19 +269,19 @@
             <text x="148" y="108" fill="#4a9eff" font-size="5.5" font-family="Inter,sans-serif">342 BPP / day</text>
             <text x="148" y="120" fill="#34d399" font-size="5.5" font-family="Inter,sans-serif">6× throughput ↑</text>
           </svg>
-          <h3>Hydrogen &amp;<br/>Electrochemical</h3>
-          <p>Fuel Cells · Electrolysis · BPP</p>
-          <span class="skill-hint">Tap to reveal skills</span>
+          <h3 data-i18n="skill1.title">Hydrogen &amp;<br/>Electrochemical</h3>
+          <p data-i18n="skill1.tagline">Fuel Cells · Electrolysis · BPP</p>
+          <span class="skill-hint" data-i18n="skill.tapFront">Tap to reveal skills</span>
         </div>
         <div class="skill-back">
-          <p class="skill-back-title">Hydrogen &amp; Electrochemical Systems</p>
+          <p class="skill-back-title" data-i18n="skill1.backTitle">Hydrogen &amp; Electrochemical Systems</p>
           <div class="skill-tags">
-            <span>Fuel Cells (PEM, Ceramic)</span><span>Alkaline Electrolysis</span>
-            <span>Bipolar Plates</span><span>Stack Assembly</span>
-            <span>Sealing &amp; Bonding</span><span>H₂ Production Testing</span>
-            <span>MEA Concepts</span><span>Electrochemical Hardware</span>
+            <span data-i18n="skill1.t1">Fuel Cells (PEM, Ceramic)</span><span data-i18n="skill1.t2">Alkaline Electrolysis</span>
+            <span data-i18n="skill1.t3">Bipolar Plates</span><span data-i18n="skill1.t4">Stack Assembly</span>
+            <span data-i18n="skill1.t5">Sealing &amp; Bonding</span><span data-i18n="skill1.t6">H₂ Production Testing</span>
+            <span data-i18n="skill1.t7">MEA Concepts</span><span data-i18n="skill1.t8">Electrochemical Hardware</span>
           </div>
-          <span class="skill-hint-back">Tap to flip back</span>
+          <span class="skill-hint-back" data-i18n="skill.tapBack">Tap to flip back</span>
         </div>
         </div><!-- /skill-inner -->
       </div>
@@ -326,20 +337,20 @@
             <!-- Arrhenius label bottom -->
             <text x="100" y="136" text-anchor="middle" fill="#8892b0" font-size="6" font-family="Inter,sans-serif">Arrhenius ALT · ICP-OES · ISO 527 / 4578 / 868</text>
           </svg>
-          <h3>Testing &amp;<br/>Validation</h3>
-          <p>DVP&R · Failure Analysis · Leak Test</p>
-          <span class="skill-hint">Tap to reveal skills</span>
+          <h3 data-i18n="skill2.title">Testing &amp;<br/>Validation</h3>
+          <p data-i18n="skill2.tagline">DVP&R · Failure Analysis · Leak Test</p>
+          <span class="skill-hint" data-i18n="skill.tapFront">Tap to reveal skills</span>
         </div>
         <div class="skill-back">
-          <p class="skill-back-title">Testing &amp; Validation</p>
+          <p class="skill-back-title" data-i18n="skill2.backTitle">Testing &amp; Validation</p>
           <div class="skill-tags">
-            <span>DVP&R Planning</span><span>Failure Analysis</span>
-            <span>Root Cause Analysis</span><span>Leak Testing</span>
-            <span>Fuji Pressure Testing</span><span>Profilometer Analysis</span>
-            <span>Tensile &amp; Shear</span><span>Vickers Hardness</span>
-            <span>Accelerated Lifetime (Arrhenius)</span>
+            <span>DVP&R Planning</span><span data-i18n="skill2.t2">Failure Analysis</span>
+            <span data-i18n="skill2.t3">Root Cause Analysis</span><span data-i18n="skill2.t4">Leak Testing</span>
+            <span data-i18n="skill2.t5">Fuji Pressure Testing</span><span data-i18n="skill2.t6">Profilometer Analysis</span>
+            <span data-i18n="skill2.t7">Tensile &amp; Shear</span><span data-i18n="skill2.t8">Vickers Hardness</span>
+            <span data-i18n="skill2.t9">Accelerated Lifetime (Arrhenius)</span>
           </div>
-          <span class="skill-hint-back">Tap to flip back</span>
+          <span class="skill-hint-back" data-i18n="skill.tapBack">Tap to flip back</span>
         </div>
         </div><!-- /skill-inner -->
       </div>
@@ -419,19 +430,19 @@
             <!-- Speed label -->
             <text x="148" y="125" text-anchor="middle" fill="#fb923c" font-size="6" font-family="Inter,sans-serif">3 m/min · 342 BPP/day</text>
           </svg>
-          <h3>Prototyping &amp;<br/>Workshop</h3>
-          <p>3D Printing · Fixtures · CNC</p>
-          <span class="skill-hint">Tap to reveal skills</span>
+          <h3 data-i18n="skill3.title">Prototyping &amp;<br/>Workshop</h3>
+          <p data-i18n="skill3.tagline">3D Printing · Fixtures · CNC</p>
+          <span class="skill-hint" data-i18n="skill.tapFront">Tap to reveal skills</span>
         </div>
         <div class="skill-back">
-          <p class="skill-back-title">Prototyping &amp; Workshop Engineering</p>
+          <p class="skill-back-title" data-i18n="skill3.backTitle">Prototyping &amp; Workshop Engineering</p>
           <div class="skill-tags">
-            <span>3D Printing (FDM &amp; SLA)</span><span>PrusaSlicer · PreForm</span>
-            <span>Fixture Design</span><span>DATRON CNC</span>
-            <span>NC Programming</span><span>Test Rig Development</span>
-            <span>Vacuum Systems</span><span>Injection Moulding</span>
+            <span data-i18n="skill3.t1">3D Printing (FDM &amp; SLA)</span><span>PrusaSlicer · PreForm</span>
+            <span data-i18n="skill3.t3">Fixture Design</span><span>DATRON CNC</span>
+            <span data-i18n="skill3.t5">NC Programming</span><span data-i18n="skill3.t6">Test Rig Development</span>
+            <span data-i18n="skill3.t7">Vacuum Systems</span><span data-i18n="skill3.t8">Injection Moulding</span>
           </div>
-          <span class="skill-hint-back">Tap to flip back</span>
+          <span class="skill-hint-back" data-i18n="skill.tapBack">Tap to flip back</span>
         </div>
         </div><!-- /skill-inner -->
       </div>
@@ -506,20 +517,20 @@
             <line x1="28" y1="64" x2="34" y2="64" stroke="#a78bfa" stroke-width="0.6"/>
             <text x="6" y="66" fill="#a78bfa" font-size="4.5" font-family="Inter,sans-serif">Ra 0.8 µm</text>
           </svg>
-          <h3>CAD &amp;<br/>Documentation</h3>
-          <p>CATIA · SolidWorks · GD&T</p>
-          <span class="skill-hint">Tap to reveal skills</span>
+          <h3 data-i18n="skill4.title">CAD &amp;<br/>Documentation</h3>
+          <p data-i18n="skill4.tagline">CATIA · SolidWorks · GD&T</p>
+          <span class="skill-hint" data-i18n="skill.tapFront">Tap to reveal skills</span>
         </div>
         <div class="skill-back">
-          <p class="skill-back-title">CAD &amp; Documentation</p>
+          <p class="skill-back-title" data-i18n="skill4.backTitle">CAD &amp; Documentation</p>
           <div class="skill-tags">
             <span>SolidWorks</span><span>CATIA V5</span>
             <span>PTC Creo</span><span>AutoCAD</span>
             <span>GD&T</span><span>DFMA</span>
-            <span>Technical Drawings</span><span>Assembly Instructions</span>
-            <span>Test Protocols</span>
+            <span data-i18n="skill4.t7">Technical Drawings</span><span data-i18n="skill4.t8">Assembly Instructions</span>
+            <span data-i18n="skill4.t9">Test Protocols</span>
           </div>
-          <span class="skill-hint-back">Tap to flip back</span>
+          <span class="skill-hint-back" data-i18n="skill.tapBack">Tap to flip back</span>
         </div>
         </div><!-- /skill-inner -->
       </div>
@@ -531,8 +542,8 @@
 <!-- EXPERIENCE -->
 <section id="experience" class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Experience</h2>
-    <p class="sec-sub">Click any role to read the full story.</p>
+    <h2 class="section-title" data-i18n="exp.title">Experience</h2>
+    <p class="sec-sub" data-i18n="exp.sub">Click any role to read the full story.</p>
     <div class="exp-list">
 
       <div class="exp-card fade-up" data-exp="tum">
@@ -553,10 +564,10 @@
           </svg>
         </div>
         <div class="exp-info">
-          <h3>Working Student</h3>
+          <h3 data-i18n="exp.tum.role">Working Student</h3>
           <p class="exp-co">Technical University Munich</p>
           <p class="exp-date">Nov – Dec 2025 · Munich</p>
-          <p class="exp-sum">3D-printed ceramic fuel-cell test fixture with custom sealing &amp; clamping.</p>
+          <p class="exp-sum" data-i18n="exp.tum.sum">3D-printed ceramic fuel-cell test fixture with custom sealing &amp; clamping.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
@@ -573,10 +584,10 @@
           </svg>
         </div>
         <div class="exp-info">
-          <h3>Thesis Student &amp; Intern — R&amp;D</h3>
+          <h3 data-i18n="exp.freudenberg.role">Thesis Student &amp; Intern — R&amp;D</h3>
           <p class="exp-co">Freudenberg e-Power Systems</p>
           <p class="exp-date">Aug 2024 – Jun 2025 · Munich</p>
-          <p class="exp-sum">DVP&R validation &amp; bonding process for ~342 bipolar plates/day. 6× CNC throughput gain.</p>
+          <p class="exp-sum" data-i18n="exp.freudenberg.sum">DVP&R validation &amp; bonding process for ~342 bipolar plates/day. 6× CNC throughput gain.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
@@ -597,10 +608,10 @@
           </svg>
         </div>
         <div class="exp-info">
-          <h3>Working Student</h3>
+          <h3 data-i18n="exp.lkt.role">Working Student</h3>
           <p class="exp-co">FAU Erlangen — Lehrstuhl für Kunststofftechnik</p>
           <p class="exp-date">Mar – Jul 2024 · Erlangen</p>
-          <p class="exp-sum">Graphite/PP composite bipolar plates via injection moulding; MEA research.</p>
+          <p class="exp-sum" data-i18n="exp.lkt.sum">Graphite/PP composite bipolar plates (80% graphite / 20% PP) via injection moulding; MEA research.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
@@ -622,10 +633,10 @@
           </svg>
         </div>
         <div class="exp-info">
-          <h3>Graduate Trainee</h3>
+          <h3 data-i18n="exp.truetech.role">Graduate Trainee</h3>
           <p class="exp-co">Truetech Vision Industry Pvt. Ltd.</p>
           <p class="exp-date">Jul 2020 – Jan 2021 · Pune, India</p>
-          <p class="exp-sum">CAD-based tooling development and process planning for manufacturing.</p>
+          <p class="exp-sum" data-i18n="exp.truetech.sum">CAD-based tooling development and process planning for manufacturing.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
@@ -646,10 +657,10 @@
           </svg>
         </div>
         <div class="exp-info">
-          <h3>Thesis Intern — Design Engineering</h3>
+          <h3 data-i18n="exp.pragati.role">Thesis Intern — Design Engineering</h3>
           <p class="exp-co">Pragati Pvt. Ltd.</p>
           <p class="exp-date">Jun 2019 – Apr 2020 · Nashik, India</p>
-          <p class="exp-sum">Injection mould design achieving ~80% cost reduction for solar-panel trolley.</p>
+          <p class="exp-sum" data-i18n="exp.pragati.sum">Injection mould design achieving ~80% cost reduction for a nylon wheel component.</p>
         </div>
         <div class="exp-arrow">→</div>
       </div>
@@ -661,17 +672,18 @@
 <!-- EDUCATION -->
 <section id="education" class="section">
   <div class="container">
-    <h2 class="section-title">Education</h2>
+    <h2 class="section-title" data-i18n="edu.title">Education</h2>
     <div class="edu-grid">
       <div class="edu-card fade-up">
         <div class="edu-year">2021 – 2026</div>
         <div class="edu-body">
           <span class="edu-deg">M.Sc.</span>
-          <h3>Clean Energy Technologies</h3>
-          <p>Friedrich Alexander University Erlangen (FAU) · Germany</p>
+          <h3 data-i18n="edu.msc.name">Clean Energy Technologies</h3>
+          <p data-i18n="edu.msc.uni">Friedrich Alexander University Erlangen (FAU) · Germany</p>
+          <p class="edu-grade" data-i18n="edu.msc.grade">Thesis grade: 1.8 (sehr gut)</p>
           <div class="edu-pills">
-            <span>Fuel Cells</span><span>Electrolysis</span><span>Energy Storage</span>
-            <span>LCA</span><span>Polymer Science</span><span>PV Systems</span>
+            <span data-i18n="edu.msc.p1">Fuel Cells</span><span data-i18n="edu.msc.p2">Electrolysis</span><span data-i18n="edu.msc.p3">Energy Storage</span>
+            <span>LCA</span><span data-i18n="edu.msc.p5">Polymer Science</span><span data-i18n="edu.msc.p6">PV Systems</span>
           </div>
         </div>
       </div>
@@ -679,11 +691,11 @@
         <div class="edu-year">2017 – 2020</div>
         <div class="edu-body">
           <span class="edu-deg">B.E.</span>
-          <h3>Mechanical Engineering</h3>
-          <p>Pune University · India</p>
+          <h3 data-i18n="edu.be.name">Mechanical Engineering</h3>
+          <p data-i18n="edu.be.uni">Pune University · India</p>
           <div class="edu-pills">
-            <span>FEA</span><span>Machine Design</span><span>Thermodynamics</span>
-            <span>Materials &amp; Metallurgy</span><span>Automation</span>
+            <span>FEA</span><span data-i18n="edu.be.p2">Machine Design</span><span data-i18n="edu.be.p3">Thermodynamics</span>
+            <span data-i18n="edu.be.p4">Materials &amp; Metallurgy</span><span data-i18n="edu.be.p5">Automation</span>
           </div>
         </div>
       </div>
@@ -691,10 +703,10 @@
         <div class="edu-year">2014 – 2017</div>
         <div class="edu-body">
           <span class="edu-deg">Dip.</span>
-          <h3>Mechanical Engineering</h3>
-          <p>MSBTE · India</p>
+          <h3 data-i18n="edu.dip.name">Mechanical Engineering</h3>
+          <p data-i18n="edu.dip.uni">MSBTE · India</p>
           <div class="edu-pills">
-            <span>Manufacturing</span><span>Engineering Fundamentals</span>
+            <span data-i18n="edu.dip.p1">Manufacturing</span><span data-i18n="edu.dip.p2">Engineering Fundamentals</span>
           </div>
         </div>
       </div>
@@ -705,8 +717,8 @@
 <!-- PROJECTS -->
 <section id="projects" class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Projects</h2>
-    <p class="sec-sub">Click any project to explore details &amp; diagrams.</p>
+    <h2 class="section-title" data-i18n="proj.title">Projects</h2>
+    <p class="sec-sub" data-i18n="proj.sub">Click any project to explore details &amp; diagrams.</p>
     <div class="proj-grid">
 
       <div class="proj-card fade-up" data-proj="co2">
@@ -802,10 +814,10 @@
           </svg>
         </div>
         <div class="proj-body">
-          <span class="proj-tag">Mini-Project</span>
-          <h3>Low-CO₂ Scenario · Jena City</h3>
-          <p>City-scale energy model with solar, EVs, fuel cells &amp; electrolysis. 21.2% CO₂ reduction.</p>
-          <span class="proj-explore">Explore details →</span>
+          <span class="proj-tag" data-i18n="proj.co2.tag">Mini-Project</span>
+          <h3 data-i18n="proj.co2.title">Low-CO₂ Scenario · Jena City</h3>
+          <p data-i18n="proj.co2.desc">City-scale energy model with solar, EVs, fuel cells &amp; electrolysis. 21.2% CO₂ reduction.</p>
+          <span class="proj-explore" data-i18n="proj.explore">Explore details →</span>
         </div>
       </div>
 
@@ -890,10 +902,10 @@
           </svg>
         </div>
         <div class="proj-body">
-          <span class="proj-tag">Self-Initiated</span>
-          <h3>Alkaline Water Electrolysis</h3>
-          <p>Built H₂ production prototype — studied temperature, concentration &amp; geometry effects.</p>
-          <span class="proj-explore">Explore details →</span>
+          <span class="proj-tag" data-i18n="proj.elec.tag">Self-Initiated</span>
+          <h3 data-i18n="proj.elec.title">Alkaline Water Electrolysis</h3>
+          <p data-i18n="proj.elec.desc">Built H₂ production prototype — studied temperature, concentration &amp; geometry effects.</p>
+          <span class="proj-explore" data-i18n="proj.explore">Explore details →</span>
         </div>
       </div>
 
@@ -971,10 +983,10 @@
           </svg>
         </div>
         <div class="proj-body">
-          <span class="proj-tag">B.E. Project</span>
-          <h3>Connecting Rod Failure Study</h3>
-          <p>UTM testing + Vickers hardness + microscopy to evaluate toughness &amp; failure modes.</p>
-          <span class="proj-explore">Explore details →</span>
+          <span class="proj-tag" data-i18n="proj.rod.tag">B.E. Project</span>
+          <h3 data-i18n="proj.rod.title">Connecting Rod Failure Study</h3>
+          <p data-i18n="proj.rod.desc">UTM testing + Vickers hardness + microscopy to evaluate toughness &amp; failure modes.</p>
+          <span class="proj-explore" data-i18n="proj.explore">Explore details →</span>
         </div>
       </div>
 
@@ -985,7 +997,7 @@
 <!-- PUBLICATIONS -->
 <section id="publications" class="section">
   <div class="container">
-    <h2 class="section-title">Publications</h2>
+    <h2 class="section-title" data-i18n="pub.title">Publications</h2>
     <div class="pub-grid">
       <a class="pub-item fade-up" href="https://www.irjet.net/archives/V7/i5/IRJET-V7I51339.pdf" target="_blank" rel="noopener">
         <span class="pub-n">01</span>
@@ -1019,30 +1031,70 @@
   </div>
 </section>
 
+<!-- DOCUMENTS -->
+<section id="documents" class="section">
+  <div class="container">
+    <h2 class="section-title" data-i18n="docs.title">Documents</h2>
+    <p class="sec-sub" data-i18n="docs.sub">Official academic documents, available to view.</p>
+    <div class="docs-grid">
+      <div class="doc-card fade-up">
+        <div class="doc-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+        </div>
+        <div class="doc-info">
+          <h3 data-i18n="docs.transcript.title">Academic Transcript</h3>
+          <p data-i18n="docs.transcript.desc">M.Sc. Clean Energy Technologies — FAU Erlangen-Nürnberg</p>
+        </div>
+        <a class="doc-view" href="assets/documents/Transcript.pdf" target="_blank" rel="noopener" data-i18n="docs.view">View ↗</a>
+      </div>
+      <div class="doc-card fade-up">
+        <div class="doc-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+        </div>
+        <div class="doc-info">
+          <h3 data-i18n="docs.modules.title">List of Passed Modules</h3>
+          <p data-i18n="docs.modules.desc">Detailed module record — FAU Erlangen-Nürnberg</p>
+        </div>
+        <a class="doc-view" href="assets/documents/Module_List.pdf" target="_blank" rel="noopener" data-i18n="docs.view">View ↗</a>
+      </div>
+      <div class="doc-card doc-card-pending fade-up">
+        <div class="doc-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><circle cx="12" cy="15" r="3"/></svg>
+        </div>
+        <div class="doc-info">
+          <h3 data-i18n="docs.degree.title">Degree Certificate</h3>
+          <p data-i18n="docs.degree.desc">Available on request — issued upon graduation.</p>
+        </div>
+        <a class="doc-view doc-request" href="mailto:rishinikumbh28@gmail.com?subject=Document%20Request%20%E2%80%94%20Degree%20Certificate" data-i18n="docs.request">Request ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- LANGUAGES -->
 <section id="languages" class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Languages</h2>
+    <h2 class="section-title" data-i18n="lang.title">Languages</h2>
     <div class="lang-list">
       <div class="lang-row fade-up">
-        <span class="lang-name">English</span>
+        <span class="lang-name" data-i18n="lang.en">English</span>
         <div class="lang-bar"><div class="lang-fill" data-w="90"></div></div>
-        <span class="lang-lvl">C1 · Business Fluent</span>
+        <span class="lang-lvl" data-i18n="lang.en.lvl">C1 · Business Fluent</span>
       </div>
       <div class="lang-row fade-up">
-        <span class="lang-name">German</span>
+        <span class="lang-name" data-i18n="lang.de">German</span>
         <div class="lang-bar"><div class="lang-fill" data-w="55"></div></div>
-        <span class="lang-lvl">B1 · Actively Improving</span>
+        <span class="lang-lvl" data-i18n="lang.de.lvl">B1 · Actively Improving</span>
       </div>
       <div class="lang-row fade-up">
-        <span class="lang-name">Marathi</span>
+        <span class="lang-name" data-i18n="lang.mr">Marathi</span>
         <div class="lang-bar"><div class="lang-fill" data-w="100"></div></div>
-        <span class="lang-lvl">Mother Tongue</span>
+        <span class="lang-lvl" data-i18n="lang.mr.lvl">Mother Tongue</span>
       </div>
       <div class="lang-row fade-up">
-        <span class="lang-name">Hindi</span>
+        <span class="lang-name" data-i18n="lang.hi">Hindi</span>
         <div class="lang-bar"><div class="lang-fill" data-w="90"></div></div>
-        <span class="lang-lvl">Business Fluent</span>
+        <span class="lang-lvl" data-i18n="lang.hi.lvl">Business Fluent</span>
       </div>
     </div>
   </div>
@@ -1051,9 +1103,9 @@
 <!-- CONTACT -->
 <section id="contact" class="section">
   <div class="container">
-    <h2 class="section-title">Get In Touch</h2>
+    <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
     <div class="contact-box fade-up">
-      <p>Open to roles in <strong>clean energy</strong>, <strong>fuel-cell R&D</strong>, and <strong>test &amp; validation engineering</strong>.</p>
+      <p data-i18n="contact.text">Currently applying for <strong>Mechanical Engineer</strong> and <strong>R&D / Validation Engineer</strong> roles in Germany's hydrogen and fuel cell industry. Available immediately.</p>
       <div class="contact-links">
         <a href="mailto:rishinikumbh28@gmail.com" class="c-link">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -1063,26 +1115,25 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 015.19 12.9 19.79 19.79 0 012.12 4.27 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           +49 1578 2474 735
         </a>
-        <a href="https://www.linkedin.com/in/rushikesh-nikumbh" target="_blank" class="c-link">
+        <a href="https://www.linkedin.com/in/rushikesh-nikumbh-b336b3152/" target="_blank" class="c-link">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="#64ffda"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45H7.1V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
-          LinkedIn Profile
+          <span data-i18n="contact.linkedin">LinkedIn Profile</span>
         </a>
       </div>
-      <a href="mailto:rishinikumbh28@gmail.com" class="btn-primary">Say Hello →</a>
+      <a href="mailto:rishinikumbh28@gmail.com" class="btn-primary" data-i18n="contact.sayHello">Say Hello →</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>Rushikesh Nikumbh · © 2026 · Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
+    <p><span data-i18n="footer.text">Rushikesh Nikumbh · © 2026</span></p>
   </div>
 </footer>
 
 <!-- MODAL -->
 <div id="modal-overlay">
   <div id="modal-box">
-    <button id="modal-close">✕</button>
     <div id="modal-body"></div>
   </div>
 </div>
