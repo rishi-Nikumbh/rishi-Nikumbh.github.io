@@ -186,6 +186,11 @@
     if (window.__setTypedRoles) window.__setTypedRoles(ROLES[lang]);
     if (window.__setModalLang) window.__setModalLang(lang);
     if (window.__redrawTimeline) setTimeout(window.__redrawTimeline, 50);
+    var cvFile = lang === 'de' ? 'assets/Rushikesh_CV_DE.pdf' : 'assets/Rushikesh_CV.pdf';
+    var cvNav = document.getElementById('cv-link-nav');
+    var cvHero = document.getElementById('cv-link-hero');
+    if (cvNav) cvNav.setAttribute('href', cvFile);
+    if (cvHero) cvHero.setAttribute('href', cvFile);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -266,6 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
   (function () {
     var wrap = document.getElementById('tl-wrap');
     var svg = document.getElementById('tl-svg');
+    var runnerSvg = document.getElementById('tl-runner-svg');
     var path = document.getElementById('tl-path');
     if (!wrap || !svg || !path) return;
 
@@ -275,6 +281,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var wrapRect = wrap.getBoundingClientRect();
       var w = wrapRect.width, h = wrapRect.height;
       svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      if (runnerSvg) runnerSvg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
       var pts = Array.prototype.map.call(dots, function (d) {
         var r = d.getBoundingClientRect();
         return { x: r.left + r.width / 2 - wrapRect.left, y: r.top + r.height / 2 - wrapRect.top };
@@ -289,24 +296,78 @@ document.addEventListener('DOMContentLoaded', function () {
       path.setAttribute('d', d);
     }
 
-    window.__redrawTimeline = draw;
+    /* ── Runner: a little hard-hat engineer who walks the road as you scroll.
+       Scrolling down = moving into the past (most-recent stop is at the top),
+       so his stride plays in reverse; scrolling up plays it forward again. */
+    var runnerG = document.getElementById('tl-runner');
+    var legF = document.getElementById('tl-leg-front');
+    var legB = document.getElementById('tl-leg-back');
+    var armF = document.getElementById('tl-arm-front');
+    var armB = document.getElementById('tl-arm-back');
+    var lastProgress = null, strideDist = 0, facing = 1;
+    var STRIDE_LEN = 30, MAX_SWING = 34;
+
+    function sectionProgress() {
+      var rect = wrap.getBoundingClientRect();
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      var total = rect.height + vh;
+      if (total <= 0) return 0;
+      var traveled = vh - rect.top;
+      return Math.max(0, Math.min(1, traveled / total));
+    }
+
+    function updateRunner() {
+      if (!runnerG || typeof path.getTotalLength !== 'function') return;
+      var len = path.getTotalLength();
+      if (!len) return;
+      var progress = sectionProgress();
+      if (lastProgress === null) lastProgress = progress;
+      var delta = progress - lastProgress; // negative while scrolling back up
+      strideDist += delta * len;
+      lastProgress = progress;
+
+      var atLen = Math.max(0, Math.min(len, progress * len));
+      var pt = path.getPointAtLength(atLen);
+      var pt2 = path.getPointAtLength(Math.min(len, atLen + 3));
+      var dx = pt2.x - pt.x;
+      if (Math.abs(dx) > 0.2) facing = dx < 0 ? -1 : 1;
+
+      var phase = (strideDist / STRIDE_LEN) * Math.PI * 2;
+      var swing = Math.sin(phase) * MAX_SWING;
+      var bob = Math.abs(Math.sin(phase)) * 3;
+
+      if (legF) legF.setAttribute('transform', 'rotate(' + swing.toFixed(1) + ' 0 0)');
+      if (legB) legB.setAttribute('transform', 'rotate(' + (-swing).toFixed(1) + ' 0 0)');
+      if (armF) armF.setAttribute('transform', 'rotate(' + (-swing * 0.7).toFixed(1) + ' 0 -36)');
+      if (armB) armB.setAttribute('transform', 'rotate(' + (swing * 0.7).toFixed(1) + ' 0 -36)');
+      runnerG.setAttribute('transform', 'translate(' + pt.x.toFixed(1) + ' ' + (pt.y - bob).toFixed(1) + ') scale(' + facing + ' 1)');
+    }
+
+    window.__redrawTimeline = function () { draw(); updateRunner(); };
     window.addEventListener('resize', function () {
       clearTimeout(window.__tlResizeT);
-      window.__tlResizeT = setTimeout(draw, 120);
+      window.__tlResizeT = setTimeout(window.__redrawTimeline, 120);
     });
-    window.addEventListener('load', draw);
+    window.addEventListener('load', window.__redrawTimeline);
+    var scrollTicking = false;
+    window.addEventListener('scroll', function () {
+      if (scrollTicking) return;
+      scrollTicking = true;
+      requestAnimationFrame(function () { updateRunner(); scrollTicking = false; });
+    }, { passive: true });
+
     // Catch late layout shifts (web fonts, fade-up reveal, logo image loads)
     var tries = 0;
     var settleTimer = setInterval(function () {
-      draw();
+      window.__redrawTimeline();
       tries++;
       if (tries > 20) clearInterval(settleTimer);
     }, 150);
     wrap.querySelectorAll('.tl-dot img').forEach(function (img) {
       if (img.complete) return;
-      img.addEventListener('load', draw);
+      img.addEventListener('load', window.__redrawTimeline);
     });
-    draw();
+    window.__redrawTimeline();
   })();
 
   /* ── Fade-up on scroll ────────────────────────────────────────────────── */
