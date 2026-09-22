@@ -76,17 +76,16 @@
     'stats.cnc': 'CNC-Durchsatz<br/>Steigerung', 'stats.bpp': 'Bipolarplatten<br/>Verklebt / Tag',
     'stats.cost': 'Formkosten<br/>Einsparung', 'stats.co2': 'CO₂-Reduktion<br/>modelliert',
     'about.title': 'Über mich',
-    'about.bio1': 'Maschinenbau- und Clean-Energy-Ingenieur, der einen <strong>M.Sc. an der FAU Erlangen</strong> abschließt (Abschlussnote 1,8) — mit praktischer Erfahrung in <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung, Vorrichtungs- und Prozessentwicklung</strong>. Ich bewege mich sicher zwischen Prüfstand und CAD-Bildschirm — betreibe Testaufbauten, baue Vorrichtungen, werte Messdaten aus und setze Ergebnisse in fertigungsreife Prozessverbesserungen um.',
-    'about.bio2': 'Am meisten schätze ich die Bandbreite an Aufgaben: in einer Woche analysiere ich einen Klebefehler unter dem Mikroskop, in der nächsten entwerfe ich eine Vorrichtung im CAD oder optimiere ein CNC-Programm — ich arbeite mich schnell in neue Systeme ein und bleibe methodisch, wenn etwas nicht wie erwartet funktioniert.',
-    'about.radar': 'Kompetenz-Radar',
-    'tag.stackTesting': 'Stack-Tests', 'tag.testBench': 'Prüfstandsbetrieb',
-    'tag.printing': '3D-Druck', 'tag.electrolysis': 'Elektrolyse', 'tag.bpp': 'Bipolarplatten',
-    'tag.leak': 'Dichtheitsprüfung', 'tag.polarisation': 'Polarisationskurven',
+    'about.bio1': 'Maschinenbau- und Clean-Energy-Ingenieur (M.Sc., FAU Erlangen, Abschlussnote 1,8) mit praktischer Bandbreite in <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung und Fertigungsprozessentwicklung</strong>. Bei Freudenberg e-Power Systems entwickelte ich einen manuellen Klebeprozess zu einem validierten <strong>12-Stationen-Fertigungslayout</strong> weiter und steigerte den Durchsatz um das 7-Fache — inklusive der zugehörigen Prüfstandsarbeit: Dichtheitsprüfung, Scherzugversuch, chemische Beständigkeit und strukturierte Prüfberichte.',
+    'about.quote': '&bdquo;Seine schnelle Auffassungsgabe und sein Denkvermögen ließen ihn selbst schwierige Situationen sofort überblicken und stets das Wesentliche erkennen&hellip; Herr Nikumbh war immer äußerst zuverlässig und genoss stets unser volles Vertrauen.&ldquo;',
+    'about.quoteSrc': '&mdash; Freudenberg e-Power Systems, Zeugnis',
+    'trait.hardworking': 'Fleißig', 'trait.focused': 'Fokussiert', 'trait.persistent': 'Beharrlich',
+    'trait.planning': 'Methodische Planung', 'trait.creative': 'Kreative Problemlösung',
     'impact.title': 'Technische Erfolge', 'impact.sub': 'Echte Zahlen aus echten Projekten — für die volle Geschichte auf eine Karte klicken.',
     'impact.clickHint': 'Zum Entdecken klicken →',
     'impact.cnc.title': 'CNC-Durchsatz', 'impact.cnc.sub': 'NC-Programmoptimierung · Freudenberg e-Power Systems',
     'impact.co2.title': 'CO₂-Reduktion', 'impact.co2.sub': 'Städtisches Energiewende-Modell · Jena',
-    'impact.cost.title': 'Kosteneinsparung', 'impact.cost.sub': 'Spritzgussform-Neukonstruktion · Pragati Pvt. Ltd.',
+    'impact.cost.title': 'Kosteneinsparung', 'impact.cost.sub': 'Spritzgussform-Neukonstruktion · Pragati Udyog',
     'impact.bpp.title': 'BPP-Skalierung', 'impact.bpp.sub': 'Bipolarplatten-Verklebung &amp; -Abdichtung · Freudenberg',
     'skills.title': 'Skills', 'skills.sub': 'Auf eine Karte klicken, um alle Skills zu sehen.',
     'skill.tapFront': 'Antippen für Skills', 'skill.tapBack': 'Zurück antippen',
@@ -528,7 +527,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ]
     },
     'pragati': {
-      role: 'Thesis Intern — Design Engineer', co: 'Pragati Pvt. Ltd.',
+      role: 'Thesis Intern — Design Engineer', co: 'Pragati Udyog',
       date: 'Jun 2019 – Apr 2020',
       thesis: 'B.E. Thesis: Design and Manufacturing of Wheel Mould — full lifecycle from design intent to production-ready tooling.',
       bullets: [
@@ -616,7 +615,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ]
     },
     'pragati': {
-      role: 'Praktikant Abschlussarbeit — Konstruktion', co: 'Pragati Pvt. Ltd.',
+      role: 'Praktikant Abschlussarbeit — Konstruktion', co: 'Pragati Udyog',
       date: 'Jun 2019 – Apr 2020',
       thesis: 'Bachelorarbeit: Entwurf und Fertigung einer Radform — vollständiger Lebenszyklus von der Entwurfsidee bis zum produktionsreifen Werkzeug.',
       bullets: [
@@ -806,34 +805,6 @@ document.addEventListener('DOMContentLoaded', function () {
       plugins: { legend: { display: false } },
       animation: { duration: 1200 }
     };
-
-    /* Radar — Skills */
-    var radarEl = document.getElementById('radar-chart');
-    if (radarEl) {
-      new Chart(radarEl, {
-        type: 'radar',
-        data: {
-          labels: ['Fuel Cell Stack Testing', 'DVP&R Validation', '3D Print / CAD', 'Test Bench Ops', 'Electrochemistry', 'Data Evaluation'],
-          datasets: [{
-            data: [95, 90, 85, 82, 78, 75],
-            backgroundColor: 'rgba(100,255,218,.1)',
-            borderColor: '#64ffda', borderWidth: 2,
-            pointBackgroundColor: '#64ffda', pointRadius: 4
-          }]
-        },
-        options: Object.assign({}, baseOpts, {
-          scales: {
-            r: {
-              min: 0, max: 100,
-              grid: { color: 'rgba(255,255,255,.08)' },
-              ticks: { display: false },
-              pointLabels: { color: '#ccd6f6', font: { size: 9 } }
-            }
-          },
-          layout: { padding: 6 }
-        })
-      });
-    }
 
     /* Horizontal bar — CNC throughput */
     var cncEl = document.getElementById('chart-cnc');

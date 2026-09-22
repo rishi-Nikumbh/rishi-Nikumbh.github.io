@@ -141,15 +141,24 @@ ul { list-style: none; }
 .about-bio { font-size: 1rem; color: var(--muted); line-height: 1.85; margin-bottom: 1.5rem; }
 .about-bio-sub { font-size: .9rem; margin-top: -1rem; opacity: .85; }
 .about-bio strong { color: var(--text); }
-.tag-cloud { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
-.tag-cloud span {
+.tag-cloud, .trait-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.tag-cloud span, .trait-row span {
   font-family: var(--mono); font-size: .75rem; color: var(--accent);
   border: 1px solid var(--border); padding: .25rem .65rem; border-radius: 4px; background: var(--accent-d);
 }
+.trait-row { margin: -.5rem 0 2rem; }
 .about-meta { display: flex; flex-direction: column; gap: .3rem; font-size: .85rem; color: var(--muted); }
 .about-meta a { color: var(--accent); }
-.radar-wrap { position: relative; max-width: 380px; margin: 0 auto; padding: 0 1.75rem; }
-.chart-note { text-align: center; font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-top: .75rem; letter-spacing: .05em; }
+.about-quote {
+  position: relative; max-width: 420px; margin: 0 auto; padding: 1.75rem 1.75rem 1.5rem;
+  border-left: 3px solid var(--accent); background: var(--accent-d);
+}
+.about-quote p {
+  font-size: 1rem; line-height: 1.75; color: var(--text); font-style: italic; margin-bottom: 1rem;
+}
+.about-quote cite {
+  display: block; font-family: var(--mono); font-size: .75rem; color: var(--muted); font-style: normal; letter-spacing: .02em;
+}
 
 /* ── Impact Charts ──────────────────────────────────────────────────────── */
 .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
