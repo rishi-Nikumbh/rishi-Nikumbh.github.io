@@ -98,7 +98,7 @@
     'skill2.backTitle': 'Test &amp; Validierung',
     'skill2.t2': 'Fehleranalyse', 'skill2.t3': 'Ursachenanalyse', 'skill2.t4': 'Dichtheitsprüfung',
     'skill2.t5': 'Fuji-Drucktest', 'skill2.t6': 'Profilometer-Analyse', 'skill2.t7': 'Zug- &amp; Scherversuch',
-    'skill2.t8': 'Vickers-Härte', 'skill2.t9': 'Beschleunigte Lebensdauertests (Arrhenius)',
+    'skill2.t8': 'Shore-A-Härte', 'skill2.t9': 'Chemische Beständigkeitsprüfung',
     'skill3.title': 'Prototypenbau &amp;<br/>Werkstatt', 'skill3.tagline': '3D-Druck · Vorrichtungen · CNC',
     'skill3.backTitle': 'Prototypenbau &amp; Werkstatttechnik',
     'skill3.t1': '3D-Druck (FDM &amp; SLA)', 'skill3.t3': 'Vorrichtungskonstruktion',
@@ -477,11 +477,11 @@ document.addEventListener('DOMContentLoaded', function () {
     'tum': {
       role: 'Working Student', co: 'Technical University Munich (TUM)',
       date: 'Nov 2025 – Dec 2025',
-      intro: 'Short-duration assignment supporting fuel cell research activities.',
+      intro: 'Short-duration assignment developing a custom test fixture for fuel cell research.',
       bullets: [
-        'Assisted ongoing fuel cell research with documentation and testing support',
-        'Applied DVP&R validation methodologies in academic research context',
-        'Coordinated with doctoral researchers on experimental test planning'
+        '3D-printed a ceramic fuel cell test fixture with custom sealing &amp; clamping design',
+        'Performed leak-tightness verification and electrochemical voltage characterisation on the assembled fixture',
+        'Produced commissioning documentation, safety protocols, and technical drawings for the test setup'
       ]
     },
     'freudenberg': {
@@ -491,8 +491,8 @@ document.addEventListener('DOMContentLoaded', function () {
       bullets: [
         '<strong>342 BPP/day</strong> production layout designed — 12-station curing concept scaled from a 20/day single-station baseline',
         '<strong>6× CNC dispensing throughput</strong> via NC-program optimisation and parameter tuning',
-        'Operated test benches for functional, performance, and accelerated lifetime testing (1,000 h at 95°C)',
-        'Installed test specimens and measurement equipment; evaluated measurement data and wrote structured test reports',
+        'Identified and specified suitable test methods (leaching, chemical stability, mechanical) within a structured DVP&amp;R framework',
+        'Prepared standardized test specimens to ISO norms; evaluated measurement data and wrote structured test reports',
         'Learned the DATRON dispensing system\'s code structure independently — no formal training — and wrote new programs for specific dispensing outputs, troubleshooting by tracing patterns in the output back to the code',
         'Fuji Pressure Film testing for contact pressure distribution analysis',
         'Surface characterization using profilometer &amp; 3D scanning',
@@ -565,11 +565,11 @@ document.addEventListener('DOMContentLoaded', function () {
     'tum': {
       role: 'Werkstudent', co: 'Technische Universität München (TUM)',
       date: 'Nov 2025 – Dez 2025',
-      intro: 'Kurzzeitiger Einsatz zur Unterstützung laufender Brennstoffzellenforschung.',
+      intro: 'Kurzzeitiger Einsatz zur Entwicklung einer maßgeschneiderten Prüfvorrichtung für die Brennstoffzellenforschung.',
       bullets: [
-        'Laufende Brennstoffzellenforschung durch Dokumentation und Testunterstützung begleitet',
-        'DVP&R-Validierungsmethoden im akademischen Forschungskontext angewendet',
-        'Mit Doktoranden bei der Planung experimenteller Tests koordiniert'
+        'Keramische Brennstoffzellen-Prüfvorrichtung mit eigens entwickelter Abdichtung und Klemmung 3D-gedruckt',
+        'Dichtheitsprüfung und elektrochemische Spannungscharakterisierung an der montierten Vorrichtung durchgeführt',
+        'Inbetriebnahmedokumentation, Sicherheitsprotokolle und technische Zeichnungen für den Versuchsaufbau erstellt'
       ]
     },
     'freudenberg': {
@@ -579,8 +579,8 @@ document.addEventListener('DOMContentLoaded', function () {
       bullets: [
         '<strong>Produktionslayout für 342 BPP/Tag</strong> entworfen — 12-Stationen-Aushärtungskonzept, skaliert von einer Basis von 20/Tag mit einer Station',
         '<strong>6-fache Steigerung des CNC-Dosierdurchsatzes</strong> durch NC-Programmoptimierung und Parameteranpassung',
-        'Prüfstände für Funktions-, Leistungs- und beschleunigte Lebensdauertests betrieben (1.000 h bei 95 °C)',
-        'Prüflinge und Messtechnik installiert; Messdaten ausgewertet und strukturierte Prüfberichte verfasst',
+        'Geeignete Prüfmethoden (Laugung, chemische Beständigkeit, mechanische Prüfungen) im Rahmen eines strukturierten DVP&amp;R-Frameworks identifiziert und festgelegt',
+        'Standardisierte Prüfkörper nach Normen vorbereitet; Messdaten ausgewertet und strukturierte Prüfberichte verfasst',
         'Den Code-Aufbau des DATRON-Dosiersystems selbstständig gelernt — ohne formale Schulung — und neue Programme für bestimmte Dosierausgaben geschrieben, mit Fehlersuche anhand der Ausgabemuster',
         'Fuji-Drucktests zur Analyse der Kontaktdruckverteilung',
         'Oberflächencharakterisierung mittels Profilometer &amp; 3D-Scanning',
