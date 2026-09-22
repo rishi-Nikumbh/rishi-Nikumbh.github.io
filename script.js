@@ -79,6 +79,7 @@
     'about.bio1': 'Maschinenbau- und Clean-Energy-Ingenieur (M.Sc., FAU Erlangen, Abschlussnote 1,8) mit praktischer Bandbreite in <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung und Fertigungsprozessentwicklung</strong>. Bei Freudenberg e-Power Systems entwickelte ich einen manuellen Klebeprozess zu einem validierten <strong>12-Stationen-Fertigungslayout</strong> weiter und steigerte den Durchsatz um das 7-Fache — inklusive der zugehörigen Prüfstandsarbeit: Dichtheitsprüfung, Scherzugversuch, chemische Beständigkeit und strukturierte Prüfberichte.',
     'about.quote': '&bdquo;Seine schnelle Auffassungsgabe und sein Denkvermögen ließen ihn selbst schwierige Situationen sofort überblicken und stets das Wesentliche erkennen&hellip; Herr Nikumbh war immer äußerst zuverlässig und genoss stets unser volles Vertrauen.&ldquo;',
     'about.quoteSrc': '&mdash; Freudenberg e-Power Systems, Zeugnis',
+    'about.radar': 'Kompetenz-Radar',
     'trait.hardworking': 'Fleißig', 'trait.focused': 'Fokussiert', 'trait.persistent': 'Beharrlich',
     'trait.planning': 'Methodische Planung', 'trait.creative': 'Kreative Problemlösung',
     'impact.title': 'Technische Erfolge', 'impact.sub': 'Echte Zahlen aus echten Projekten — für die volle Geschichte auf eine Karte klicken.',
@@ -131,11 +132,12 @@
     'proj.rod.tag': 'B.E.-Projekt', 'proj.rod.title': 'Pleuelstangen-Versagensstudie',
     'proj.rod.desc': 'Zugversuch (UTM) + Vickers-Härte + Mikroskopie zur Bewertung von Zähigkeit &amp; Versagensverhalten.',
     'pub.title': 'Publikationen',
-    'docs.title': 'Dokumente', 'docs.sub': 'Offizielle akademische Dokumente, zur Ansicht verfügbar.',
+    'docs.title': 'Dokumente', 'docs.sub': 'Offizielle Bewerbungsunterlagen, zur Ansicht verfügbar.',
     'docs.view': 'Ansehen ↗', 'docs.request': 'Anfragen ↗',
-    'docs.transcript.title': 'Notenübersicht', 'docs.transcript.desc': 'M.Sc. Clean Energy Technologies — FAU Erlangen-Nürnberg',
-    'docs.modules.title': 'Liste bestandener Module', 'docs.modules.desc': 'Detaillierte Modulübersicht — FAU Erlangen-Nürnberg',
-    'docs.degree.title': 'Abschlussurkunde', 'docs.degree.desc': 'Auf Anfrage verfügbar — wird nach Studienabschluss ausgestellt.',
+    'docs.refs.title': 'Arbeitszeugnisse &amp; Referenzen', 'docs.refs.desc': 'Referenzschreiben — Freudenberg, TrueTech Vision, Pragati Udyog u. a.',
+    'docs.transcript.title': 'Notenübersicht', 'docs.transcript.desc': 'M.Sc. Clean Energy Technologies — FAU Erlangen-Nürnberg (inkl. vollständiger Modulübersicht)',
+    'docs.degree.title': 'Abschluss- &amp; Diplomurkunden', 'docs.degree.desc': 'Bachelor of Engineering + Diplom (Maschinenbau) — M.Sc.-Urkunde folgt nach Studienabschluss',
+    'docs.certs.title': 'Sprach- &amp; Leistungszertifikate', 'docs.certs.desc': 'Deutsch A2, Japanisch N5 sowie akademische Veranstaltungszertifikate',
     'lang.title': 'Sprachen',
     'lang.en': 'Englisch', 'lang.en.lvl': 'C1 · Verhandlungssicher',
     'lang.de': 'Deutsch', 'lang.de.lvl': 'B1 · Aktiv in Verbesserung',
@@ -190,6 +192,9 @@
     var cvHero = document.getElementById('cv-link-hero');
     if (cvNav) cvNav.setAttribute('href', cvFile);
     if (cvHero) cvHero.setAttribute('href', cvFile);
+    var refsFile = lang === 'de' ? 'assets/documents/Work_Experience_DE.pdf' : 'assets/documents/Work_Experience_EN.pdf';
+    var refsLink = document.getElementById('doc-link-refs');
+    if (refsLink) refsLink.setAttribute('href', refsFile);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -805,6 +810,34 @@ document.addEventListener('DOMContentLoaded', function () {
       plugins: { legend: { display: false } },
       animation: { duration: 1200 }
     };
+
+    /* Radar — Skills */
+    var radarEl = document.getElementById('radar-chart');
+    if (radarEl) {
+      new Chart(radarEl, {
+        type: 'radar',
+        data: {
+          labels: ['Fuel Cell Stack Testing', 'DVP&R Validation', '3D Print / CAD', 'Test Bench Ops', 'Electrochemistry', 'Data Evaluation'],
+          datasets: [{
+            data: [95, 90, 85, 82, 78, 75],
+            backgroundColor: 'rgba(100,255,218,.1)',
+            borderColor: '#64ffda', borderWidth: 2,
+            pointBackgroundColor: '#64ffda', pointRadius: 4
+          }]
+        },
+        options: Object.assign({}, baseOpts, {
+          scales: {
+            r: {
+              min: 0, max: 100,
+              grid: { color: 'rgba(255,255,255,.08)' },
+              ticks: { display: false },
+              pointLabels: { color: '#ccd6f6', font: { size: 9 } }
+            }
+          },
+          layout: { padding: 6 }
+        })
+      });
+    }
 
     /* Horizontal bar — CNC throughput */
     var cncEl = document.getElementById('chart-cnc');

@@ -159,6 +159,8 @@ ul { list-style: none; }
 .about-quote cite {
   display: block; font-family: var(--mono); font-size: .75rem; color: var(--muted); font-style: normal; letter-spacing: .02em;
 }
+.radar-wrap { position: relative; max-width: 340px; height: 260px; margin: 2rem auto 0; padding: 0 1.75rem; }
+.chart-note { text-align: center; font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-top: .75rem; letter-spacing: .05em; }
 
 /* ── Impact Charts ──────────────────────────────────────────────────────── */
 .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }

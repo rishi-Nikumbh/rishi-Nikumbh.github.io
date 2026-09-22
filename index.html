@@ -123,6 +123,10 @@
           <p data-i18n="about.quote">&ldquo;His ability to familiarise himself rapidly and his creative thinking enabled him to gain an immediate overview, even in difficult situations&hellip; he was always very reliable and consistently enjoyed our complete trust.&rdquo;</p>
           <cite data-i18n="about.quoteSrc">&mdash; Freudenberg e-Power Systems, Letter of Reference</cite>
         </blockquote>
+        <div class="radar-wrap">
+          <canvas id="radar-chart"></canvas>
+        </div>
+        <p class="chart-note" data-i18n="about.radar">Expertise Radar</p>
       </div>
     </div>
   </div>
@@ -943,15 +947,25 @@
 <section id="documents" class="section">
   <div class="container">
     <h2 class="section-title" data-i18n="docs.title">Documents</h2>
-    <p class="sec-sub" data-i18n="docs.sub">Official academic documents, available to view.</p>
+    <p class="sec-sub" data-i18n="docs.sub">Official application documents, available to view.</p>
     <div class="docs-grid">
       <div class="doc-card fade-up">
         <div class="doc-icon">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
         </div>
         <div class="doc-info">
+          <h3 data-i18n="docs.refs.title">Work Experience &amp; References</h3>
+          <p data-i18n="docs.refs.desc">Reference letters — Freudenberg, TrueTech Vision, Pragati Udyog &amp; others</p>
+        </div>
+        <a class="doc-view" id="doc-link-refs" href="assets/documents/Work_Experience_EN.pdf" target="_blank" rel="noopener" data-i18n="docs.view">View ↗</a>
+      </div>
+      <div class="doc-card fade-up">
+        <div class="doc-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+        </div>
+        <div class="doc-info">
           <h3 data-i18n="docs.transcript.title">Academic Transcript</h3>
-          <p data-i18n="docs.transcript.desc">M.Sc. Clean Energy Technologies — FAU Erlangen-Nürnberg</p>
+          <p data-i18n="docs.transcript.desc">M.Sc. Clean Energy Technologies — FAU Erlangen-Nürnberg (includes full module record)</p>
         </div>
         <a class="doc-view" href="assets/documents/Transcript.pdf" target="_blank" rel="noopener" data-i18n="docs.view">View ↗</a>
       </div>
@@ -960,20 +974,20 @@
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
         </div>
         <div class="doc-info">
-          <h3 data-i18n="docs.modules.title">List of Passed Modules</h3>
-          <p data-i18n="docs.modules.desc">Detailed module record — FAU Erlangen-Nürnberg</p>
+          <h3 data-i18n="docs.degree.title">Degree &amp; Diploma Certificates</h3>
+          <p data-i18n="docs.degree.desc">Bachelor of Engineering + Diploma (Mechanical) — M.Sc. certificate pending graduation</p>
         </div>
-        <a class="doc-view" href="assets/documents/Module_List.pdf" target="_blank" rel="noopener" data-i18n="docs.view">View ↗</a>
+        <a class="doc-view" href="assets/documents/Degree_Diploma_Certificates.pdf" target="_blank" rel="noopener" data-i18n="docs.view">View ↗</a>
       </div>
-      <div class="doc-card doc-card-pending fade-up">
+      <div class="doc-card fade-up">
         <div class="doc-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><circle cx="12" cy="15" r="3"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
         </div>
         <div class="doc-info">
-          <h3 data-i18n="docs.degree.title">Degree Certificate</h3>
-          <p data-i18n="docs.degree.desc">Available on request — issued upon graduation.</p>
+          <h3 data-i18n="docs.certs.title">Language &amp; Achievement Certificates</h3>
+          <p data-i18n="docs.certs.desc">German A2, Japanese N5, and academic event certificates</p>
         </div>
-        <a class="doc-view doc-request" href="mailto:rishinikumbh28@gmail.com?subject=Document%20Request%20%E2%80%94%20Degree%20Certificate" data-i18n="docs.request">Request ↗</a>
+        <a class="doc-view" href="assets/documents/Language_Achievement_Certificates.pdf" target="_blank" rel="noopener" data-i18n="docs.view">View ↗</a>
       </div>
     </div>
   </div>
