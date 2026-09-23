@@ -151,9 +151,9 @@ ul { list-style: none; }
 /* Focus: bow-arrow */
 .ti-arrow { transform: translateX(0); opacity: 0; }
 .trait-icons.play .ti-arrow { animation: arrowFly 1.1s .1s cubic-bezier(.4,0,.2,1) forwards; }
-.ti-target-ring { transform-origin: 40px 24px; opacity: 0; }
+.ti-target-ring { transform-origin: 40px 20px; opacity: 0; }
 .trait-icons.play .ti-target-ring { animation: targetPulse .5s .95s ease forwards; }
-@keyframes arrowFly { 0% { transform: translateX(0); opacity: 1; } 100% { transform: translateX(14px); opacity: 1; } }
+@keyframes arrowFly { 0% { transform: translateX(-3px); opacity: 1; } 20% { transform: translateX(-3px); opacity: 1; } 100% { transform: translateX(7px); opacity: 1; } }
 @keyframes targetPulse { 0% { opacity: 0; transform: scale(.4); } 60% { opacity: 1; transform: scale(1.25); } 100% { opacity: 1; transform: scale(1); } }
 
 /* Creative problem-solving: puzzle piece drop */
