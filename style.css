@@ -344,7 +344,8 @@ ul { list-style: none; }
 .contact-box { max-width: 600px; margin: 0 auto; text-align: center; }
 .contact-btns { display: flex; gap: .9rem; flex-wrap: wrap; justify-content: center; }
 .booking-embed { margin-top: 2rem; max-width: 640px; margin-left: auto; margin-right: auto; }
-.booking-embed-label { text-align: center; font-family: var(--mono); font-size: .8rem; color: var(--muted); letter-spacing: .05em; margin-bottom: .75rem; }
+.booking-embed-label { text-align: center; font-family: var(--mono); font-size: .8rem; color: var(--muted); letter-spacing: .05em; margin-bottom: .5rem; }
+.booking-embed-note { text-align: center; font-size: .8rem; color: var(--muted); max-width: 480px; margin: 0 auto 1rem; line-height: 1.5; }
 .booking-embed .calendly-inline-widget { width: 100%; border: 1px solid rgba(100,255,218,.25); border-radius: 10px; background: var(--card); overflow: hidden; }
 .booking-fallback { display: block; text-align: center; margin-top: .6rem; font-size: .8rem; color: var(--muted); text-decoration: underline; }
 .booking-fallback:hover { color: var(--accent); }

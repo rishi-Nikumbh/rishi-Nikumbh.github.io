@@ -146,7 +146,7 @@
     'contact.title': 'Kontakt aufnehmen',
     'contact.text': 'Ich bewerbe mich derzeit auf <strong>Maschinenbauingenieur</strong>- und <strong>F&amp;E- / Validierungsingenieur</strong>-Stellen in der deutschen Wasserstoff- und Brennstoffzellenbranche. Sofort verfügbar.',
     'contact.linkedin': 'LinkedIn-Profil', 'contact.sayHello': 'Hallo sagen →', 'contact.bookCall': 'Termin buchen →',
-    'contact.bookingLabel': 'Oder direkt einen Termin buchen:', 'contact.bookingFallback': 'Kalender lädt nicht? Buchungsseite in neuem Tab öffnen →',
+    'contact.bookingLabel': 'Freie Termine ansehen und direkt buchen:', 'contact.bookingNote': 'Bevorzugen Sie Microsoft Teams oder eine andere Plattform statt Google Meet? Geben Sie es einfach bei der Buchung an, ich richte es dann persönlich ein.', 'contact.bookingFallback': 'Kalender lädt nicht? Buchungsseite in neuem Tab öffnen →',
     'footer.text': 'Rushikesh Nikumbh · © 2026'
   };
 
