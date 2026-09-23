@@ -146,6 +146,7 @@
     'contact.title': 'Kontakt aufnehmen',
     'contact.text': 'Ich bewerbe mich derzeit auf <strong>Maschinenbauingenieur</strong>- und <strong>F&amp;E- / Validierungsingenieur</strong>-Stellen in der deutschen Wasserstoff- und Brennstoffzellenbranche. Sofort verfügbar.',
     'contact.linkedin': 'LinkedIn-Profil', 'contact.sayHello': 'Hallo sagen →', 'contact.bookCall': 'Termin buchen →',
+    'traits.focus': 'Fokus', 'traits.creative': 'Kreative Problemlösung', 'traits.adaptability': 'Anpassungsfähigkeit', 'traits.teamwork': 'Teamarbeit', 'traits.detail': 'Detailgenauigkeit',
     'contact.bookingLabel': 'Freie Termine ansehen und direkt buchen:', 'contact.bookingNote': 'Möchten Sie den Termin lieber selbst über Outlook, Teams oder eine andere Plattform organisieren? Schauen Sie sich einfach meine Verfügbarkeit oben an und vereinbaren Sie den Termin persönlich, wie es für Sie am besten passt.', 'contact.bookingFallback': 'Kalender lädt nicht? Buchungsseite in neuem Tab öffnen →',
     'footer.text': 'Rushikesh Nikumbh · © 2026'
   };
@@ -382,6 +383,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }, { threshold: 0.12 });
   document.querySelectorAll('.fade-up').forEach(function (el) { fadeObs.observe(el); });
+
+  /* ── Trait icon animations on scroll ─────────────────────────────────── */
+  var traitEl = document.getElementById('trait-icons');
+  if (traitEl) {
+    var traitObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('play'); traitObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.4 });
+    traitObs.observe(traitEl);
+  }
 
   /* ── Counter animation ────────────────────────────────────────────────── */
   var cObs = new IntersectionObserver(function (entries) {
