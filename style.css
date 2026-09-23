@@ -342,6 +342,7 @@ ul { list-style: none; }
 
 /* ── Contact ────────────────────────────────────────────────────────────── */
 .contact-box { max-width: 600px; margin: 0 auto; text-align: center; }
+.contact-btns { display: flex; gap: .9rem; flex-wrap: wrap; justify-content: center; }
 .contact-box p { color: var(--muted); font-size: .98rem; margin-bottom: 2rem; line-height: 1.8; }
 .contact-box strong { color: var(--text); }
 .contact-links { display: flex; flex-direction: column; gap: .6rem; align-items: center; margin-bottom: 2rem; }
