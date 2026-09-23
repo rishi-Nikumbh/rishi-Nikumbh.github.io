@@ -343,6 +343,12 @@ ul { list-style: none; }
 /* ── Contact ────────────────────────────────────────────────────────────── */
 .contact-box { max-width: 600px; margin: 0 auto; text-align: center; }
 .contact-btns { display: flex; gap: .9rem; flex-wrap: wrap; justify-content: center; }
+.booking-embed { margin-top: 2rem; max-width: 640px; margin-left: auto; margin-right: auto; }
+.booking-embed-label { text-align: center; font-family: var(--mono); font-size: .8rem; color: var(--muted); letter-spacing: .05em; margin-bottom: .75rem; }
+.booking-embed iframe { width: 100%; height: 600px; border: 1px solid rgba(100,255,218,.25); border-radius: 10px; background: #fff; display: block; }
+.booking-fallback { display: block; text-align: center; margin-top: .6rem; font-size: .8rem; color: var(--muted); text-decoration: underline; }
+.booking-fallback:hover { color: var(--accent); }
+@media (max-width: 600px) { .booking-embed iframe { height: 520px; } }
 .contact-box p { color: var(--muted); font-size: .98rem; margin-bottom: 2rem; line-height: 1.8; }
 .contact-box strong { color: var(--text); }
 .contact-links { display: flex; flex-direction: column; gap: .6rem; align-items: center; margin-bottom: 2rem; }

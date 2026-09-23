@@ -1044,7 +1044,17 @@
       </div>
       <div class="contact-btns">
         <a href="mailto:rishinikumbh28@gmail.com" class="btn-primary" data-i18n="contact.sayHello">Say Hello →</a>
-        <a href="https://calendar.app.google/JsPnFzFU92WUgyr77" target="_blank" rel="noopener" class="btn-outline" data-i18n="contact.bookCall">Book a Call →</a>
+      </div>
+      <div class="booking-embed">
+        <p class="booking-embed-label" data-i18n="contact.bookingLabel">Or book a call directly:</p>
+        <iframe
+          id="booking-iframe"
+          src="https://calendar.app.google/EJipqFXDk66iWdm27"
+          title="Book a call with Rushikesh Nikumbh"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a href="https://calendar.app.google/EJipqFXDk66iWdm27" id="booking-fallback-link" target="_blank" rel="noopener" class="booking-fallback" data-i18n="contact.bookingFallback">Calendar not loading? Open the booking page in a new tab →</a>
       </div>
     </div>
   </div>
