@@ -956,6 +956,44 @@ document.addEventListener('DOMContentLoaded', function () {
       animation: { duration: 1200 }
     };
 
+    /* Radar — Skills: small always-visible "NN%" badge under each axis line,
+       so the score reads at a glance without hovering for a tooltip. */
+    var radarValueBadges = {
+      id: 'radarValueBadges',
+      afterDraw: function (chart) {
+        var scale = chart.scales && chart.scales.r;
+        var dataset = chart.data.datasets[0];
+        if (!scale || !dataset) return;
+        var ctx = chart.ctx;
+        dataset.data.forEach(function (value, i) {
+          var pos = scale.getPointPosition(i, scale.drawingArea + 9);
+          var label = Math.round(value) + '%';
+          ctx.save();
+          ctx.font = '700 9px "Fira Code", monospace';
+          var tw = ctx.measureText(label).width;
+          var boxW = tw + 10, boxH = 15, r = 4;
+          var bx = pos.x - boxW / 2, by = pos.y - boxH / 2;
+          ctx.fillStyle = 'rgba(10, 25, 47, .92)';
+          ctx.strokeStyle = 'rgba(100, 255, 218, .55)';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(bx + r, by);
+          ctx.arcTo(bx + boxW, by, bx + boxW, by + boxH, r);
+          ctx.arcTo(bx + boxW, by + boxH, bx, by + boxH, r);
+          ctx.arcTo(bx, by + boxH, bx, by, r);
+          ctx.arcTo(bx, by, bx + boxW, by, r);
+          ctx.closePath();
+          ctx.fill();
+          ctx.stroke();
+          ctx.fillStyle = '#64ffda';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(label, pos.x, by + boxH / 2 + 0.5);
+          ctx.restore();
+        });
+      }
+    };
+
     /* Radar — Skills */
     var radarEl = document.getElementById('radar-chart');
     if (radarEl) {
@@ -976,11 +1014,12 @@ document.addEventListener('DOMContentLoaded', function () {
               min: 0, max: 100,
               grid: { color: 'rgba(255,255,255,.08)' },
               ticks: { display: false },
-              pointLabels: { color: '#ccd6f6', font: { size: 9 } }
+              pointLabels: { color: '#ccd6f6', font: { size: 9 }, padding: 22 }
             }
           },
-          layout: { padding: 6 }
-        })
+          layout: { padding: 42 }
+        }),
+        plugins: [radarValueBadges]
       });
     }
 
