@@ -142,17 +142,38 @@ ul { list-style: none; }
 .about-bio-sub { font-size: .9rem; margin-top: -1rem; opacity: .85; }
 .about-bio strong { color: var(--text); }
 
-/* ── Trait icons (About section) ───────────────────────────────────────── */
-.trait-icons { display: grid; grid-template-columns: repeat(3, auto); column-gap: 2.2rem; row-gap: 1.6rem; margin-top: 2.75rem; max-width: 480px; }
+/* ── Skills orbit: radar chart centred, trait icons orbiting around it ──── */
+.skills-orbit {
+  position: relative;
+  width: 100%; max-width: 600px; aspect-ratio: 1 / 1; height: auto;
+  margin: 4.5rem auto 0;
+}
+.orbit-ring {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 61%; height: 61%; border-radius: 50%;
+  border: 1px dashed var(--border);
+  pointer-events: none;
+}
+.orbit-center {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 48%; display: flex; flex-direction: column; align-items: center;
+}
+
 .trait-icon { display: flex; flex-direction: column; align-items: center; gap: .6rem; width: 84px; text-align: center; }
 .trait-icon svg { width: 68px; height: 68px; overflow: visible; }
 .trait-icon span { font-size: .7rem; color: var(--muted); line-height: 1.3; }
-/* scattered, hand-placed feel */
-.trait-icon.ti-1 { transform: rotate(-2deg); }
-.trait-icon.ti-2 { transform: translateY(20px) rotate(2deg); }
-.trait-icon.ti-3 { transform: translateY(-6px) rotate(-3deg); }
-.trait-icon.ti-4 { transform: translateY(10px) rotate(2deg); }
-.trait-icon.ti-5 { transform: translateY(-10px) rotate(-1deg); grid-column: 2; }
+/* orbit positions: pentagon around the centre, top and clockwise */
+.skills-orbit .trait-icon {
+  position: absolute; width: 108px; transform: translate(-50%, -50%);
+  transition: transform var(--tr);
+}
+.skills-orbit .trait-icon svg { width: 84px; height: 84px; }
+.skills-orbit .trait-icon:hover { transform: translate(-50%, -50%) scale(1.06); }
+.skills-orbit .trait-icon.ti-1 { left: 50%; top: 12%; }
+.skills-orbit .trait-icon.ti-2 { left: 86%; top: 38%; }
+.skills-orbit .trait-icon.ti-3 { left: 72%; top: 81%; }
+.skills-orbit .trait-icon.ti-4 { left: 28%; top: 81%; }
+.skills-orbit .trait-icon.ti-5 { left: 14%; top: 38%; }
 .trait-icon.ti-1 { --stagger: 0s; }
 .trait-icon.ti-2 { --stagger: .4s; }
 .trait-icon.ti-3 { --stagger: .8s; }
@@ -283,8 +304,8 @@ ul { list-style: none; }
 .about-quote cite {
   display: block; font-family: var(--mono); font-size: .75rem; color: var(--muted); font-style: normal; letter-spacing: .02em;
 }
-.radar-wrap { position: relative; max-width: 340px; height: 260px; margin: 2rem auto 0; padding: 0 1.75rem; }
-.chart-note { text-align: center; font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-top: .75rem; letter-spacing: .05em; }
+.radar-wrap { position: relative; width: 100%; max-width: 300px; height: 230px; margin: 0 auto; padding: 0; }
+.chart-note { text-align: center; font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-top: .35rem; letter-spacing: .05em; }
 
 /* ── Impact Charts ──────────────────────────────────────────────────────── */
 .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
@@ -535,6 +556,20 @@ footer a { color: var(--accent); }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .edu-grid { grid-template-columns: 1fr; }
   .proj-grid { grid-template-columns: 1fr 1fr; }
+  .skills-orbit {
+    max-width: 420px; aspect-ratio: auto; height: auto;
+    display: flex; flex-direction: column; align-items: center; gap: 2.25rem;
+    margin-top: 3rem;
+  }
+  .orbit-ring { display: none; }
+  .orbit-center { position: static; transform: none; width: 100%; max-width: 300px; }
+  .skills-orbit .trait-icon {
+    position: static; transform: none !important; width: auto;
+  }
+  .skills-orbit .trait-icon:hover { transform: none !important; }
+  .orbit-icons {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem 1.5rem; max-width: 420px;
+  }
 }
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }

@@ -76,7 +76,7 @@
     'stats.cnc': 'CNC-Durchsatz<br/>Steigerung', 'stats.bpp': 'Bipolarplatten<br/>Verklebt / Tag',
     'stats.cost': 'Formkosten<br/>Einsparung', 'stats.co2': 'CO₂-Reduktion<br/>modelliert',
     'about.title': 'Über mich',
-    'about.bio1': 'Maschinenbau- und Clean-Energy-Ingenieur (M.Sc., FAU Erlangen, Abschlussnote 1,8) mit praktischer Bandbreite in <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung und Fertigungsprozessentwicklung</strong>. Bei Freudenberg e-Power Systems entwickelte ich einen manuellen Klebeprozess zu einem validierten <strong>12-Stationen-Fertigungslayout</strong> weiter und steigerte den Durchsatz um das 7-Fache — inklusive der zugehörigen Prüfstandsarbeit: Dichtheitsprüfung, Scherzugversuch, chemische Beständigkeit und strukturierte Prüfberichte.',
+    'about.bio1': 'Ich bin Maschinenbau- und Clean-Energy-Ingenieur (M.Sc., FAU Erlangen, Abschlussnote 1,8) und bringe frühe Hardware-Konzepte am liebsten bis zu einem validierten Fertigungsprozess voran. Bei Freudenberg e-Power Systems habe ich einen manuellen Klebe- und Dichtprozess für Brennstoffzellen-Bipolarplatten von einer einzelnen Prototyp-Station zu einem <strong>12-Stationen-Fertigungslayout</strong> weiterentwickelt und den Durchsatz um das <strong>7-Fache</strong> gesteigert — abgesichert durch die zugehörige Prüfstandsarbeit: Dichtheitsprüfung, Scherzugversuch, chemische Beständigkeit und strukturierte Prüfberichte. Genau diese Kombination aus <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung und Fertigungsprozessentwicklung</strong> möchte ich auch künftig einbringen.',
     'about.quote': '&bdquo;Seine schnelle Auffassungsgabe und sein Denkvermögen ließen ihn selbst schwierige Situationen sofort überblicken und stets das Wesentliche erkennen&hellip; Herr Nikumbh war immer äußerst zuverlässig und genoss stets unser volles Vertrauen.&ldquo;',
     'about.quoteSrc': '&mdash; Freudenberg e-Power Systems, Zeugnis',
     'about.radar': 'Kompetenz-Radar',
@@ -812,6 +812,138 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /* ── Impact-chart modal data ─────────────────────────────────────────── */
+  var impactData = {
+    'cnc': {
+      tag: 'NC-Program Optimisation &middot; Freudenberg e-Power Systems',
+      title: 'CNC Dispensing Throughput &mdash; 6&times; Increase',
+      date: 'Aug 2024 &ndash; Jun 2025',
+      intro: 'The DATRON dispensing system applying bonding &amp; sealing adhesive to the bipolar plates was running far below its practical capacity &mdash; I rewrote its program logic to close the gap.',
+      bullets: [
+        '<strong>57 &rarr; 342 units/day</strong> dispensing throughput, a <strong>6&times; increase</strong>, through NC-program optimisation and parameter tuning',
+        'Learned the DATRON system&rsquo;s code structure independently &mdash; no formal training &mdash; by tracing patterns in the dispensing output back to the underlying code',
+        'Wrote new programs for specific dispensing outputs and validated results against Fuji pressure-film contact analysis',
+        'Directly enabled the 12-station, 342 BPP/day production layout by removing dispensing as the process bottleneck'
+      ],
+      chartType: 'bar', chartLabel: 'Units / day', chartLabels: ['Before', 'After'], chartValues: [57, 342]
+    },
+    'co2': {
+      tag: 'Energy Systems Analysis &middot; Master&rsquo;s coursework',
+      title: 'Low-CO&#8322; Scenario Simulation &mdash; City of Jena',
+      intro: 'A city-scale clean-energy transition study modelling CO&#8322; reduction pathways for Jena through 2035.',
+      bullets: [
+        '<strong>21.2% CO&#8322; reduction</strong> achieved by 2035 in the modelled scenario',
+        'Analysed wind, solar PV, biomass, and heat-pump integration pathways',
+        'Evaluated sector coupling between electricity, heat, and transport',
+        'Used EnergyPLAN and Python for scenario modelling and sensitivity analysis'
+      ],
+      chartType: 'line', chartLabel: 'CO&#8322; Index (base=100)', chartLabels: ['2020', '2025', '2028', '2031', '2035'], chartValues: [100, 91, 83, 82.3, 78.8]
+    },
+    'cost': {
+      tag: 'Design Engineering &middot; Pragati Udyog (B.E. Thesis)',
+      title: 'Injection Mould Redesign &mdash; ~80% Tooling Cost Reduction',
+      date: 'Jun 2019 &ndash; Apr 2020',
+      intro: 'Full-lifecycle redesign of a wheel injection mould, from design intent to production-ready tooling, aimed at cutting tooling cost without compromising part quality.',
+      bullets: [
+        '<strong>~80% tooling cost reduction</strong> versus the legacy mould design',
+        'Designed mould geometry in CATIA V5 with full GD&amp;T tolerancing',
+        'Performed material selection and draft-angle optimisation for reliable de-moulding',
+        'Coordinated CNC machining of the cavity and core inserts, then ran dimensional inspection and fit-check testing'
+      ],
+      chartType: 'bar', chartLabel: 'Relative tooling cost (%)', chartLabels: ['Legacy', 'Optimised'], chartValues: [100, 20]
+    },
+    'bpp': {
+      tag: 'Bonding &amp; Sealing Process &middot; Freudenberg e-Power Systems (M.Sc. Thesis)',
+      title: 'Bipolar Plate Production Scale-Up &mdash; 342 BPP/day',
+      date: 'Aug 2024 &ndash; Jun 2025',
+      intro: 'Took the PEM fuel-cell bipolar-plate bonding &amp; sealing process from a single manual prototype station to a validated multi-station production layout.',
+      bullets: [
+        '<strong>342 BPP/day</strong> production layout designed &mdash; a 12-station curing concept scaled from a 20/day single-station baseline',
+        'Specified test methods (leak testing, lap shear, chemical stability) within a structured DVP&amp;R framework',
+        'Prepared standardised test specimens to ISO norms; evaluated data and wrote structured qualification reports',
+        'Verified contact pressure distribution via Fuji pressure-film testing and surface characterisation via profilometer &amp; 3D scanning'
+      ],
+      chartType: 'bar', chartLabel: 'BPP / day', chartLabels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], chartValues: [20, 120, 198, 240, 310, 342]
+    }
+  };
+
+  /* ── Impact-chart modal data — German ────────────────────────────────── */
+  var impactDataDE = {
+    'cnc': {
+      tag: 'NC-Programmoptimierung &middot; Freudenberg e-Power Systems',
+      title: 'CNC-Dosierdurchsatz &mdash; 6-fache Steigerung',
+      date: 'Aug 2024 &ndash; Jun 2025',
+      intro: 'Das DATRON-Dosiersystem f&uuml;r den Kleb-/Dichtstoffauftrag auf die Bipolarplatten lief weit unter seiner praktischen Kapazit&auml;t &mdash; ich habe die Programmlogik &uuml;berarbeitet, um die L&uuml;cke zu schlie&szlig;en.',
+      bullets: [
+        '<strong>57 &rarr; 342 Einheiten/Tag</strong> Dosierdurchsatz, eine <strong>6-fache Steigerung</strong>, durch NC-Programmoptimierung und Parameteranpassung',
+        'Den Code-Aufbau des DATRON-Systems selbstst&auml;ndig gelernt &mdash; ohne formale Schulung &mdash; durch R&uuml;ckverfolgung von Mustern in der Dosierausgabe',
+        'Neue Programme f&uuml;r bestimmte Dosierausgaben geschrieben und Ergebnisse mittels Fuji-Drucktest-Kontaktanalyse validiert',
+        'Erm&ouml;glichte direkt das 12-Stationen-Produktionslayout mit 342 BPP/Tag, indem der Dosierschritt als Prozess-Engpass beseitigt wurde'
+      ],
+      chartType: 'bar', chartLabel: 'Einheiten / Tag', chartLabels: ['Vorher', 'Nachher'], chartValues: [57, 342]
+    },
+    'co2': {
+      tag: 'Energiesystemanalyse &middot; Masterstudium',
+      title: 'CO&#8322;-arme Szenariomodellierung &mdash; Stadt Jena',
+      intro: 'Eine stadtweite Energiewende-Studie zur Modellierung von CO&#8322;-Reduktionspfaden f&uuml;r Jena bis 2035.',
+      bullets: [
+        '<strong>21,2% CO&#8322;-Reduktion</strong> im modellierten Szenario bis 2035 erreicht',
+        'Wind-, Solar-PV-, Biomasse- und W&auml;rmepumpen-Integrationspfade analysiert',
+        'Sektorkopplung zwischen Strom, W&auml;rme und Verkehr bewertet',
+        'EnergyPLAN und Python f&uuml;r Szenariomodellierung und Sensitivit&auml;tsanalyse eingesetzt'
+      ],
+      chartType: 'line', chartLabel: 'CO&#8322;-Index (Basis=100)', chartLabels: ['2020', '2025', '2028', '2031', '2035'], chartValues: [100, 91, 83, 82.3, 78.8]
+    },
+    'cost': {
+      tag: 'Konstruktion &middot; Pragati Udyog (Bachelorarbeit)',
+      title: 'Spritzgussform-Neukonstruktion &mdash; ~80% Werkzeugkostensenkung',
+      date: 'Jun 2019 &ndash; Apr 2020',
+      intro: 'Vollst&auml;ndige Neukonstruktion einer Rad-Spritzgussform, vom Entwurfsgedanken bis zum produktionsreifen Werkzeug, mit dem Ziel, die Werkzeugkosten ohne Qualit&auml;tseinbu&szlig;en zu senken.',
+      bullets: [
+        '<strong>~80% Werkzeugkostensenkung</strong> gegen&uuml;ber dem bisherigen Formdesign',
+        'Formgeometrie in CATIA V5 mit vollst&auml;ndiger GD&amp;T-Tolerierung entworfen',
+        'Materialauswahl und Optimierung des Entformungswinkels f&uuml;r zuverl&auml;ssige Entformung durchgef&uuml;hrt',
+        'CNC-Bearbeitung von Kavit&auml;t und Formkernen koordiniert, anschlie&szlig;end Ma&szlig;pr&uuml;fung und Passungstests durchgef&uuml;hrt'
+      ],
+      chartType: 'bar', chartLabel: 'Relative Werkzeugkosten (%)', chartLabels: ['Bisher', 'Optimiert'], chartValues: [100, 20]
+    },
+    'bpp': {
+      tag: 'Verklebung &amp; Abdichtung &middot; Freudenberg e-Power Systems (Masterarbeit)',
+      title: 'Bipolarplatten-Produktionshochlauf &mdash; 342 BPP/Tag',
+      date: 'Aug 2024 &ndash; Jun 2025',
+      intro: '&Uuml;berf&uuml;hrung des Verklebungs- und Abdichtungsprozesses f&uuml;r PEM-Brennstoffzellen-Bipolarplatten von einer einzelnen manuellen Prototyp-Station zu einem validierten Mehrstationen-Produktionslayout.',
+      bullets: [
+        '<strong>342 BPP/Tag</strong> Produktionslayout entworfen &mdash; ein 12-Stationen-Aush&auml;rtungskonzept, skaliert von einer Basis von 20/Tag mit einer Station',
+        'Pr&uuml;fmethoden (Dichtheitspr&uuml;fung, Scherzugversuch, chemische Best&auml;ndigkeit) im Rahmen eines strukturierten DVP&amp;R-Frameworks festgelegt',
+        'Standardisierte Pr&uuml;fk&ouml;rper nach ISO-Normen vorbereitet; Daten ausgewertet und strukturierte Pr&uuml;fberichte verfasst',
+        'Kontaktdruckverteilung mittels Fuji-Drucktest und Oberfl&auml;chencharakterisierung mittels Profilometer &amp; 3D-Scanning verifiziert'
+      ],
+      chartType: 'bar', chartLabel: 'BPP / Tag', chartLabels: ['Jan', 'Feb', 'M&auml;r', 'Apr', 'Mai', 'Jun'], chartValues: [20, 120, 198, 240, 310, 342]
+    }
+  };
+
+  document.querySelectorAll('.chart-card[data-modal]').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var __lang3 = window.__i18n ? window.__i18n.getLang() : 'en';
+      var d = (__lang3 === 'de' ? impactDataDE : impactData)[card.dataset.modal];
+      if (!d) return;
+      var html = '<button id="modal-close">&#x2715;</button>'
+        + '<div class="m-role">' + d.tag + '</div>'
+        + '<div class="m-title">' + d.title + '</div>'
+        + (d.date ? '<div class="m-date">' + d.date + '</div>' : '')
+        + '<div class="m-intro">' + d.intro + '</div>'
+        + '<ul class="m-bullets">' + d.bullets.map(function (b) { return '<li>' + b + '</li>'; }).join('') + '</ul>';
+      if (d.chartValues) {
+        html += '<div class="m-chart-wrap">'
+          + '<canvas id="modal-chart" data-type="' + (d.chartType || 'bar') + '" data-label="' + d.chartLabel + '"'
+          + ' data-labels=\'' + JSON.stringify(d.chartLabels) + '\''
+          + ' data-values=\'' + JSON.stringify(d.chartValues) + '\'></canvas>'
+          + '</div>';
+      }
+      openModal(html);
+    });
+  });
+
   /* ── Chart.js charts (guarded — entire block only runs if Chart loaded) ── */
   if (typeof Chart !== 'undefined') {
     Chart.defaults.color = '#8892b0';
@@ -922,7 +1054,7 @@ document.addEventListener('DOMContentLoaded', function () {
       new Chart(bppEl, {
         type: 'bar',
         data: {
-          labels: ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jun'],
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
           datasets: [{
             data: [20, 120, 198, 240, 310, 342],
             backgroundColor: 'rgba(100,255,218,.25)',
