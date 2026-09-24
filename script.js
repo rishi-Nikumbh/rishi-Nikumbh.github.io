@@ -1017,7 +1017,7 @@ document.addEventListener('DOMContentLoaded', function () {
               pointLabels: { color: '#ccd6f6', font: { size: 9 }, padding: 22 }
             }
           },
-          layout: { padding: 42 }
+          layout: { padding: { top: 42, left: 42, right: 42, bottom: 16 } }
         }),
         plugins: [radarValueBadges]
       });
