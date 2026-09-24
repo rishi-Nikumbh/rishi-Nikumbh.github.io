@@ -142,32 +142,35 @@ ul { list-style: none; }
 .about-bio-sub { font-size: .9rem; margin-top: -1rem; opacity: .85; }
 .about-bio strong { color: var(--text); }
 
-/* ── Skills cluster: radar chart centred, trait icons scattered around it ── */
+/* ── Skills cluster: radar chart centred, trait icons scattered around it ──
+   Uses the section's full width (not just a narrow centred column) so the
+   icons spread out into the space either side of the chart instead of
+   crowding it. ── */
 .skills-orbit {
   position: relative;
-  width: 100%; max-width: 460px; aspect-ratio: 1 / 1; height: auto;
+  width: 100%; height: 480px;
   margin: 2.5rem auto 0;
 }
 .orbit-center {
   position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-  width: 46%; display: flex; flex-direction: column; align-items: center;
+  width: 320px; display: flex; flex-direction: column; align-items: center;
 }
 
 .trait-icon { display: flex; flex-direction: column; align-items: center; gap: .6rem; width: 84px; text-align: center; }
 .trait-icon svg { width: 68px; height: 68px; overflow: visible; }
 .trait-icon span { font-size: .7rem; color: var(--muted); line-height: 1.3; }
-/* scattered around the centred radar chart, at varied distances — not a ring */
+/* scattered across the available width, at varied distances from the chart */
 .skills-orbit .trait-icon {
   position: absolute; width: 90px; transform: translate(-50%, -50%);
   transition: transform var(--tr);
 }
 .skills-orbit .trait-icon svg { width: 70px; height: 70px; }
 .skills-orbit .trait-icon:hover { transform: translate(-50%, -50%) scale(1.06); }
-.skills-orbit .trait-icon.ti-1 { left: 43%; top: 10%; }
-.skills-orbit .trait-icon.ti-2 { left: 84%; top: 34%; }
-.skills-orbit .trait-icon.ti-3 { left: 74%; top: 84%; }
-.skills-orbit .trait-icon.ti-4 { left: 20%; top: 76%; }
-.skills-orbit .trait-icon.ti-5 { left: 15%; top: 37%; }
+.skills-orbit .trait-icon.ti-1 { left: 18%; top: 15%; }
+.skills-orbit .trait-icon.ti-2 { left: 83%; top: 19%; }
+.skills-orbit .trait-icon.ti-3 { left: 79%; top: 80%; }
+.skills-orbit .trait-icon.ti-4 { left: 20%; top: 83%; }
+.skills-orbit .trait-icon.ti-5 { left: 9%; top: 50%; }
 .trait-icon.ti-1 { --stagger: 0s; }
 .trait-icon.ti-2 { --stagger: .4s; }
 .trait-icon.ti-3 { --stagger: .8s; }
@@ -298,8 +301,8 @@ ul { list-style: none; }
 .about-quote cite {
   display: block; font-family: var(--mono); font-size: .75rem; color: var(--muted); font-style: normal; letter-spacing: .02em;
 }
-.radar-wrap { position: relative; width: 100%; max-width: 260px; height: 200px; margin: 0 auto; padding: 0; }
-.chart-note { text-align: center; font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-top: .35rem; letter-spacing: .05em; }
+.radar-wrap { position: relative; width: 100%; max-width: 320px; height: 250px; margin: 0 auto; padding: 0; }
+.chart-note { text-align: center; font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-top: .5rem; letter-spacing: .05em; }
 
 /* ── Impact Charts ──────────────────────────────────────────────────────── */
 .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
@@ -555,7 +558,7 @@ footer a { color: var(--accent); }
     display: flex; flex-direction: column; align-items: center; gap: 1.75rem;
     margin-top: 2rem;
   }
-  .orbit-center { position: static; transform: none; width: 100%; max-width: 260px; }
+  .orbit-center { position: static; transform: none; width: 100%; max-width: 300px; }
   .skills-orbit .trait-icon {
     position: static; transform: none !important; width: auto;
   }
