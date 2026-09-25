@@ -829,16 +829,17 @@ document.addEventListener('DOMContentLoaded', function () {
       chartType: 'bar', chartLabel: 'Dispensing speed (mm/s)', chartLabels: ['Before', 'After'], chartValues: [8, 50]
     },
     'co2': {
-      tag: 'Energy Systems Analysis &middot; Master&rsquo;s coursework',
-      title: 'Low-CO&#8322; Scenario Simulation &mdash; City of Jena',
-      intro: 'A city-scale clean-energy transition study modelling CO&#8322; reduction pathways for Jena through 2035.',
+      tag: 'Energy Systems Analysis &middot; FAU Coursework (Group Project)',
+      title: 'Low-CO&#8322; Scenario for Jena: 21.2% CO&#8322; Reduction Modelled',
+      intro: 'As part of an FAU coursework group project, we modelled how Jena, a city producing around 300,000 tons of CO&#8322; a year from gas heating and transport alone, could cut its emissions. We analysed 15 years of energy and commuting data and projected trends out to 2040, then modelled four levers: more solar on the grid, biomethane from the city&rsquo;s own waste, a shift to e-bikes and electric buses, and a redesigned power plant. Overall, the plan modelled a 21.2% cut in CO&#8322; emissions.',
       bullets: [
-        '<strong>21.2% CO&#8322; reduction</strong> achieved by 2035 in the modelled scenario',
-        'Analysed wind, solar PV, biomass, and heat-pump integration pathways',
-        'Evaluated sector coupling between electricity, heat, and transport',
-        'Used EnergyPLAN and Python for scenario modelling and sensitivity analysis'
+        'Analysed 15 years of Jena&rsquo;s population, energy, and emissions data (2005 to 2019) across electricity, heating, and transport to build a baseline picture of the city&rsquo;s CO&#8322; sources',
+        'Modelled a continued rollout of 500 kW of solar capacity every year for the electricity grid through to 2040, an investment of roughly &euro;650,000 annually',
+        'Sized a 500 kW biogas plant that could convert the city&rsquo;s household waste, around 211 kg per person a year, into biomethane as a substitute for natural gas, projecting the city&rsquo;s gas linked CO&#8322; to reach 90,635 tons by 2040 with the plan in place, down from a projected 167,941 tons if nothing changed',
+        'Modelled a shift in commuting patterns: most private car users switching to e-bikes for 8 months of the year, alongside phasing 44 electric buses into the public transport fleet, rolled out gradually over 20 years through to the early 2040s',
+        'Evaluated redesigning the city&rsquo;s actual power plant with a 10.4 MW gas engine and a heat recovery steam turbine in place of the current setup, and separately checked whether retrofitting carbon capture onto the existing plant made economic sense instead'
       ],
-      chartType: 'line', chartLabel: 'CO&#8322; Index (base=100)', chartLabels: ['2020', '2025', '2028', '2031', '2035'], chartValues: [100, 91, 83, 82.3, 78.8]
+      chartType: 'bar', chartLabel: 'CO&#8322; emissions (tons/year)', chartLabels: ['Before', 'After'], chartValues: [158789, 124789]
     },
     'cost': {
       tag: 'Design Engineering &middot; Pragati Udyog (B.E. Thesis)',
@@ -885,16 +886,17 @@ document.addEventListener('DOMContentLoaded', function () {
       chartType: 'bar', chartLabel: 'Dosiergeschwindigkeit (mm/s)', chartLabels: ['Vorher', 'Nachher'], chartValues: [8, 50]
     },
     'co2': {
-      tag: 'Energiesystemanalyse &middot; Masterstudium',
-      title: 'CO&#8322;-arme Szenariomodellierung &mdash; Stadt Jena',
-      intro: 'Eine stadtweite Energiewende-Studie zur Modellierung von CO&#8322;-Reduktionspfaden f&uuml;r Jena bis 2035.',
+      tag: 'Energiesystemanalyse &middot; FAU Studienprojekt (Gruppenprojekt)',
+      title: 'Low-CO&#8322;-Szenario f&uuml;r Jena: 21,2% CO&#8322;-Reduktion modelliert',
+      intro: 'Im Rahmen eines FAU Studienprojekts in der Gruppe haben wir modelliert, wie Jena, eine Stadt, die allein durch Erdgasheizung und Verkehr rund 300.000 Tonnen CO&#8322; pro Jahr verursacht, seine Emissionen senken k&ouml;nnte. Wir analysierten 15 Jahre an Energie- und Pendlerdaten und projizierten die Trends bis 2040, dann modellierten wir vier Hebel: mehr Solarenergie im Stromnetz, Biomethan aus dem Abfall der Stadt, einen Umstieg auf E-Bikes und Elektrobusse sowie ein neu konzipiertes Kraftwerk. Insgesamt modellierte der Plan eine CO&#8322;-Reduktion von 21,2%.',
       bullets: [
-        '<strong>21,2% CO&#8322;-Reduktion</strong> im modellierten Szenario bis 2035 erreicht',
-        'Wind-, Solar-PV-, Biomasse- und W&auml;rmepumpen-Integrationspfade analysiert',
-        'Sektorkopplung zwischen Strom, W&auml;rme und Verkehr bewertet',
-        'EnergyPLAN und Python f&uuml;r Szenariomodellierung und Sensitivit&auml;tsanalyse eingesetzt'
+        'Analysierte 15 Jahre an Bev&ouml;lkerungs-, Energie- und Emissionsdaten Jenas (2005 bis 2019) in den Bereichen Strom, W&auml;rme und Verkehr, um ein Basisbild der CO&#8322;-Quellen der Stadt zu erstellen',
+        'Modellierte einen fortlaufenden Ausbau von 500 kW Solarleistung pro Jahr f&uuml;r das Stromnetz bis 2040, eine Investition von rund 650.000 Euro pro Jahr',
+        'Dimensionierte eine 500 kW Biogasanlage, die den Hausm&uuml;ll der Stadt, rund 211 kg pro Person und Jahr, in Biomethan als Ersatz f&uuml;r Erdgas umwandeln k&ouml;nnte, und projizierte die erdgasbedingten CO&#8322;-Emissionen der Stadt auf 90.635 Tonnen im Jahr 2040 mit dem Plan, gegen&uuml;ber prognostizierten 167.941 Tonnen ohne &Auml;nderungen',
+        'Modellierte eine Verlagerung des Pendelverhaltens: die meisten Nutzer privater Fahrzeuge steigen f&uuml;r 8 Monate im Jahr auf E-Bikes um, zus&auml;tzlich werden schrittweise 44 Elektrobusse &uuml;ber 20 Jahre bis in die fr&uuml;hen 2040er Jahre in die &ouml;ffentliche Busflotte integriert',
+        'Bewertete eine Neukonzeption des tats&auml;chlichen Kraftwerks der Stadt mit einem 10,4 MW Gasmotor und einer Dampfturbine zur W&auml;rmer&uuml;ckgewinnung anstelle der bestehenden Anlage, und pr&uuml;fte separat, ob eine Nachr&uuml;stung mit CO&#8322;-Abscheidung am bestehenden Kraftwerk wirtschaftlich sinnvoll w&auml;re'
       ],
-      chartType: 'line', chartLabel: 'CO&#8322;-Index (Basis=100)', chartLabels: ['2020', '2025', '2028', '2031', '2035'], chartValues: [100, 91, 83, 82.3, 78.8]
+      chartType: 'bar', chartLabel: 'CO&#8322;-Emissionen (Tonnen/Jahr)', chartLabels: ['Vorher', 'Nachher'], chartValues: [158789, 124789]
     },
     'cost': {
       tag: 'Konstruktion &middot; Pragati Udyog (Bachelorarbeit)',
