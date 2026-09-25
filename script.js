@@ -452,7 +452,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var values = JSON.parse(mc.dataset.values || '[]');
       var scalesOpt = type !== 'radar' ? {
         x: { grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 11 } } },
-        y: { grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 11 } } }
+        y: { beginAtZero: type === 'bar', grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 11 } } }
       } : {
         r: { grid: { color: 'rgba(255,255,255,.08)' }, ticks: { display: false }, pointLabels: { color: '#ccd6f6', font: { size: 11 } } }
       };
@@ -815,17 +815,18 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── Impact-chart modal data ─────────────────────────────────────────── */
   var impactData = {
     'cnc': {
-      tag: 'NC-Program Optimisation &middot; Freudenberg e-Power Systems',
-      title: 'CNC Dispensing Throughput &mdash; 6&times; Increase',
-      date: 'Aug 2024 &ndash; Jun 2025',
-      intro: 'The DATRON dispensing system applying bonding &amp; sealing adhesive to the bipolar plates was running far below its practical capacity &mdash; I rewrote its program logic to close the gap.',
+      tag: 'Dispensing Process Optimisation &middot; Freudenberg e-Power Systems (M.Sc. Thesis)',
+      title: 'CNC Dispensing Throughput: 6&times; Increase',
+      intro: 'The core constraint for bonding BPPs was reproducibility of the dispensed bead (the adhesive line) at high speed. Dispensing worked fine at 8&nbsp;mm/s, but mass production required 50&nbsp;mm/s. At that speed, the machine&rsquo;s constant volume pump caused the area of the bead&rsquo;s cross section to vary along its length.',
       bullets: [
-        '<strong>57 &rarr; 342 units/day</strong> dispensing throughput, a <strong>6&times; increase</strong>, through NC-program optimisation and parameter tuning',
-        'Learned the DATRON system&rsquo;s code structure independently &mdash; no formal training &mdash; by tracing patterns in the dispensing output back to the underlying code',
-        'Wrote new programs for specific dispensing outputs and validated results against Fuji pressure-film contact analysis',
-        'Directly enabled the 12-station, 342 BPP/day production layout by removing dispensing as the process bottleneck'
+        'Reached <strong>50 mm/s</strong> dispensing speed, up from <strong>8 mm/s</strong> (<strong>6&times; faster</strong>), the speed mass production required, while keeping the bead fully within tolerance',
+        'Learned to program the DATRON dispensing system from scratch, since no formal training was available, by working through its manual and testing how each setting changed the dispensed line',
+        'Found that the nozzle kept clogging and then dripping adhesive after dispensing stopped, especially at higher pressure. Testing different nozzle shapes and pressures showed that a tapered nozzle running at lower pressure gave a clean, unbroken line with no dripping',
+        'Followed DATRON&rsquo;s official procedure for tuning the A factor and B factor, its built in settings that compensate for speed changes, running test lines at alternating speeds and adjusting each factor step by step',
+        'Verified the results properly instead of relying on visual judgement alone: measured the bead&rsquo;s cross section at multiple points with a profilometer, since small variations invisible to the eye can still cause leaks',
+        'Observed the bead drifting out of tolerance over the course of the day, even with identical settings. Traced it to the dispensing pump&rsquo;s temperature slowly rising through the day, caused by friction between the pump&rsquo;s moving parts and the thick adhesive itself, which made the adhesive thinner and changed how it flowed. Fixed it by adding a heater to hold the pump at one constant temperature, which finally made the process repeatable throughout the day'
       ],
-      chartType: 'bar', chartLabel: 'Units / day', chartLabels: ['Before', 'After'], chartValues: [57, 342]
+      chartType: 'bar', chartLabel: 'Dispensing speed (mm/s)', chartLabels: ['Before', 'After'], chartValues: [8, 50]
     },
     'co2': {
       tag: 'Energy Systems Analysis &middot; Master&rsquo;s coursework',
@@ -870,17 +871,18 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── Impact-chart modal data — German ────────────────────────────────── */
   var impactDataDE = {
     'cnc': {
-      tag: 'NC-Programmoptimierung &middot; Freudenberg e-Power Systems',
-      title: 'CNC-Dosierdurchsatz &mdash; 6-fache Steigerung',
-      date: 'Aug 2024 &ndash; Jun 2025',
-      intro: 'Das DATRON-Dosiersystem f&uuml;r den Kleb-/Dichtstoffauftrag auf die Bipolarplatten lief weit unter seiner praktischen Kapazit&auml;t &mdash; ich habe die Programmlogik &uuml;berarbeitet, um die L&uuml;cke zu schlie&szlig;en.',
+      tag: 'Optimierung des Dosierprozesses &middot; Freudenberg e-Power Systems (Masterarbeit)',
+      title: 'CNC-Dosierdurchsatz: 6-fache Steigerung',
+      intro: 'Die zentrale Herausforderung beim Verkleben der BPPs war die Reproduzierbarkeit der dosierten Klebstoffraupe bei hoher Geschwindigkeit. Die Dosierung funktionierte bei 8&nbsp;mm/s einwandfrei, doch die Serienproduktion erforderte 50&nbsp;mm/s. Bei dieser Geschwindigkeit f&uuml;hrte die volumenkonstante Pumpe der Maschine dazu, dass die Querschnittsfl&auml;che der Raupe entlang ihrer L&auml;nge schwankte.',
       bullets: [
-        '<strong>57 &rarr; 342 Einheiten/Tag</strong> Dosierdurchsatz, eine <strong>6-fache Steigerung</strong>, durch NC-Programmoptimierung und Parameteranpassung',
-        'Den Code-Aufbau des DATRON-Systems selbstst&auml;ndig gelernt &mdash; ohne formale Schulung &mdash; durch R&uuml;ckverfolgung von Mustern in der Dosierausgabe',
-        'Neue Programme f&uuml;r bestimmte Dosierausgaben geschrieben und Ergebnisse mittels Fuji-Drucktest-Kontaktanalyse validiert',
-        'Erm&ouml;glichte direkt das 12-Stationen-Produktionslayout mit 342 BPP/Tag, indem der Dosierschritt als Prozess-Engpass beseitigt wurde'
+        '<strong>50 mm/s</strong> Dosiergeschwindigkeit erreicht, ausgehend von <strong>8 mm/s</strong> (<strong>6-fach schneller</strong>), die von der Serienproduktion geforderte Geschwindigkeit, bei voller Einhaltung der Raupentoleranz',
+        'Die Programmierung des DATRON-Dosiersystems von Grund auf selbst erlernt, da keine formale Schulung verf&uuml;gbar war, indem ich mich durch das Handbuch gearbeitet und getestet habe, wie sich jede Einstellung auf die dosierte Linie auswirkt',
+        'Festgestellt, dass die D&uuml;se bei h&ouml;herem Druck verstopfte und nach dem Dosieren nachtropfte. Tests mit verschiedenen D&uuml;senformen und Dr&uuml;cken zeigten, dass eine konische D&uuml;se bei niedrigerem Druck eine saubere, durchgehende Linie ohne Nachtropfen ergab',
+        'Dem offiziellen DATRON-Verfahren zur Einstellung von A-Faktor und B-Faktor gefolgt, den integrierten Einstellungen zur Kompensation von Geschwindigkeits&auml;nderungen, indem Testlinien mit wechselnden Geschwindigkeiten gefahren und jeder Faktor schrittweise angepasst wurde',
+        'Die Ergebnisse sorgf&auml;ltig &uuml;berpr&uuml;ft, statt sich allein auf die visuelle Beurteilung zu verlassen: den Raupenquerschnitt an mehreren Stellen mit einem Profilometer gemessen, da kleine, mit blo&szlig;em Auge unsichtbare Abweichungen dennoch zu Undichtigkeiten f&uuml;hren k&ouml;nnen',
+        'Beobachtet, dass die Raupe im Laufe des Tages trotz identischer Einstellungen au&szlig;erhalb der Toleranz driftete. Ursache war die im Tagesverlauf langsam steigende Temperatur der Dosierpumpe, verursacht durch Reibung zwischen den beweglichen Teilen der Pumpe und dem z&auml;hen Klebstoff selbst, wodurch der Klebstoff d&uuml;nnfl&uuml;ssiger wurde und sein Flie&szlig;verhalten sich &auml;nderte. Behoben durch eine Heizung, die die Pumpe auf einer konstanten Temperatur h&auml;lt, wodurch der Prozess den ganzen Tag &uuml;ber reproduzierbar wurde'
       ],
-      chartType: 'bar', chartLabel: 'Einheiten / Tag', chartLabels: ['Vorher', 'Nachher'], chartValues: [57, 342]
+      chartType: 'bar', chartLabel: 'Dosiergeschwindigkeit (mm/s)', chartLabels: ['Vorher', 'Nachher'], chartValues: [8, 50]
     },
     'co2': {
       tag: 'Energiesystemanalyse &middot; Masterstudium',
