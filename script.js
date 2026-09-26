@@ -73,10 +73,10 @@
     'nav.projects': 'Projekte', 'nav.documents': 'Dokumente', 'nav.contact': 'Kontakt', 'nav.resume': 'Lebenslauf ↗',
     'hero.greeting': 'Hallo, ich bin', 'hero.location': 'Erlangen, Deutschland &nbsp;·&nbsp; Offen für neue Möglichkeiten',
     'hero.hireMe': 'Kontakt aufnehmen', 'hero.downloadCV': 'Lebenslauf herunterladen',
-    'stats.cnc': 'Schnelleres<br/>CNC-Dosieren', 'stats.bpp': 'Bipolarplatten / Tag<br/>Layout geplant',
+    'stats.cnc': 'CNC-Durchsatz<br/>Steigerung', 'stats.bpp': 'Bipolarplatten / Tag<br/>Layout geplant',
     'stats.cost': 'Geringere Kosten<br/>pro Rad', 'stats.co2': 'CO₂-Reduktion<br/>modelliert',
     'about.title': 'Über mich',
-    'about.bio1': 'Maschinenbauingenieur kurz vor dem Abschluss des M.Sc. Clean Energy Processes an der FAU Erlangen (Note der Masterarbeit 1,8), mit praktischer Erfahrung in <strong>Tests von PEM-Brennstoffzellenkomponenten, DVP&amp;R-Validierung und Entwicklung von Fertigungsprozessen</strong>. Bei Freudenberg e-Power Systems habe ich einen neuen Klebstoff für die Verklebung von Graphit-Bipolarplatten qualifiziert, eine Aushärtung über Nacht durch eine von <strong>27 Minuten</strong> ersetzt, das CNC-Dosieren <strong>6-fach</strong> beschleunigt und ein Layout mit <strong>12 Stationen</strong> für 342 Platten pro Tag geplant.',
+    'about.bio1': 'Maschinenbauingenieur kurz vor dem Abschluss des M.Sc. Clean Energy Processes an der FAU Erlangen (Note der Masterarbeit 1,8), mit praktischer Erfahrung in <strong>Tests von PEM-Brennstoffzellenkomponenten, DVP&amp;R-Validierung und Entwicklung von Fertigungsprozessen</strong>. Bei Freudenberg e-Power Systems habe ich einen neuen Klebstoff für die Verklebung von Graphit-Bipolarplatten qualifiziert, eine Aushärtung über Nacht durch eine von <strong>27 Minuten</strong> ersetzt, den CNC-Dosierdurchsatz <strong>6-fach</strong> gesteigert und ein Layout mit <strong>12 Stationen</strong> für 342 Platten pro Tag geplant.',
     'about.quote': '&bdquo;Seine schnelle Auffassungsgabe und sein Denkvermögen ließen ihn selbst schwierige Situationen sofort überblicken und stets das Wesentliche erkennen&hellip; Herr Nikumbh war immer äußerst zuverlässig und genoss stets unser volles Vertrauen.&ldquo;',
     'about.quoteSrc': 'Freudenberg e-Power Systems, Zeugnis',
     'about.radar': 'Kompetenz-Radar',
@@ -109,7 +109,7 @@
     'skill4.t7': 'Technische Zeichnungen', 'skill4.t8': 'Montageanleitungen', 'skill4.t9': 'Prüfprotokolle',
     'exp.title': 'Erfahrung', 'exp.sub': 'Für die volle Geschichte auf eine Station am Weg klicken.',
     'exp.tum.role': 'Werkstudent', 'exp.tum.sum': '3D-gedruckte Prüfvorrichtung und Dichtungen für eine Glukose-Brennstoffzelle mit keramischem Elektrolyt.',
-    'exp.freudenberg.role': 'Praktikant &amp; Masterand, F&amp;E', 'exp.freudenberg.sum': '6-fach schnelleres CNC-Dosieren und eine Klebstoffaushärtung von über 12 Stunden auf 27 Minuten verkürzt, für die Verklebung von Bipolarplatten.',
+    'exp.freudenberg.role': 'Praktikant &amp; Masterand, F&amp;E', 'exp.freudenberg.sum': '6-facher CNC-Dosierdurchsatz und eine Klebstoffaushärtung von über 12 Stunden auf 27 Minuten verkürzt, für die Verklebung von Bipolarplatten.',
     'exp.lkt.role': 'Werkstudent', 'exp.lkt.sum': 'Graphit/PP-Verbund-Bipolarplatten im Spritzguss und Recherche zu rahmenintegrierten MEA-Dichtungen.',
     'exp.truetech.role': 'Trainee', 'exp.truetech.sum': 'CAD-Modelle, Fertigungszeichnungen und Stücklisten in PTC Creo und AutoCAD für Prototypen und Serienteile.',
     'exp.pragati.role': 'Gesponsertes Bachelorprojekt, Formenbau', 'exp.pragati.sum': 'Spritzgussform für ein Nylonrad mit 75% geringeren Kosten pro Rad bei 45 Rädern pro Stunde.',
@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function () {
       date: 'Aug 2024 – Jun 2025',
       thesis: 'M.Sc. thesis &ldquo;Analysis of Bonding Application for Graphite Bipolar Plate&rdquo; in the Unit Cell &amp; Bipolar Plate Technology team, following a 5 month internship in the same team.',
       bullets: [
-        '<strong>6&times; faster CNC dispensing</strong> (8 to 50 mm/s) and a <strong>12 station</strong> bonding layout planned for <strong>342 bipolar plates a day</strong>',
+        '<strong>6&times; CNC dispensing throughput</strong> (8 to 50 mm/s) and a <strong>12 station</strong> bonding layout planned for <strong>342 bipolar plates a day</strong>',
         'Replaced an overnight adhesive cure of more than 12 hours with a <strong>27 minute</strong> heat cure, after comparing IR, hot plate and oven curing',
         'Defined the DVP&amp;R test plan for the new adhesive and prepared the samples to standard, covering leaching (ICP-OES), chemical stability, tensile, lap shear and leak tests',
         'Leak tested short stacks to check the quality of bonded plates, and ran Fuji pressure film tests to check the force distribution across the plates',
@@ -588,7 +588,7 @@ document.addEventListener('DOMContentLoaded', function () {
       date: 'Aug 2024 – Jun 2025',
       thesis: 'Masterarbeit &bdquo;Analysis of Bonding Application for Graphite Bipolar Plate&ldquo; im Team Unit Cell &amp; Bipolar Plate Technology, nach einem fünfmonatigen Praktikum im selben Team.',
       bullets: [
-        '<strong>6-fach schnelleres CNC-Dosieren</strong> (8 auf 50 mm/s) und ein Verklebungslayout mit <strong>12 Stationen</strong>, geplant für <strong>342 Bipolarplatten pro Tag</strong>',
+        '<strong>6-facher CNC-Dosierdurchsatz</strong> (8 auf 50 mm/s) und ein Verklebungslayout mit <strong>12 Stationen</strong>, geplant für <strong>342 Bipolarplatten pro Tag</strong>',
         'Eine Klebstoffaushärtung über Nacht von mehr als 12 Stunden durch eine Warmhärtung von <strong>27 Minuten</strong> ersetzt, nach einem Vergleich von IR-, Heizplatten- und Ofenaushärtung',
         'Den DVP&amp;R-Prüfplan für den neuen Klebstoff festgelegt und die Proben normgerecht vorbereitet, mit Auslaugung (ICP-OES), chemischer Beständigkeit, Zugversuch, Zugscherversuch und Dichtheitsprüfung',
         'Dichtheitsprüfungen am Short Stack zur Qualitätssicherung verklebter Platten und Fuji-Drucktests zur Kraftverteilung über die Platten durchgeführt',
@@ -808,16 +808,16 @@ document.addEventListener('DOMContentLoaded', function () {
     'bpp': {
       tag: 'Bonding &amp; Sealing Process &middot; Freudenberg e-Power Systems (M.Sc. Thesis)',
       title: 'Bipolar Plate Bonding Scale-Up: 342 Plates a Day',
-      intro: 'Freudenberg bonded graphite bipolar plates with an adhesive that needed a 24 hour bonding cycle, curing overnight for more than 12 hours under heavy weights, far too slow for series production. My thesis qualified a heat curing adhesive to replace it, developed the dispensing and curing steps, and planned the production layout.',
+      intro: 'Freudenberg bonded graphite bipolar plates with an adhesive that cured overnight for more than 12 hours under heavy weights, so each station bonded one plate a day, far too slow for series production. My thesis qualified a heat curing adhesive to replace it, developed the dispensing and curing steps, and planned the production layout.',
       bullets: [
-        '<strong>342</strong> bipolar plates a day from a <strong>12 station</strong> oven curing layout on two shifts, against <strong>12</strong> a day if the same stations ran the old 24 hour cycle. Enough to finish a <strong>3,500 plate</strong> order in <strong>11 working days</strong>',
+        '<strong>342</strong> bipolar plates a day from a <strong>12 station</strong> oven curing layout on two shifts, against <strong>12</strong> a day if the same stations ran the old 12 hour overnight cure. Enough to finish a <strong>3,500 plate</strong> order in <strong>11 working days</strong>',
         'Cut the cure from more than <strong>12 hours</strong> to <strong>27 minutes</strong> (1,600 s at 130 to 135 &deg;C) after comparing IR heating, a hot plate press and an oven with thermocouples on the bond line. IR was dropped because the aluminium tool only reached 62 &deg;C while the plate beneath it hit 171 &deg;C, and the oven won because one oven with several compartments scales better than a row of presses',
         'Sized the line at 12 stations so that the 27 minute cure, shared across the stations, keeps pace with the 137 second cycle for dispensing and joining each plate',
         'Defined the DVP&amp;R plan to qualify the new adhesive and prepared the samples to standard. Six tests covered leaching (ICP-OES), 1,000 hours of chemical ageing at 95 &deg;C, tensile (ISO 37), lap shear (<strong>2.5 MPa</strong>, ISO 4587), thermal stability and leak tightness',
         'Designed a 3D printed leak test fixture and leak tested the bonded plates in five pressure steps up to 2,300 mbar. All plates stayed leak tight',
         'Designed the handling for series production, a vacuum table and gripper plus an alignment fixture that positions the two half plates for bonding'
       ],
-      chartType: 'bar', chartLabel: 'Bipolar plates per day (12 stations)', chartLabels: ['Before (24 h cycle)', 'After (27 min cure)'], chartValues: [12, 342]
+      chartType: 'bar', chartLabel: 'Bipolar plates per day (12 stations)', chartLabels: ['Before (12 h+ cure)', 'After (27 min cure)'], chartValues: [12, 342]
     }
   };
 
@@ -866,16 +866,16 @@ document.addEventListener('DOMContentLoaded', function () {
     'bpp': {
       tag: 'Verklebung &amp; Abdichtung &middot; Freudenberg e-Power Systems (Masterarbeit)',
       title: 'Skalierung der Bipolarplatten-Verklebung: 342 Platten pro Tag',
-      intro: 'Freudenberg verklebte Graphit-Bipolarplatten mit einem Klebstoff, der einen 24 Stunden Verklebungszyklus brauchte und dabei über Nacht mehr als 12 Stunden unter schweren Gewichten aushärtete, viel zu langsam für die Serienfertigung. In meiner Masterarbeit habe ich einen warmhärtenden Klebstoff als Ersatz qualifiziert, das Dosieren und Aushärten entwickelt und das Produktionslayout geplant.',
+      intro: 'Freudenberg verklebte Graphit-Bipolarplatten mit einem Klebstoff, der über Nacht mehr als 12 Stunden unter schweren Gewichten aushärtete, sodass jede Station eine Platte pro Tag verklebte, viel zu langsam für die Serienfertigung. In meiner Masterarbeit habe ich einen warmhärtenden Klebstoff als Ersatz qualifiziert, das Dosieren und Aushärten entwickelt und das Produktionslayout geplant.',
       bullets: [
-        '<strong>342</strong> Bipolarplatten pro Tag mit einem Ofen-Aushärtungslayout aus <strong>12 Stationen</strong> im Zweischichtbetrieb, gegenüber <strong>12</strong> pro Tag, wenn dieselben Stationen den alten 24 Stunden Zyklus fahren würden. Genug für einen Auftrag über <strong>3.500 Platten</strong> in <strong>11 Arbeitstagen</strong>',
+        '<strong>342</strong> Bipolarplatten pro Tag mit einem Ofen-Aushärtungslayout aus <strong>12 Stationen</strong> im Zweischichtbetrieb, gegenüber <strong>12</strong> pro Tag, wenn dieselben Stationen mit der alten 12 Stunden Aushärtung über Nacht laufen würden. Genug für einen Auftrag über <strong>3.500 Platten</strong> in <strong>11 Arbeitstagen</strong>',
         'Die Aushärtung von mehr als <strong>12 Stunden</strong> auf <strong>27 Minuten</strong> verkürzt (1.600 s bei 130 bis 135 &deg;C), nach einem Vergleich von IR-Heizung, Heizplattenpresse und Ofen mit Thermoelementen in der Klebefuge. IR schied aus, weil das Aluminiumwerkzeug nur 62 &deg;C erreichte, während die Platte darunter 171 &deg;C erreichte, und der Ofen setzte sich durch, weil ein Ofen mit mehreren Fächern besser skaliert als eine Reihe von Pressen',
         'Die Linie auf 12 Stationen ausgelegt, damit die 27 Minuten Aushärtung, verteilt auf die Stationen, mit dem 137 Sekunden Takt für Dosieren und Fügen jeder Platte Schritt hält',
         'Den DVP&amp;R-Plan zur Qualifizierung des neuen Klebstoffs festgelegt und die Proben normgerecht vorbereitet. Sechs Prüfungen deckten Auslaugung (ICP-OES), 1.000 Stunden chemische Alterung bei 95 &deg;C, Zugversuch (ISO 37), Zugscherfestigkeit (<strong>2,5 MPa</strong>, ISO 4587), thermische Stabilität und Dichtheit ab',
         'Eine 3D-gedruckte Dichtheitsprüfvorrichtung konstruiert und die verklebten Platten in fünf Druckstufen bis 2.300 mbar geprüft. Alle Platten blieben dicht',
         'Das Handling für die Serienfertigung konzipiert, einen Vakuumtisch und Greifer sowie eine Ausrichtvorrichtung, die die beiden Halbplatten zum Verkleben positioniert'
       ],
-      chartType: 'bar', chartLabel: 'Bipolarplatten pro Tag (12 Stationen)', chartLabels: ['Vorher (24 h Zyklus)', 'Nachher (27 min Aushärtung)'], chartValues: [12, 342]
+      chartType: 'bar', chartLabel: 'Bipolarplatten pro Tag (12 Stationen)', chartLabels: ['Vorher (12 h+ Aushärtung)', 'Nachher (27 min Aushärtung)'], chartValues: [12, 342]
     }
   };
 
@@ -1011,7 +1011,7 @@ document.addEventListener('DOMContentLoaded', function () {
       new Chart(bppEl, {
         type: 'bar',
         data: {
-          labels: ['Before (24 h cycle)', 'After (27 min cure)'],
+          labels: ['Before (12 h+ cure)', 'After (27 min cure)'],
           datasets: [{
             data: [12, 342],
             backgroundColor: ['rgba(255,80,80,.35)', 'rgba(100,255,218,.6)'],
