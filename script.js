@@ -73,16 +73,16 @@
     'nav.projects': 'Projekte', 'nav.documents': 'Dokumente', 'nav.contact': 'Kontakt', 'nav.resume': 'Lebenslauf ↗',
     'hero.greeting': 'Hallo, ich bin', 'hero.location': 'Erlangen, Deutschland &nbsp;·&nbsp; Offen für neue Möglichkeiten',
     'hero.hireMe': 'Kontakt aufnehmen', 'hero.downloadCV': 'Lebenslauf herunterladen',
-    'stats.cnc': 'CNC-Durchsatz<br/>Steigerung', 'stats.bpp': 'Bipolarplatten<br/>Verklebt / Tag',
+    'stats.cnc': 'Schnelleres<br/>CNC-Dosieren', 'stats.bpp': 'Bipolarplatten / Tag<br/>Layout geplant',
     'stats.cost': 'Geringere Kosten<br/>pro Rad', 'stats.co2': 'CO₂-Reduktion<br/>modelliert',
     'about.title': 'Über mich',
-    'about.bio1': 'Maschinenbau- und Clean-Energy-Ingenieur (M.Sc., FAU Erlangen, Abschlussnote 1,8) mit praktischer Bandbreite in <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung und Fertigungsprozessentwicklung</strong>. Bei Freudenberg e-Power Systems entwickelte ich einen manuellen Klebeprozess zu einem validierten <strong>12-Stationen-Fertigungslayout</strong> weiter und steigerte den Durchsatz um das 7-Fache — inklusive der zugehörigen Prüfstandsarbeit: Dichtheitsprüfung, Scherzugversuch, chemische Beständigkeit und strukturierte Prüfberichte.',
+    'about.bio1': 'Maschinenbauingenieur kurz vor dem Abschluss des M.Sc. Clean Energy Processes an der FAU Erlangen (Note der Masterarbeit 1,8), mit praktischer Erfahrung in <strong>Tests von PEM-Brennstoffzellenkomponenten, DVP&amp;R-Validierung und Entwicklung von Fertigungsprozessen</strong>. Bei Freudenberg e-Power Systems habe ich einen neuen Klebstoff für die Verklebung von Graphit-Bipolarplatten qualifiziert, eine Aushärtung über Nacht durch eine von <strong>27 Minuten</strong> ersetzt, das CNC-Dosieren <strong>6-fach</strong> beschleunigt und ein Layout mit <strong>12 Stationen</strong> für 342 Platten pro Tag geplant.',
     'about.quote': '&bdquo;Seine schnelle Auffassungsgabe und sein Denkvermögen ließen ihn selbst schwierige Situationen sofort überblicken und stets das Wesentliche erkennen&hellip; Herr Nikumbh war immer äußerst zuverlässig und genoss stets unser volles Vertrauen.&ldquo;',
-    'about.quoteSrc': '&mdash; Freudenberg e-Power Systems, Zeugnis',
+    'about.quoteSrc': 'Freudenberg e-Power Systems, Zeugnis',
     'about.radar': 'Kompetenz-Radar',
     'trait.hardworking': 'Fleißig', 'trait.focused': 'Fokussiert', 'trait.persistent': 'Beharrlich',
     'trait.planning': 'Methodische Planung', 'trait.creative': 'Kreative Problemlösung',
-    'impact.title': 'Technische Erfolge', 'impact.sub': 'Echte Zahlen aus echten Projekten — für die volle Geschichte auf eine Karte klicken.',
+    'impact.title': 'Technische Erfolge', 'impact.sub': 'Echte Zahlen aus echten Projekten. Für die volle Geschichte auf eine Karte klicken.',
     'impact.clickHint': 'Zum Entdecken klicken →',
     'impact.cnc.title': 'CNC-Durchsatz', 'impact.cnc.sub': 'NC-Programmoptimierung · Freudenberg e-Power Systems',
     'impact.co2.title': 'CO₂-Reduktion', 'impact.co2.sub': 'Städtisches Energiewende-Modell · Jena',
@@ -108,35 +108,35 @@
     'skill4.backTitle': 'CAD &amp; Dokumentation',
     'skill4.t7': 'Technische Zeichnungen', 'skill4.t8': 'Montageanleitungen', 'skill4.t9': 'Prüfprotokolle',
     'exp.title': 'Erfahrung', 'exp.sub': 'Für die volle Geschichte auf eine Station am Weg klicken.',
-    'exp.tum.role': 'Werkstudent', 'exp.tum.sum': '3D-gedruckte keramische Brennstoffzellen-Prüfvorrichtung mit eigener Abdichtung &amp; Klemmung.',
-    'exp.freudenberg.role': 'Masterand &amp; Praktikant — F&amp;E', 'exp.freudenberg.sum': 'DVP&R-Validierung &amp; Klebeprozess für ~342 Bipolarplatten/Tag. 6-fache CNC-Durchsatzsteigerung.',
-    'exp.lkt.role': 'Werkstudent', 'exp.lkt.sum': 'Graphit/PP-Verbund-Bipolarplatten (80% Graphit / 20% PP) im Spritzgussverfahren; MEA-Forschung.',
-    'exp.truetech.role': 'Trainee', 'exp.truetech.sum': 'CAD-basierte Werkzeugentwicklung und Prozessplanung für die Fertigung.',
-    'exp.pragati.role': 'Praktikant Abschlussarbeit — Konstruktion', 'exp.pragati.sum': 'Spritzgussform für ein Nylonrad: 75% geringere Kosten pro Rad bei 45 Rädern pro Stunde.',
-    'exp.shreyas.role': 'Trainee-Ingenieur', 'exp.shreyas.sum': 'Prozessablaufplanung und Qualitätsprüfungen in der Fertigung nach ISO-Normen.',
-    'exp.kalpataru.role': 'Fertigungspraktikant', 'exp.kalpataru.sum': 'Oberflächenbearbeitung und Maßgenauigkeit beim Bohren, Gewindeschneiden und Drehen.',
+    'exp.tum.role': 'Werkstudent', 'exp.tum.sum': '3D-gedruckte Prüfvorrichtung und Dichtungen für eine Glukose-Brennstoffzelle mit keramischem Elektrolyt.',
+    'exp.freudenberg.role': 'Praktikant &amp; Masterand, F&amp;E', 'exp.freudenberg.sum': '6-fach schnelleres CNC-Dosieren und eine Klebstoffaushärtung von über 12 Stunden auf 27 Minuten verkürzt, für die Verklebung von Bipolarplatten.',
+    'exp.lkt.role': 'Werkstudent', 'exp.lkt.sum': 'Graphit/PP-Verbund-Bipolarplatten im Spritzguss und Recherche zu rahmenintegrierten MEA-Dichtungen.',
+    'exp.truetech.role': 'Trainee', 'exp.truetech.sum': 'CAD-Modelle, Fertigungszeichnungen und Stücklisten in PTC Creo und AutoCAD für Prototypen und Serienteile.',
+    'exp.pragati.role': 'Gesponsertes Bachelorprojekt, Formenbau', 'exp.pragati.sum': 'Spritzgussform für ein Nylonrad mit 75% geringeren Kosten pro Rad bei 45 Rädern pro Stunde.',
+    'exp.shreyas.role': 'Industriepraktikant', 'exp.shreyas.sum': 'Prozessablaufplanung und Qualitätsprüfungen nach ISO in einem Bohr- und Gewindeschneidbetrieb.',
+    'exp.kalpataru.role': 'Fertigungspraktikant', 'exp.kalpataru.sum': 'Oberflächengüte und Maßgenauigkeit beim Bohren, Gewindeschneiden und Drehen.',
     'edu.title': 'Ausbildung',
-    'edu.msc.name': 'Clean Energy Technologies', 'edu.msc.uni': 'Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) · Deutschland',
-    'edu.msc.grade': 'Abschlussnote: 1,8 (sehr gut)',
-    'edu.msc.p1': 'Brennstoffzellen', 'edu.msc.p2': 'Elektrolyse', 'edu.msc.p3': 'Energiespeicher',
-    'edu.msc.p5': 'Polymerwissenschaft', 'edu.msc.p6': 'PV-Systeme',
+    'edu.msc.name': 'Clean Energy Processes', 'edu.msc.uni': 'Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) · Deutschland',
+    'edu.msc.grade': 'Note der Masterarbeit 1,8',
+    'edu.msc.p1': 'Brennstoffzellen &amp; Elektrolyseure', 'edu.msc.p2': 'Energiespeicher', 'edu.msc.p3': 'Thermische Kraftwerke',
+    'edu.msc.p5': 'Polymerwissenschaft', 'edu.msc.p6': 'Dünnschichtverfahren',
     'edu.be.name': 'Maschinenbau', 'edu.be.uni': 'Pune University · Indien',
-    'edu.be.p2': 'Maschinenkonstruktion', 'edu.be.p3': 'Thermodynamik', 'edu.be.p4': 'Werkstoffkunde &amp; Metallurgie', 'edu.be.p5': 'Automatisierung',
+    'edu.be.p2': 'Maschinenkonstruktion', 'edu.be.p3': 'Thermodynamik', 'edu.be.p4': 'Werkstoffkunde &amp; Metallurgie', 'edu.be.p5': 'CAD/CAM &amp; Automatisierung',
     'edu.dip.name': 'Maschinenbau', 'edu.dip.uni': 'MSBTE · Indien',
     'edu.dip.p1': 'Fertigungstechnik', 'edu.dip.p2': 'Technische Grundlagen',
     'proj.title': 'Projekte', 'proj.sub': 'Für Details &amp; Diagramme auf ein Projekt klicken.', 'proj.explore': 'Details entdecken →',
-    'proj.co2.tag': 'Miniprojekt', 'proj.co2.title': 'CO₂-armes Szenario · Stadt Jena',
-    'proj.co2.desc': 'Städtisches Energiemodell mit Solar, E-Fahrzeugen, Brennstoffzellen &amp; Elektrolyse. 21,2% CO₂-Reduktion.',
+    'proj.co2.tag': 'FAU-Gruppenprojekt', 'proj.co2.title': 'CO₂-armes Szenario · Stadt Jena',
+    'proj.co2.desc': 'Solar, Biomethan aus städtischem Abfall, E-Bikes und Elektrobusse für Jena bis 2040 modelliert. 21,2% CO₂-Reduktion.',
     'proj.elec.tag': 'Eigeninitiative', 'proj.elec.title': 'Alkalische Wasserelektrolyse',
-    'proj.elec.desc': 'H₂-Produktionsprototyp gebaut — Temperatur-, Konzentrations- &amp; Geometrieeffekte untersucht.',
-    'proj.rod.tag': 'B.E.-Projekt', 'proj.rod.title': 'Pleuelstangen-Versagensstudie',
-    'proj.rod.desc': 'Zugversuch (UTM) + Vickers-Härte + Mikroskopie zur Bewertung von Zähigkeit &amp; Versagensverhalten.',
+    'proj.elec.desc': 'H₂-Prototyp großteils aus Altmaterial gebaut und Elektrolyt, Temperatur, Elektrodenfläche und Stack-Aufbau getestet.',
+    'proj.rod.tag': 'Diplomprojekt', 'proj.rod.title': 'Untersuchung einer Pleuelstange',
+    'proj.rod.desc': 'Zugversuch an der UTM sowie Vickers-Härte, Mikroskopie und Einschlussanalyse.',
     'pub.title': 'Publikationen',
     'docs.title': 'Dokumente', 'docs.sub': 'Offizielle Bewerbungsunterlagen, zur Ansicht verfügbar.',
     'docs.view': 'Ansehen ↗', 'docs.request': 'Anfragen ↗',
-    'docs.refs.title': 'Arbeitszeugnisse &amp; Referenzen', 'docs.refs.desc': 'Referenzschreiben — Freudenberg, TrueTech Vision, Pragati Udyog u. a.',
-    'docs.transcript.title': 'Notenübersicht', 'docs.transcript.desc': 'M.Sc. Clean Energy Technologies — FAU Erlangen-Nürnberg (inkl. vollständiger Modulübersicht)',
-    'docs.degree.title': 'Abschluss- &amp; Diplomurkunden', 'docs.degree.desc': 'Bachelor of Engineering + Diplom (Maschinenbau) — M.Sc.-Urkunde folgt nach Studienabschluss',
+    'docs.refs.title': 'Arbeitszeugnisse &amp; Referenzen', 'docs.refs.desc': 'Arbeitszeugnisse und Bescheinigungen von Freudenberg, Truetech Vision, Pragati Udyog u. a.',
+    'docs.transcript.title': 'Notenübersicht', 'docs.transcript.desc': 'M.Sc. Clean Energy Processes, FAU Erlangen-Nürnberg, mit vollständiger Modulübersicht',
+    'docs.degree.title': 'Abschluss- &amp; Diplomurkunden', 'docs.degree.desc': 'Bachelor of Engineering und Diplom im Maschinenbau. M.Sc.-Urkunde folgt nach Studienabschluss',
     'docs.certs.title': 'Sprach- &amp; Leistungszertifikate', 'docs.certs.desc': 'Deutsch A2, Japanisch N5 sowie akademische Veranstaltungszertifikate',
     'lang.title': 'Sprachen',
     'lang.en': 'Englisch', 'lang.en.lvl': 'C1 · Verhandlungssicher',
@@ -148,6 +148,7 @@
     'contact.linkedin': 'LinkedIn-Profil', 'contact.sayHello': 'Hallo sagen →', 'contact.bookCall': 'Termin buchen →',
     'traits.focus': 'Fokus', 'traits.creative': 'Kreative Problemlösung', 'traits.adaptability': 'Anpassungsfähigkeit', 'traits.teamwork': 'Teamarbeit', 'traits.detail': 'Detailgenauigkeit',
     'contact.bookingLabel': 'Freie Termine ansehen und direkt buchen:', 'contact.bookingNote': 'Möchten Sie den Termin lieber selbst über Outlook, Teams oder eine andere Plattform organisieren? Schauen Sie sich einfach meine Verfügbarkeit oben an und vereinbaren Sie den Termin persönlich, wie es für Sie am besten passt.', 'contact.bookingFallback': 'Kalender lädt nicht? Buchungsseite in neuem Tab öffnen →',
+    'edu.msc.p4': 'Ökobilanzierung', 'edu.be.grade': 'Erste Klasse mit Auszeichnung', 'edu.be.p6': 'Messtechnik &amp; Qualitätssicherung', 'edu.dip.grade': 'Erste Klasse mit Auszeichnung',
     'footer.text': 'Rushikesh Nikumbh · © 2026'
   };
 
@@ -174,8 +175,8 @@
       ? 'Rushikesh Nikumbh | Maschinenbauingenieur — Clean Energy & Wasserstoff'
       : 'Rushikesh Nikumbh | Mechanical Engineer — Clean Energy & Hydrogen';
     if (descEl) descEl.setAttribute('content', lang === 'de'
-      ? 'Portfolio von Rushikesh Nikumbh – M.Sc. Clean Energy Technologies, Maschinenbauingenieur mit Schwerpunkt Brennstoffzellen-, Wasserstoff- und Fertigungstechnik.'
-      : 'Portfolio of Rushikesh Nikumbh – M.Sc. Clean Energy Technologies, Mechanical Engineer specialising in fuel cell, hydrogen & manufacturing engineering.');
+      ? 'Portfolio von Rushikesh Nikumbh, Maschinenbauingenieur (M.Sc. Clean Energy Processes, FAU Erlangen) mit Schwerpunkt Brennstoffzellentests, Validierung und Fertigungstechnik.'
+      : 'Portfolio of Rushikesh Nikumbh, mechanical engineer (M.Sc. Clean Energy Processes, FAU Erlangen) specialising in fuel cell testing, validation and manufacturing engineering.');
     var enBtn = document.getElementById('lang-en');
     var deBtn = document.getElementById('lang-de');
     if (enBtn && deBtn) {
@@ -493,61 +494,54 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── Experience modal data ────────────────────────────────────────────── */
   var expData = {
     'tum': {
-      role: 'Working Student', co: 'Technical University Munich (TUM)',
+      role: 'Working Student, Department of Chemistry', co: 'Technical University of Munich (TUM)',
       date: 'Nov 2025 – Dec 2025',
-      intro: 'Short-duration assignment developing a custom test fixture for fuel cell research.',
+      intro: 'Built the test hardware for a glucose fuel cell with a ceramic electrolyte, from the sealing concept to the first validation tests.',
       bullets: [
-        '3D-printed a ceramic fuel cell test fixture with custom sealing &amp; clamping design',
-        'Performed leak-tightness verification and electrochemical voltage characterisation on the assembled fixture',
-        'Produced commissioning documentation, safety protocols, and technical drawings for the test setup'
+        'Designed and 3D printed the cell test fixture with a dedicated sealing profile, clamping and the interfaces for electrochemical testing',
+        'Made a 3D printed mould to cast the complex sealing geometry, then oven cured the seals',
+        'Ran the first single cell validation tests, checking leak tightness and measuring cell voltage',
+        'Wrote the CAD models, technical drawings, assembly instructions, safety requirements and commissioning procedure for the setup'
       ]
     },
     'freudenberg': {
-      role: 'Thesis Student & Research Intern', co: 'Freudenberg e-Power Systems GmbH',
+      role: 'Intern, then Master&rsquo;s Thesis Student (R&amp;D)', co: 'Freudenberg e-Power Systems GmbH',
       date: 'Aug 2024 – Jun 2025',
-      thesis: 'M.Sc. Thesis: Bonding & Sealing Process Optimisation for PEM Fuel Cell Bipolar Plates — 342 BPP/day production layout and 6× CNC dispensing throughput through structured DVP&R validation.',
+      thesis: 'M.Sc. thesis &ldquo;Analysis of Bonding Application for Graphite Bipolar Plate&rdquo; in the Unit Cell &amp; Bipolar Plate Technology team, following a 5 month internship in the same team.',
       bullets: [
-        '<strong>342 BPP/day</strong> production layout designed — 12-station curing concept scaled from a 20/day single-station baseline',
-        '<strong>6× CNC dispensing throughput</strong> via NC-program optimisation and parameter tuning',
-        'Identified and specified suitable test methods (leaching, chemical stability, mechanical) within a structured DVP&amp;R framework',
-        'Prepared standardized test specimens to ISO norms; evaluated measurement data and wrote structured test reports',
-        'Learned the DATRON dispensing system\'s code structure independently — no formal training — and wrote new programs for specific dispensing outputs, troubleshooting by tracing patterns in the output back to the code',
-        'Fuji Pressure Film testing for contact pressure distribution analysis',
-        'Surface characterization using profilometer &amp; 3D scanning',
-        'Calibration checks on measurement equipment before test execution',
-        'CATIA V5 &amp; SolidWorks fixture design for test-rig development',
-        'Technical documentation: DVP&amp;R reports, test protocols, process flowcharts'
-      ],
-      chartLabel: 'BPP Daily Output (units)',
-      chartLabels: ['Baseline', 'Study 1', 'Study 2', 'Study 3', 'Optimised'],
-      chartValues: [20, 110, 200, 280, 342]
+        '<strong>6&times; faster CNC dispensing</strong> (8 to 50 mm/s) and a <strong>12 station</strong> bonding layout planned for <strong>342 bipolar plates a day</strong>',
+        'Replaced an overnight adhesive cure of more than 12 hours with a <strong>27 minute</strong> heat cure, after comparing IR, hot plate and oven curing',
+        'Defined the DVP&amp;R test plan for the new adhesive and prepared the samples to standard, covering leaching (ICP-OES), chemical stability, tensile, lap shear and leak tests',
+        'Leak tested short stacks to check the quality of bonded plates, and ran Fuji pressure film tests to check the force distribution across the plates',
+        'Measured dispensed bead profiles with a profilometer and 3D scanner and tuned the dispensing parameters from the results',
+        'Designed a 3D printed snap fit tool that aligns the plates for bonding and removed the need for 2 extra operators, plus a vacuum table and gripper for handling',
+        'Joined Freudenberg&rsquo;s internal training courses on my own initiative'
+      ]
     },
     'lkt': {
-      role: 'Working Student — Bipolar Plate Materials Research', co: 'FAU Erlangen — Lehrstuhl für Kunststofftechnik (LKT)',
+      role: 'Working Student', co: 'FAU Erlangen, Institute of Polymer Technology (LKT)',
       date: 'Mar 2024 – Jul 2024',
-      intro: 'Materials research into composite bipolar plates and scalable bonding concepts for fuel cell stacks.',
+      intro: 'Research on composite bipolar plates and sealing concepts for fuel cell stacks.',
       bullets: [
-        'Developed graphite/PP composite bipolar plates (80% graphite / 20% PP) via injection moulding',
-        'Investigated material behaviour and manufacturing constraints of composite BPPs',
-        'Researched frame-integrated MEA bonding and sealing concepts for scalable stack assembly',
-        'Coordinated experimental work and documented results for research outputs'
+        'Developed graphite and polypropylene composite materials for bipolar plates, processed by injection moulding',
+        'Researched literature and patents on gas seal designs and materials, and identified frame integrated MEAs with an injection moulded sealing frame as a promising route to mass manufacturing and long term reliability',
+        'Assisted in coordinating the experimental work'
       ]
     },
     'truetech': {
-      role: 'Graduate Trainee', co: 'Truetech Vision — Pune, India',
+      role: 'Graduate Trainee, Production Engineering', co: 'Truetech Vision Industry Pvt. Ltd.',
       date: 'Jul 2020 – Jan 2021',
-      intro: 'Industrial automation and mechanical systems role covering machine design and commissioning.',
+      intro: 'Six month in plant training covering design, production drawings and the manufacturing floor.',
       bullets: [
-        'Managed mechanical assembly and commissioning of automated inspection lines',
-        'Maintained CNC machines and performed first-level troubleshooting',
-        'Created CATIA &amp; AutoCAD drawings for custom tooling adaptors',
-        'Customer-facing machine handover and operator training'
+        'Built CAD models in PTC Creo and AutoCAD for prototypes and production components',
+        'Prepared production drawings and bills of materials, and ran basic stress analysis and data evaluation',
+        'Supported plant layout optimisation and learned to run the plant&rsquo;s manufacturing machines'
       ]
     },
     'pragati': {
-      role: 'Thesis Intern — Design Engineer', co: 'Pragati Udyog',
+      role: 'Sponsored B.E. Project, Mould Design', co: 'Pragati Udyog',
       date: 'Jun 2019 – Apr 2020',
-      thesis: 'B.E. Group Project: Design and Manufacturing of Wheel Mould, taken from CAD model to a tested, production ready injection mould for a solar panel cleaning trolley wheel.',
+      thesis: 'B.E. group project &ldquo;Design and Manufacturing of Wheel Mould&rdquo;, sponsored by Pragati Udyog and taken from CAD model to a tested, production ready injection mould for a solar panel cleaning trolley wheel.',
       bullets: [
         '<strong>75% lower cost per wheel</strong> (Rs. 27.5 against a Rs. 110 market price) at 45 wheels per hour, with the mould paying back its cost in 16 hours of production',
         'Modelled the complete mould in PTC Creo 4.0 and produced manufacturing drawings for every part',
@@ -557,23 +551,21 @@ document.addEventListener('DOMContentLoaded', function () {
       ]
     },
     'shreyas': {
-      role: 'Trainee Engineer', co: 'Shreyas Industry',
-      date: 'Jun 2019',
-      intro: 'Short industrial exposure to manufacturing floor operations and quality inspection.',
+      role: 'Industrial Trainee', co: 'Shreyas Industry, Nashik',
+      date: 'Jun 2019 (2 weeks)',
+      intro: 'Two week industrial training at a drilling and tapping job shop.',
       bullets: [
-        'Observed and participated in lathe, milling, and grinding operations',
-        'Assisted quality team with dimensional inspection',
-        'Documented process parameters for standard operating procedures'
+        'Mapped the process flow and prepared the bill of processes for parts on the shop floor',
+        'Carried out quality checks on drilled and tapped parts according to ISO norms'
       ]
     },
     'kalpataru': {
-      role: 'Manufacturing Intern', co: 'Kalpataru Precision Tools',
+      role: 'Manufacturing Trainee', co: 'Kalpataru Precision Tools, Nashik',
       date: 'May 2016 – Jun 2016',
-      intro: 'First industrial internship — exposure to precision tooling and machining.',
+      intro: 'One month training programme during my diploma, my first time on a production floor.',
       bullets: [
-        'Observed conventional and CNC machining of precision cutting tools',
-        'Learned workholding, toolpath planning, and G-code basics',
-        'Participated in quality checks: hardness testing, surface finish measurement'
+        'Worked on drilling, tapping and lathe operations with a focus on surface finish and dimensional accuracy',
+        'Described in my training certificate as punctual, hardworking and inquisitive'
       ]
     }
   };
@@ -581,63 +573,56 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── Experience modal data — German ───────────────────────────────────── */
   var expDataDE = {
     'tum': {
-      role: 'Werkstudent', co: 'Technische Universität München (TUM)',
+      role: 'Werkstudent, Department Chemie', co: 'Technische Universität München (TUM)',
       date: 'Nov 2025 – Dez 2025',
-      intro: 'Kurzzeitiger Einsatz zur Entwicklung einer maßgeschneiderten Prüfvorrichtung für die Brennstoffzellenforschung.',
+      intro: 'Testhardware für eine Glukose-Brennstoffzelle mit keramischem Elektrolyt aufgebaut, vom Dichtungskonzept bis zu den ersten Validierungstests.',
       bullets: [
-        'Keramische Brennstoffzellen-Prüfvorrichtung mit eigens entwickelter Abdichtung und Klemmung 3D-gedruckt',
-        'Dichtheitsprüfung und elektrochemische Spannungscharakterisierung an der montierten Vorrichtung durchgeführt',
-        'Inbetriebnahmedokumentation, Sicherheitsprotokolle und technische Zeichnungen für den Versuchsaufbau erstellt'
+        'Prüfvorrichtung der Zelle mit eigenem Dichtungsprofil, Klemmung und Schnittstellen für elektrochemische Tests konstruiert und 3D-gedruckt',
+        'Eine 3D-gedruckte Form zum Gießen der komplexen Dichtungsgeometrie gebaut und die Dichtungen im Ofen ausgehärtet',
+        'Die ersten Einzelzell-Validierungstests durchgeführt, mit Dichtheitsprüfung und Messung der Zellspannung',
+        'CAD-Modelle, technische Zeichnungen, Montageanleitung, Sicherheitsanforderungen und Inbetriebnahmeverfahren für den Aufbau erstellt'
       ]
     },
     'freudenberg': {
-      role: 'Masterand &amp; Forschungspraktikant', co: 'Freudenberg e-Power Systems GmbH',
+      role: 'Praktikant, dann Masterand (F&amp;E)', co: 'Freudenberg e-Power Systems GmbH',
       date: 'Aug 2024 – Jun 2025',
-      thesis: 'Masterarbeit: Prozessoptimierung für Verklebung &amp; Abdichtung von PEM-Brennstoffzellen-Bipolarplatten — Produktionslayout für 342 BPP/Tag und 6-fache CNC-Dosierdurchsatzsteigerung durch strukturierte DVP&R-Validierung.',
+      thesis: 'Masterarbeit &bdquo;Analysis of Bonding Application for Graphite Bipolar Plate&ldquo; im Team Unit Cell &amp; Bipolar Plate Technology, nach einem fünfmonatigen Praktikum im selben Team.',
       bullets: [
-        '<strong>Produktionslayout für 342 BPP/Tag</strong> entworfen — 12-Stationen-Aushärtungskonzept, skaliert von einer Basis von 20/Tag mit einer Station',
-        '<strong>6-fache Steigerung des CNC-Dosierdurchsatzes</strong> durch NC-Programmoptimierung und Parameteranpassung',
-        'Geeignete Prüfmethoden (Laugung, chemische Beständigkeit, mechanische Prüfungen) im Rahmen eines strukturierten DVP&amp;R-Frameworks identifiziert und festgelegt',
-        'Standardisierte Prüfkörper nach Normen vorbereitet; Messdaten ausgewertet und strukturierte Prüfberichte verfasst',
-        'Den Code-Aufbau des DATRON-Dosiersystems selbstständig gelernt — ohne formale Schulung — und neue Programme für bestimmte Dosierausgaben geschrieben, mit Fehlersuche anhand der Ausgabemuster',
-        'Fuji-Drucktests zur Analyse der Kontaktdruckverteilung',
-        'Oberflächencharakterisierung mittels Profilometer &amp; 3D-Scanning',
-        'Kalibrierprüfungen der Messtechnik vor jeder Testdurchführung',
-        'CATIA V5 &amp; SolidWorks Vorrichtungskonstruktion für den Prüfstandsbau',
-        'Technische Dokumentation: DVP&amp;R-Berichte, Prüfprotokolle, Prozessablaufpläne'
-      ],
-      chartLabel: 'BPP Tagesausstoß (Stück)',
-      chartLabels: ['Basis', 'Studie 1', 'Studie 2', 'Studie 3', 'Optimiert'],
-      chartValues: [20, 110, 200, 280, 342]
+        '<strong>6-fach schnelleres CNC-Dosieren</strong> (8 auf 50 mm/s) und ein Verklebungslayout mit <strong>12 Stationen</strong>, geplant für <strong>342 Bipolarplatten pro Tag</strong>',
+        'Eine Klebstoffaushärtung über Nacht von mehr als 12 Stunden durch eine Warmhärtung von <strong>27 Minuten</strong> ersetzt, nach einem Vergleich von IR-, Heizplatten- und Ofenaushärtung',
+        'Den DVP&amp;R-Prüfplan für den neuen Klebstoff festgelegt und die Proben normgerecht vorbereitet, mit Auslaugung (ICP-OES), chemischer Beständigkeit, Zugversuch, Zugscherversuch und Dichtheitsprüfung',
+        'Dichtheitsprüfungen am Short Stack zur Qualitätssicherung verklebter Platten und Fuji-Drucktests zur Kraftverteilung über die Platten durchgeführt',
+        'Profile der dosierten Raupen mit Profilometer und 3D-Scanner vermessen und die Dosierparameter anhand der Ergebnisse angepasst',
+        'Ein 3D-gedrucktes Schnapp-Ausrichtwerkzeug für die Verklebung konstruiert, das 2 zusätzliche Bediener überflüssig machte, dazu einen Vakuumtisch und Greifer für das Handling',
+        'Aus eigener Initiative an internen Schulungen von Freudenberg teilgenommen'
+      ]
     },
     'lkt': {
-      role: 'Werkstudent — Materialforschung Bipolarplatten', co: 'FAU Erlangen — Lehrstuhl für Kunststofftechnik (LKT)',
+      role: 'Werkstudent', co: 'FAU Erlangen, Lehrstuhl für Kunststofftechnik (LKT)',
       date: 'Mär 2024 – Jul 2024',
-      intro: 'Materialforschung an Verbund-Bipolarplatten und skalierbaren Verklebungskonzepten für Brennstoffzellen-Stacks.',
+      intro: 'Forschung zu Verbund-Bipolarplatten und Dichtungskonzepten für Brennstoffzellen-Stacks.',
       bullets: [
-        'Graphit/PP-Verbund-Bipolarplatten (80% Graphit / 20% PP) im Spritzgussverfahren entwickelt',
-        'Materialverhalten und Fertigungsgrenzen von Verbund-BPPs untersucht',
-        'Rahmenintegrierte MEA-Verklebungs- und Abdichtungskonzepte für skalierbare Stack-Montage erforscht',
-        'Versuchsarbeit koordiniert und Ergebnisse für Forschungszwecke dokumentiert'
+        'Verbundwerkstoffe aus Graphit und Polypropylen für Bipolarplatten entwickelt, verarbeitet im Spritzguss',
+        'Literatur und Patente zu Gasdichtungen und Dichtungswerkstoffen recherchiert und rahmenintegrierte MEAs mit spritzgegossenem Dichtrahmen als vielversprechenden Weg für Massenfertigung und Langzeitzuverlässigkeit identifiziert',
+        'Bei der Koordination der Versuchsarbeit unterstützt'
       ]
     },
     'truetech': {
-      role: 'Trainee', co: 'Truetech Vision — Pune, Indien',
+      role: 'Graduate Trainee, Produktionstechnik', co: 'Truetech Vision Industry Pvt. Ltd.',
       date: 'Jul 2020 – Jan 2021',
-      intro: 'Rolle in industrieller Automatisierung und Maschinenbau mit Fokus auf Konstruktion und Inbetriebnahme.',
+      intro: 'Sechsmonatige Ausbildung im Werk mit Konstruktion, Fertigungszeichnungen und Arbeit in der Produktion.',
       bullets: [
-        'Mechanische Montage und Inbetriebnahme automatisierter Prüflinien geleitet',
-        'CNC-Maschinen gewartet und erste Fehlersuche durchgeführt',
-        'CATIA- &amp; AutoCAD-Zeichnungen für kundenspezifische Werkzeugadapter erstellt',
-        'Kundenseitige Maschinenübergabe und Bedienerschulung'
+        'CAD-Modelle in PTC Creo und AutoCAD für Prototypen und Serienbauteile erstellt',
+        'Fertigungszeichnungen und Stücklisten erstellt sowie einfache Festigkeitsberechnungen und Datenauswertungen durchgeführt',
+        'Bei der Optimierung des Werkslayouts unterstützt und die Fertigungsmaschinen des Werks bedienen gelernt'
       ]
     },
     'pragati': {
-      role: 'Praktikant Abschlussarbeit — Konstruktion', co: 'Pragati Udyog',
+      role: 'Gesponsertes Bachelorprojekt, Formenbau', co: 'Pragati Udyog',
       date: 'Jun 2019 – Apr 2020',
-      thesis: 'Bachelor Gruppenprojekt: Entwurf und Fertigung einer Radform, vom CAD-Modell bis zur getesteten, serienreifen Spritzgussform für das Rad eines Solarpanel Reinigungswagens.',
+      thesis: 'Bachelor-Gruppenprojekt &bdquo;Design and Manufacturing of Wheel Mould&ldquo;, gesponsert von Pragati Udyog, vom CAD-Modell bis zur getesteten, serienreifen Spritzgussform für das Rad eines Solarpanel Reinigungswagens.',
       bullets: [
-        '<strong>75% geringere Kosten pro Rad</strong> (Rs. 27,5 gegenüber einem Marktpreis von Rs. 110) bei 45 Rädern pro Stunde; die Form hatte ihre Kosten nach 16 Stunden Produktion wieder eingespielt',
+        '<strong>75% geringere Kosten pro Rad</strong> (Rs. 27,5 gegenüber einem Marktpreis von Rs. 110) bei 45 Rädern pro Stunde, und die Form hatte ihre Kosten nach 16 Stunden Produktion wieder eingespielt',
         'Komplette Form in PTC Creo 4.0 modelliert und Fertigungszeichnungen für jedes Bauteil erstellt',
         'Anguss (5,2 mm) und Verteilerkanal (8,5 mm) für Nylon rechnerisch ausgelegt',
         'Spritzfehler auf eingeschlossene Luft zurückgeführt und durch Neugestaltung von Verteilerkanal und Entlüftung behoben',
@@ -645,23 +630,21 @@ document.addEventListener('DOMContentLoaded', function () {
       ]
     },
     'shreyas': {
-      role: 'Trainee-Ingenieur', co: 'Shreyas Industry',
-      date: 'Jun 2019',
-      intro: 'Kurzer Einblick in Fertigungsbetrieb und Qualitätsprüfung.',
+      role: 'Industriepraktikant', co: 'Shreyas Industry, Nashik',
+      date: 'Jun 2019 (2 Wochen)',
+      intro: 'Zweiwöchiges Industriepraktikum in einem Bohr- und Gewindeschneidbetrieb.',
       bullets: [
-        'Dreh-, Fräs- und Schleifarbeiten beobachtet und begleitet',
-        'Qualitätsteam bei Maßprüfungen unterstützt',
-        'Prozessparameter für Standardarbeitsanweisungen dokumentiert'
+        'Prozessablauf aufgenommen und den Arbeitsplan für Teile in der Fertigung erstellt',
+        'Qualitätsprüfungen an gebohrten und gewindegeschnittenen Teilen nach ISO-Normen durchgeführt'
       ]
     },
     'kalpataru': {
-      role: 'Fertigungspraktikant', co: 'Kalpataru Precision Tools',
+      role: 'Fertigungspraktikant', co: 'Kalpataru Precision Tools, Nashik',
       date: 'Mai 2016 – Jun 2016',
-      intro: 'Erstes Industriepraktikum — Einblick in Präzisionswerkzeugbau und Zerspanung.',
+      intro: 'Einmonatiges Praktikum während meines Diploms, mein erster Einsatz in der Fertigung.',
       bullets: [
-        'Konventionelle und CNC-Bearbeitung von Präzisionswerkzeugen beobachtet',
-        'Grundlagen von Spannmitteln, Werkzeugwegplanung und G-Code gelernt',
-        'An Qualitätsprüfungen teilgenommen: Härteprüfung, Oberflächenmessung'
+        'Bohr-, Gewindeschneid- und Dreharbeiten mit Fokus auf Oberflächengüte und Maßgenauigkeit',
+        'Im Praktikumszeugnis als pünktlich, fleißig und wissbegierig beschrieben'
       ]
     }
   };
@@ -692,102 +675,70 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── Project modal data ───────────────────────────────────────────────── */
   var projData = {
     'co2': {
-      title: 'Low-CO₂ Scenario Simulation — City of Jena',
-      tag: 'Energy Systems Analysis',
-      intro: 'Comprehensive clean energy transition study analysing CO₂ reduction pathways for the city of Jena.',
+      title: 'Low CO₂ Scenario for the City of Jena',
+      tag: 'Energy Systems Analysis &middot; FAU Group Project',
+      intro: 'A group project in the Renewable Thermal Power Plants module at FAU. We analysed Jena&rsquo;s energy and emissions data and modelled how the city could cut CO₂ by 2040. The plan modelled a 21.2% cut in CO₂ emissions.',
       bullets: [
-        '<strong>21.2% CO₂ reduction</strong> achieved by 2035 in the modelled scenario',
-        'Analysed wind, solar PV, biomass, and heat pump integration pathways',
-        'Evaluated sector coupling between electricity, heat, and transport',
-        'Used EnergyPLAN and Python for scenario modelling and sensitivity analysis',
-        'Presented findings with visualization dashboards for stakeholder communication'
-      ],
-      chartLabel: 'CO₂ Index (base=100)',
-      chartLabels: ['2020', '2025', '2028', '2031', '2035'],
-      chartValues: [100, 91, 83, 82.3, 78.8]
+        'Analysed 15 years of energy, population and emissions data (2005 to 2019) and projected the trends to 2040',
+        'Modelled 500 kW of new solar capacity every year and a 500 kW biogas plant that turns the city&rsquo;s household waste into biomethane',
+        'Modelled a shift to e-bikes and 44 electric buses phased in over 20 years',
+        'Evaluated a redesign of the city&rsquo;s power plant around a 10.4 MW gas engine and a heat recovery steam turbine'
+      ]
     },
     'electrolysis': {
       title: 'Alkaline Water Electrolysis Prototype',
-      tag: 'Hydrogen Production',
-      intro: 'Full-stack design and build of an alkaline electrolysis test cell with systematic electrochemical characterization.',
+      tag: 'Self Initiated &middot; Hydrogen Production',
+      intro: 'A curiosity project during my bachelor studies in 2019. I built a working electrolyser, largely from scrap materials, to see how design choices change hydrogen output.',
       bullets: [
-        'Reaction: <strong>2H₂O → 2H₂ + O₂</strong> using 30 wt% KOH electrolyte',
-        'Cathode: stainless steel mesh; Anode: nickel foam for catalytic surface area',
-        'Custom 3D-printed PLA housing and electrode spacer frames (SolidWorks)',
-        'Electrochemical testing: polarization curves, EIS, Tafel slope analysis',
-        'Measured Faradaic efficiency and H₂ purity at different current densities',
-        'Results fed into FAU research group publication pipeline'
-      ],
-      chartLabel: 'Cell Voltage (V)',
-      chartLabels: ['10 mA/cm²', '50 mA/cm²', '100 mA/cm²', '200 mA/cm²', '400 mA/cm²'],
-      chartValues: [1.52, 1.68, 1.82, 1.98, 2.15]
+        'Built the electrolysis stack and test setup largely from scrap and low cost materials',
+        'Varied the electrolyte, its temperature, the electrode surface area and the stack configuration to compare their effect on hydrogen production',
+        'Powered the stack from a transformer based DC supply and recorded stack voltage and current for every run'
+      ]
     },
     'connrod': {
-      title: 'Connecting Rod Failure Investigation',
-      tag: 'Materials &amp; Testing',
-      intro: 'Experimental investigation into mechanical properties and failure modes using UTM and Vickers hardness mapping.',
+      title: 'Experimental Investigation of a Connecting Rod',
+      tag: 'Diploma Project &middot; Materials Testing',
+      intro: 'Six month diploma project analysing the material of an engine connecting rod to evaluate its degradation behaviour.',
       bullets: [
-        'UTM tensile test: yield strength, UTS, elongation compared to DIN EN standards',
-        'Vickers Hardness mapping: 15-point profile across cross-section',
-        'Fracture surface analysis: brittle vs. ductile modes via macro + microscopy',
-        'CATIA V5 FE mesh preparation for stress concentration verification',
-        'Material: 40Cr4 alloy steel — hardness 285–310 HV across gauge',
-        'Documented results in structured technical report with pass/fail conclusion'
-      ],
-      chartLabel: 'Hardness (HV)',
-      chartLabels: ['Edge 1', 'Zone 2', 'Zone 3', 'Centre', 'Zone 5', 'Zone 6', 'Edge 7'],
-      chartValues: [310, 302, 297, 285, 291, 299, 308]
+        'Ran tensile tests on a universal testing machine',
+        'Measured Vickers hardness and examined the microstructure under the microscope',
+        'Checked the material for inclusions as part of the characterisation'
+      ]
     }
   };
 
   /* ── Project modal data — German ──────────────────────────────────────── */
   var projDataDE = {
     'co2': {
-      title: 'CO₂-arme Szenariomodellierung — Stadt Jena',
-      tag: 'Energiesystemanalyse',
-      intro: 'Umfassende Energiewende-Studie zur Analyse von CO₂-Reduktionspfaden für die Stadt Jena.',
+      title: 'CO₂-armes Szenario für die Stadt Jena',
+      tag: 'Energiesystemanalyse &middot; FAU-Gruppenprojekt',
+      intro: 'Ein Gruppenprojekt im Modul Renewable Thermal Power Plants an der FAU. Wir haben die Energie- und Emissionsdaten Jenas analysiert und modelliert, wie die Stadt ihren CO₂-Ausstoß bis 2040 senken könnte. Der Plan modellierte eine CO₂-Reduktion von 21,2%.',
       bullets: [
-        '<strong>21,2% CO₂-Reduktion</strong> im modellierten Szenario bis 2035 erreicht',
-        'Wind-, Solar-PV-, Biomasse- und Wärmepumpen-Integrationspfade analysiert',
-        'Sektorkopplung zwischen Strom, Wärme und Verkehr bewertet',
-        'EnergyPLAN und Python für Szenariomodellierung und Sensitivitätsanalyse eingesetzt',
-        'Ergebnisse mit Visualisierungs-Dashboards für die Stakeholder-Kommunikation präsentiert'
-      ],
-      chartLabel: 'CO₂-Index (Basis=100)',
-      chartLabels: ['2020', '2025', '2028', '2031', '2035'],
-      chartValues: [100, 91, 83, 82.3, 78.8]
+        '15 Jahre Energie-, Bevölkerungs- und Emissionsdaten (2005 bis 2019) analysiert und die Trends bis 2040 fortgeschrieben',
+        '500 kW neue Solarleistung pro Jahr und eine 500 kW Biogasanlage modelliert, die den Hausmüll der Stadt in Biomethan umwandelt',
+        'Einen Umstieg auf E-Bikes und 44 Elektrobusse modelliert, schrittweise eingeführt über 20 Jahre',
+        'Eine Neukonzeption des städtischen Kraftwerks mit 10,4 MW Gasmotor und Dampfturbine zur Wärmerückgewinnung bewertet'
+      ]
     },
     'electrolysis': {
-      title: 'Alkalischer Wasserelektrolyse-Prototyp',
-      tag: 'Wasserstoffproduktion',
-      intro: 'Vollständiger Entwurf und Bau einer alkalischen Elektrolysezelle mit systematischer elektrochemischer Charakterisierung.',
+      title: 'Prototyp für alkalische Wasserelektrolyse',
+      tag: 'Eigeninitiative &middot; Wasserstofferzeugung',
+      intro: 'Ein Neugier-Projekt während meines Bachelorstudiums 2019. Ich habe einen funktionierenden Elektrolyseur gebaut, großteils aus Altmaterial, um zu sehen, wie Designentscheidungen die Wasserstoffproduktion verändern.',
       bullets: [
-        'Reaktion: <strong>2H₂O → 2H₂ + O₂</strong> mit 30 Gew.-% KOH-Elektrolyt',
-        'Kathode: Edelstahlgeflecht; Anode: Nickelschaum für katalytische Oberfläche',
-        'Eigens 3D-gedrucktes PLA-Gehäuse und Elektrodenabstandshalter (SolidWorks)',
-        'Elektrochemische Tests: Polarisationskurven, EIS, Tafel-Steigungsanalyse',
-        'Faraday-Wirkungsgrad und H₂-Reinheit bei verschiedenen Stromdichten gemessen',
-        'Ergebnisse in die Publikationspipeline der FAU-Forschungsgruppe eingeflossen'
-      ],
-      chartLabel: 'Zellspannung (V)',
-      chartLabels: ['10 mA/cm²', '50 mA/cm²', '100 mA/cm²', '200 mA/cm²', '400 mA/cm²'],
-      chartValues: [1.52, 1.68, 1.82, 1.98, 2.15]
+        'Elektrolyse-Stack und Versuchsaufbau großteils aus Altmaterial und günstigen Materialien gebaut',
+        'Elektrolyt, Temperatur, Elektrodenfläche und Stack-Konfiguration variiert, um ihren Einfluss auf die Wasserstoffproduktion zu vergleichen',
+        'Den Stack über ein transformatorbasiertes DC-Netzteil versorgt und Stapelspannung und Strom bei jedem Versuch aufgezeichnet'
+      ]
     },
     'connrod': {
-      title: 'Pleuelstangen-Versagensuntersuchung',
-      tag: 'Werkstoffe &amp; Prüftechnik',
-      intro: 'Experimentelle Untersuchung von mechanischen Eigenschaften und Versagensverhalten mittels UTM und Vickers-Härtekartierung.',
+      title: 'Experimentelle Untersuchung einer Pleuelstange',
+      tag: 'Diplomprojekt &middot; Werkstoffprüfung',
+      intro: 'Sechsmonatiges Diplomprojekt zur Werkstoffanalyse einer Motorpleuelstange und ihres Degradationsverhaltens.',
       bullets: [
-        'Zugversuch (UTM): Streckgrenze, Zugfestigkeit, Bruchdehnung im Vergleich zu DIN-EN-Normen',
-        'Vickers-Härtekartierung: 15-Punkte-Profil über den Querschnitt',
-        'Bruchflächenanalyse: spröde vs. duktile Versagensarten mittels Makro- und Mikroskopie',
-        'CATIA V5 FE-Vernetzung zur Verifikation von Spannungskonzentrationen',
-        'Werkstoff: 40Cr4-Legierungsstahl — Härte 285–310 HV über den Messbereich',
-        'Ergebnisse in strukturiertem technischen Bericht mit Bestehen/Nicht-Bestehen-Bewertung dokumentiert'
-      ],
-      chartLabel: 'Härte (HV)',
-      chartLabels: ['Kante 1', 'Zone 2', 'Zone 3', 'Mitte', 'Zone 5', 'Zone 6', 'Kante 7'],
-      chartValues: [310, 302, 297, 285, 291, 299, 308]
+        'Zugversuche an einer Universalprüfmaschine durchgeführt',
+        'Vickers-Härte gemessen und das Gefüge unter dem Mikroskop untersucht',
+        'Den Werkstoff im Rahmen der Charakterisierung auf Einschlüsse geprüft'
+      ]
     }
   };
 
@@ -821,10 +772,10 @@ document.addEventListener('DOMContentLoaded', function () {
       bullets: [
         'Reached <strong>50 mm/s</strong> dispensing speed, up from <strong>8 mm/s</strong> (<strong>6&times; faster</strong>), the speed mass production required, while keeping the bead fully within tolerance',
         'Learned to program the DATRON dispensing system from scratch, since no formal training was available, by working through its manual and testing how each setting changed the dispensed line',
-        'Found that the nozzle kept clogging and then dripping adhesive after dispensing stopped, especially at higher pressure. Testing different nozzle shapes and pressures showed that a tapered nozzle running at lower pressure gave a clean, unbroken line with no dripping',
+        'Found that straight needles choked the flow, laying 20 to 30 mm of adhesive followed by 30 to 40 mm gaps, while tapered needles kept dripping after each stop at 6 bar. A tapered gauge 20 needle at 2 bar gave a clean, unbroken line with no dripping',
         'Followed DATRON&rsquo;s official procedure for tuning the A factor and B factor, its built in settings that compensate for speed changes, running test lines at alternating speeds and adjusting each factor step by step',
-        'Verified the results properly instead of relying on visual judgement alone: measured the bead&rsquo;s cross section at multiple points with a profilometer, since small variations invisible to the eye can still cause leaks',
-        'Observed the bead drifting out of tolerance over the course of the day, even with identical settings. Traced it to the dispensing pump&rsquo;s temperature slowly rising through the day, caused by friction between the pump&rsquo;s moving parts and the thick adhesive itself, which made the adhesive thinner and changed how it flowed. Fixed it by adding a heater to hold the pump at one constant temperature, which finally made the process repeatable throughout the day'
+        'Verified the results with measurements instead of visual judgement alone, checking the bead&rsquo;s cross section at multiple points with a profilometer, since small variations invisible to the eye can still cause leaks. Across 5 repeat trials the mean bead area stayed between 0.40 and 0.43 mm&sup2;',
+        'Observed the bead drifting out of tolerance over the course of the day, even with identical settings. Hourly thermal camera checks showed the dispensing pump warming from 24 &deg;C to about 32 &deg;C, caused by friction between the pump&rsquo;s moving parts and the thick adhesive, which thinned the adhesive and changed how it flowed. Fixed it by adding a heater that holds the pump at a constant 34 &deg;C, which made the process repeatable all day'
       ],
       chartType: 'bar', chartLabel: 'Dispensing speed (mm/s)', chartLabels: ['Before', 'After'], chartValues: [8, 50]
     },
@@ -844,28 +795,29 @@ document.addEventListener('DOMContentLoaded', function () {
     'cost': {
       tag: 'Mould Design &amp; Manufacturing &middot; Pragati Udyog (B.E. Group Project)',
       title: 'Wheel Injection Mould: 75% Lower Cost per Wheel',
-      intro: 'A manufacturer needed a steady supply of nylon wheels for a solar panel cleaning trolley, but machining them was slow and expensive, and the market price was Rs.&nbsp;110 per wheel. In a 4 person B.E. group project with Pragati Group of Industries, we compared 3D printing, CNC machining and injection moulding, chose injection moulding for high volume production, and took the mould from CAD model to a tested, production ready tool.',
+      intro: 'A manufacturer needed a steady supply of nylon wheels for a solar panel cleaning trolley. Machining them was slow and expensive, and the market price was Rs.&nbsp;110 per wheel. In a 4 person B.E. group project with Pragati Group of Industries, we compared 3D printing, CNC machining and injection moulding. We chose injection moulding for high volume production and took the mould from CAD model to a tested, production ready tool.',
       bullets: [
-        '<strong>Rs.&nbsp;27.5</strong> per wheel from the finished mould, against a <strong>Rs.&nbsp;110</strong> market price (<strong>75% lower</strong>), at <strong>45 wheels per hour</strong>, with the mould paying back its full cost in <strong>16 hours</strong> of production',
+        '<strong>Rs.&nbsp;27.5</strong> per wheel from the finished mould, against a <strong>Rs.&nbsp;110</strong> market price (<strong>75% lower</strong>), at <strong>45 wheels per hour</strong>. The mould paid back its full cost in <strong>16 hours</strong> of production',
         'Modelled the complete mould in PTC Creo 4.0 from the company&rsquo;s 2D wheel drawing, covering the upper and lower cavity, ejector plates and pins, sprue, runner and cooling circuit, and produced manufacturing drawings for every part',
-        'Sized the feed system by calculation: a <strong>5.2&nbsp;mm</strong> sprue (the 6.5&nbsp;mm standard diameter corrected by nylon&rsquo;s 0.8 factor) and an <strong>8.5&nbsp;mm</strong> runner derived from the part weight and runner length',
-        'Found injection defects in the first trial and traced the root cause to trapped air: with no way out, it was compressed by the incoming nylon and stopped the melt from filling the cavity. Fixed it by redesigning the runner and the venting at the parting line so the air could escape ahead of the melt',
-        'Validated the mould through a 3 phase trial: mould closing, cooling and clean part release; then the wheel&rsquo;s dimensions, shape and function; and finally a full run on the optimised mould before production'
+        'Sized the feed system by calculation, with a <strong>5.2&nbsp;mm</strong> sprue (the 6.5&nbsp;mm standard diameter corrected by nylon&rsquo;s 0.8 factor) and an <strong>8.5&nbsp;mm</strong> runner based on the part weight and runner length',
+        'Found injection defects in the first trial and traced the root cause to trapped air. With no way out, the air was compressed by the incoming nylon and stopped the melt from filling the cavity. Fixed it by redesigning the runner and the venting at the parting line so the air could escape ahead of the melt',
+        'Validated the mould in a 3 phase trial, checking mould closing, cooling and clean part release first, then the wheel&rsquo;s dimensions, shape and function, and finally a full run on the optimised mould before production'
       ],
       chartType: 'bar', chartLabel: 'Cost per wheel (Rs.)', chartLabels: ['Market price', 'Moulded'], chartValues: [110, 27.5]
     },
     'bpp': {
       tag: 'Bonding &amp; Sealing Process &middot; Freudenberg e-Power Systems (M.Sc. Thesis)',
-      title: 'Bipolar Plate Production Scale-Up &mdash; 342 BPP/day',
-      date: 'Aug 2024 &ndash; Jun 2025',
-      intro: 'Took the PEM fuel-cell bipolar-plate bonding &amp; sealing process from a single manual prototype station to a validated multi-station production layout.',
+      title: 'Bipolar Plate Bonding Scale-Up: 342 Plates a Day',
+      intro: 'Freudenberg bonded graphite bipolar plates with an adhesive that needed a 24 hour bonding cycle, curing overnight for more than 12 hours under heavy weights, far too slow for series production. My thesis qualified a heat curing adhesive to replace it, developed the dispensing and curing steps, and planned the production layout.',
       bullets: [
-        '<strong>342 BPP/day</strong> production layout designed &mdash; a 12-station curing concept scaled from a 20/day single-station baseline',
-        'Specified test methods (leak testing, lap shear, chemical stability) within a structured DVP&amp;R framework',
-        'Prepared standardised test specimens to ISO norms; evaluated data and wrote structured qualification reports',
-        'Verified contact pressure distribution via Fuji pressure-film testing and surface characterisation via profilometer &amp; 3D scanning'
+        '<strong>342</strong> bipolar plates a day from a <strong>12 station</strong> oven curing layout on two shifts, against <strong>12</strong> a day if the same stations ran the old 24 hour cycle. Enough to finish a <strong>3,500 plate</strong> order in <strong>11 working days</strong>',
+        'Cut the cure from more than <strong>12 hours</strong> to <strong>27 minutes</strong> (1,600 s at 130 to 135 &deg;C) after comparing IR heating, a hot plate press and an oven with thermocouples on the bond line. IR was dropped because the aluminium tool only reached 62 &deg;C while the plate beneath it hit 171 &deg;C, and the oven won because one oven with several compartments scales better than a row of presses',
+        'Sized the line at 12 stations so that the 27 minute cure, shared across the stations, keeps pace with the 137 second cycle for dispensing and joining each plate',
+        'Defined the DVP&amp;R plan to qualify the new adhesive and prepared the samples to standard. Six tests covered leaching (ICP-OES), 1,000 hours of chemical ageing at 95 &deg;C, tensile (ISO 37), lap shear (<strong>2.5 MPa</strong>, ISO 4587), thermal stability and leak tightness',
+        'Designed a 3D printed leak test fixture and leak tested the bonded plates in five pressure steps up to 2,300 mbar. All plates stayed leak tight',
+        'Designed the handling for series production, a vacuum table and gripper plus an alignment fixture that positions the two half plates for bonding'
       ],
-      chartType: 'bar', chartLabel: 'BPP / day', chartLabels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], chartValues: [20, 120, 198, 240, 310, 342]
+      chartType: 'bar', chartLabel: 'Bipolar plates per day (12 stations)', chartLabels: ['Before (24 h cycle)', 'After (27 min cure)'], chartValues: [12, 342]
     }
   };
 
@@ -878,10 +830,10 @@ document.addEventListener('DOMContentLoaded', function () {
       bullets: [
         '<strong>50 mm/s</strong> Dosiergeschwindigkeit erreicht, ausgehend von <strong>8 mm/s</strong> (<strong>6-fach schneller</strong>), die von der Serienproduktion geforderte Geschwindigkeit, bei voller Einhaltung der Raupentoleranz',
         'Die Programmierung des DATRON-Dosiersystems von Grund auf selbst erlernt, da keine formale Schulung verf&uuml;gbar war, indem ich mich durch das Handbuch gearbeitet und getestet habe, wie sich jede Einstellung auf die dosierte Linie auswirkt',
-        'Festgestellt, dass die D&uuml;se bei h&ouml;herem Druck verstopfte und nach dem Dosieren nachtropfte. Tests mit verschiedenen D&uuml;senformen und Dr&uuml;cken zeigten, dass eine konische D&uuml;se bei niedrigerem Druck eine saubere, durchgehende Linie ohne Nachtropfen ergab',
+        'Festgestellt, dass gerade Nadeln den Fluss abwürgten und nur 20 bis 30 mm Klebstoff mit anschließenden Lücken von 30 bis 40 mm auftrugen, während konische Nadeln bei 6 bar nach jedem Stopp nachtropften. Eine konische Nadel der Größe 20 bei 2 bar ergab eine saubere, durchgehende Linie ohne Nachtropfen',
         'Dem offiziellen DATRON-Verfahren zur Einstellung von A-Faktor und B-Faktor gefolgt, den integrierten Einstellungen zur Kompensation von Geschwindigkeits&auml;nderungen, indem Testlinien mit wechselnden Geschwindigkeiten gefahren und jeder Faktor schrittweise angepasst wurde',
-        'Die Ergebnisse sorgf&auml;ltig &uuml;berpr&uuml;ft, statt sich allein auf die visuelle Beurteilung zu verlassen: den Raupenquerschnitt an mehreren Stellen mit einem Profilometer gemessen, da kleine, mit blo&szlig;em Auge unsichtbare Abweichungen dennoch zu Undichtigkeiten f&uuml;hren k&ouml;nnen',
-        'Beobachtet, dass die Raupe im Laufe des Tages trotz identischer Einstellungen au&szlig;erhalb der Toleranz driftete. Ursache war die im Tagesverlauf langsam steigende Temperatur der Dosierpumpe, verursacht durch Reibung zwischen den beweglichen Teilen der Pumpe und dem z&auml;hen Klebstoff selbst, wodurch der Klebstoff d&uuml;nnfl&uuml;ssiger wurde und sein Flie&szlig;verhalten sich &auml;nderte. Behoben durch eine Heizung, die die Pumpe auf einer konstanten Temperatur h&auml;lt, wodurch der Prozess den ganzen Tag &uuml;ber reproduzierbar wurde'
+        'Die Ergebnisse durch Messungen statt nur durch Sichtprüfung verifiziert und den Raupenquerschnitt an mehreren Stellen mit einem Profilometer gemessen, da kleine, mit bloßem Auge unsichtbare Abweichungen dennoch zu Undichtigkeiten führen können. Über 5 Wiederholversuche lag die mittlere Raupenfläche zwischen 0,40 und 0,43 mm&sup2;',
+        'Beobachtet, dass die Raupe im Laufe des Tages trotz identischer Einstellungen außerhalb der Toleranz driftete. Stündliche Messungen mit der Wärmebildkamera zeigten, dass sich die Dosierpumpe von 24 &deg;C auf etwa 32 &deg;C erwärmte, verursacht durch Reibung zwischen den beweglichen Teilen der Pumpe und dem zähen Klebstoff, wodurch der Klebstoff dünnflüssiger wurde und anders floss. Behoben durch eine Heizung, die die Pumpe konstant auf 34 &deg;C hält, wodurch der Prozess den ganzen Tag reproduzierbar wurde'
       ],
       chartType: 'bar', chartLabel: 'Dosiergeschwindigkeit (mm/s)', chartLabels: ['Vorher', 'Nachher'], chartValues: [8, 50]
     },
@@ -901,28 +853,29 @@ document.addEventListener('DOMContentLoaded', function () {
     'cost': {
       tag: 'Formenbau &amp; Fertigung &middot; Pragati Udyog (Bachelor Gruppenprojekt)',
       title: 'Spritzgussform f&uuml;r R&auml;der: 75% geringere Kosten pro Rad',
-      intro: 'Ein Hersteller ben&ouml;tigte eine st&auml;ndige Versorgung mit Nylonr&auml;dern f&uuml;r einen Solarpanel Reinigungswagen, doch die spanende Fertigung war langsam und teuer, und der Marktpreis lag bei Rs.&nbsp;110 pro Rad. In einem Gruppenprojekt zu viert im Bachelorstudium, gemeinsam mit der Pragati Group of Industries, haben wir 3D-Druck, CNC-Bearbeitung und Spritzguss verglichen, uns f&uuml;r den Spritzguss als Verfahren f&uuml;r hohe St&uuml;ckzahlen entschieden und die Form vom CAD-Modell bis zum getesteten, serienreifen Werkzeug umgesetzt.',
+      intro: 'Ein Hersteller ben&ouml;tigte eine st&auml;ndige Versorgung mit Nylonr&auml;dern f&uuml;r einen Solarpanel Reinigungswagen. Die spanende Fertigung war langsam und teuer, und der Marktpreis lag bei Rs.&nbsp;110 pro Rad. In einem Gruppenprojekt zu viert im Bachelorstudium, gemeinsam mit der Pragati Group of Industries, haben wir 3D-Druck, CNC-Bearbeitung und Spritzguss verglichen. Wir haben uns f&uuml;r den Spritzguss als Verfahren f&uuml;r hohe St&uuml;ckzahlen entschieden und die Form vom CAD-Modell bis zum getesteten, serienreifen Werkzeug umgesetzt.',
       bullets: [
-        '<strong>Rs.&nbsp;27,5</strong> pro Rad aus der fertigen Form, gegen&uuml;ber einem Marktpreis von <strong>Rs.&nbsp;110</strong> (<strong>75% g&uuml;nstiger</strong>), bei <strong>45 R&auml;dern pro Stunde</strong>; die Form hatte ihre gesamten Kosten nach <strong>16 Stunden</strong> Produktion wieder eingespielt',
+        '<strong>Rs.&nbsp;27,5</strong> pro Rad aus der fertigen Form, gegen&uuml;ber einem Marktpreis von <strong>Rs.&nbsp;110</strong> (<strong>75% g&uuml;nstiger</strong>), bei <strong>45 R&auml;dern pro Stunde</strong>. Die Form hatte ihre gesamten Kosten nach <strong>16 Stunden</strong> Produktion wieder eingespielt',
         'Die komplette Form in PTC Creo 4.0 auf Basis der 2D-Radzeichnung des Unternehmens modelliert, einschlie&szlig;lich oberer und unterer Kavit&auml;t, Auswerferplatten und Auswerferstiften, Anguss, Verteilerkanal und K&uuml;hlkreislauf, und Fertigungszeichnungen f&uuml;r jedes Bauteil erstellt',
-        'Das Angusssystem rechnerisch ausgelegt: ein <strong>5,2&nbsp;mm</strong> Anguss (der Standarddurchmesser von 6,5&nbsp;mm, korrigiert um den Nylonfaktor 0,8) und ein <strong>8,5&nbsp;mm</strong> Verteilerkanal, abgeleitet aus Bauteilgewicht und Kanall&auml;nge',
-        'Im ersten Versuch Spritzfehler festgestellt und die Ursache auf eingeschlossene Luft zur&uuml;ckgef&uuml;hrt: Ohne Austrittsm&ouml;glichkeit wurde sie von der einstr&ouml;menden Nylonschmelze komprimiert und verhinderte die vollst&auml;ndige F&uuml;llung der Kavit&auml;t. Behoben durch eine Neugestaltung des Verteilerkanals und der Entl&uuml;ftung an der Trennebene, sodass die Luft vor der Schmelze entweichen konnte',
-        'Die Form in einer dreistufigen Erprobung validiert: Schlie&szlig;en der Form, K&uuml;hlung und saubere Entformung; dann Ma&szlig;e, Form und Funktion des Rades; und abschlie&szlig;end ein kompletter Lauf mit der optimierten Form vor der Serienproduktion'
+        'Das Angusssystem rechnerisch ausgelegt, mit einem <strong>5,2&nbsp;mm</strong> Anguss (der Standarddurchmesser von 6,5&nbsp;mm, korrigiert um den Nylonfaktor 0,8) und einem <strong>8,5&nbsp;mm</strong> Verteilerkanal, abgeleitet aus Bauteilgewicht und Kanall&auml;nge',
+        'Im ersten Versuch Spritzfehler festgestellt und die Ursache auf eingeschlossene Luft zur&uuml;ckgef&uuml;hrt. Ohne Austrittsm&ouml;glichkeit wurde sie von der einstr&ouml;menden Nylonschmelze komprimiert und verhinderte die vollst&auml;ndige F&uuml;llung der Kavit&auml;t. Behoben durch eine Neugestaltung des Verteilerkanals und der Entl&uuml;ftung an der Trennebene, sodass die Luft vor der Schmelze entweichen konnte',
+        'Die Form in einer dreistufigen Erprobung validiert, zuerst Schlie&szlig;en der Form, K&uuml;hlung und saubere Entformung, dann Ma&szlig;e, Form und Funktion des Rades und abschlie&szlig;end ein kompletter Lauf mit der optimierten Form vor der Serienproduktion'
       ],
       chartType: 'bar', chartLabel: 'Kosten pro Rad (Rs.)', chartLabels: ['Marktpreis', 'Spritzguss'], chartValues: [110, 27.5]
     },
     'bpp': {
       tag: 'Verklebung &amp; Abdichtung &middot; Freudenberg e-Power Systems (Masterarbeit)',
-      title: 'Bipolarplatten-Produktionshochlauf &mdash; 342 BPP/Tag',
-      date: 'Aug 2024 &ndash; Jun 2025',
-      intro: '&Uuml;berf&uuml;hrung des Verklebungs- und Abdichtungsprozesses f&uuml;r PEM-Brennstoffzellen-Bipolarplatten von einer einzelnen manuellen Prototyp-Station zu einem validierten Mehrstationen-Produktionslayout.',
+      title: 'Skalierung der Bipolarplatten-Verklebung: 342 Platten pro Tag',
+      intro: 'Freudenberg verklebte Graphit-Bipolarplatten mit einem Klebstoff, der einen 24 Stunden Verklebungszyklus brauchte und dabei über Nacht mehr als 12 Stunden unter schweren Gewichten aushärtete, viel zu langsam für die Serienfertigung. In meiner Masterarbeit habe ich einen warmhärtenden Klebstoff als Ersatz qualifiziert, das Dosieren und Aushärten entwickelt und das Produktionslayout geplant.',
       bullets: [
-        '<strong>342 BPP/Tag</strong> Produktionslayout entworfen &mdash; ein 12-Stationen-Aush&auml;rtungskonzept, skaliert von einer Basis von 20/Tag mit einer Station',
-        'Pr&uuml;fmethoden (Dichtheitspr&uuml;fung, Scherzugversuch, chemische Best&auml;ndigkeit) im Rahmen eines strukturierten DVP&amp;R-Frameworks festgelegt',
-        'Standardisierte Pr&uuml;fk&ouml;rper nach ISO-Normen vorbereitet; Daten ausgewertet und strukturierte Pr&uuml;fberichte verfasst',
-        'Kontaktdruckverteilung mittels Fuji-Drucktest und Oberfl&auml;chencharakterisierung mittels Profilometer &amp; 3D-Scanning verifiziert'
+        '<strong>342</strong> Bipolarplatten pro Tag mit einem Ofen-Aushärtungslayout aus <strong>12 Stationen</strong> im Zweischichtbetrieb, gegenüber <strong>12</strong> pro Tag, wenn dieselben Stationen den alten 24 Stunden Zyklus fahren würden. Genug für einen Auftrag über <strong>3.500 Platten</strong> in <strong>11 Arbeitstagen</strong>',
+        'Die Aushärtung von mehr als <strong>12 Stunden</strong> auf <strong>27 Minuten</strong> verkürzt (1.600 s bei 130 bis 135 &deg;C), nach einem Vergleich von IR-Heizung, Heizplattenpresse und Ofen mit Thermoelementen in der Klebefuge. IR schied aus, weil das Aluminiumwerkzeug nur 62 &deg;C erreichte, während die Platte darunter 171 &deg;C erreichte, und der Ofen setzte sich durch, weil ein Ofen mit mehreren Fächern besser skaliert als eine Reihe von Pressen',
+        'Die Linie auf 12 Stationen ausgelegt, damit die 27 Minuten Aushärtung, verteilt auf die Stationen, mit dem 137 Sekunden Takt für Dosieren und Fügen jeder Platte Schritt hält',
+        'Den DVP&amp;R-Plan zur Qualifizierung des neuen Klebstoffs festgelegt und die Proben normgerecht vorbereitet. Sechs Prüfungen deckten Auslaugung (ICP-OES), 1.000 Stunden chemische Alterung bei 95 &deg;C, Zugversuch (ISO 37), Zugscherfestigkeit (<strong>2,5 MPa</strong>, ISO 4587), thermische Stabilität und Dichtheit ab',
+        'Eine 3D-gedruckte Dichtheitsprüfvorrichtung konstruiert und die verklebten Platten in fünf Druckstufen bis 2.300 mbar geprüft. Alle Platten blieben dicht',
+        'Das Handling für die Serienfertigung konzipiert, einen Vakuumtisch und Greifer sowie eine Ausrichtvorrichtung, die die beiden Halbplatten zum Verkleben positioniert'
       ],
-      chartType: 'bar', chartLabel: 'BPP / Tag', chartLabels: ['Jan', 'Feb', 'M&auml;r', 'Apr', 'Mai', 'Jun'], chartValues: [20, 120, 198, 240, 310, 342]
+      chartType: 'bar', chartLabel: 'Bipolarplatten pro Tag (12 Stationen)', chartLabels: ['Vorher (24 h Zyklus)', 'Nachher (27 min Aushärtung)'], chartValues: [12, 342]
     }
   };
 
@@ -996,7 +949,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
           labels: ['Before', 'After'],
           datasets: [{
-            data: [57, 342],
+            data: [8, 50],
             backgroundColor: ['rgba(100,255,218,.2)', 'rgba(100,255,218,.7)'],
             borderColor: '#64ffda', borderWidth: 1.5, borderRadius: 6
           }]
@@ -1004,7 +957,7 @@ document.addEventListener('DOMContentLoaded', function () {
         options: Object.assign({}, baseOpts, {
           indexAxis: 'y',
           scales: {
-            x: { grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 10 } } },
+            x: { beginAtZero: true, grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 10 }, maxRotation: 0, callback: function (v) { return v % 25 === 0 ? v + ' mm/s' : ''; } } },
             y: { grid: { display: false }, ticks: { color: '#ccd6f6', font: { size: 10 } } }
           }
         })
@@ -1052,23 +1005,23 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
-    /* Bar — BPP ramp-up */
+    /* Bar — BPP plates per day before and after */
     var bppEl = document.getElementById('chart-bpp');
     if (bppEl) {
       new Chart(bppEl, {
         type: 'bar',
         data: {
-          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+          labels: ['Before (24 h cycle)', 'After (27 min cure)'],
           datasets: [{
-            data: [20, 120, 198, 240, 310, 342],
-            backgroundColor: 'rgba(100,255,218,.25)',
-            borderColor: '#64ffda', borderWidth: 1.5, borderRadius: 6
+            data: [12, 342],
+            backgroundColor: ['rgba(255,80,80,.35)', 'rgba(100,255,218,.6)'],
+            borderColor: ['#ff5050', '#64ffda'], borderWidth: 1.5, borderRadius: 6
           }]
         },
         options: Object.assign({}, baseOpts, {
           scales: {
-            x: { grid: { display: false }, ticks: { color: '#8892b0', font: { size: 10 } } },
-            y: { grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 10 } } }
+            x: { grid: { display: false }, ticks: { color: '#ccd6f6', font: { size: 10 } } },
+            y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 10 } } }
           }
         })
       });
