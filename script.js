@@ -74,7 +74,7 @@
     'hero.greeting': 'Hallo, ich bin', 'hero.location': 'Erlangen, Deutschland &nbsp;·&nbsp; Offen für neue Möglichkeiten',
     'hero.hireMe': 'Kontakt aufnehmen', 'hero.downloadCV': 'Lebenslauf herunterladen',
     'stats.cnc': 'CNC-Durchsatz<br/>Steigerung', 'stats.bpp': 'Bipolarplatten<br/>Verklebt / Tag',
-    'stats.cost': 'Formkosten<br/>Einsparung', 'stats.co2': 'CO₂-Reduktion<br/>modelliert',
+    'stats.cost': 'Geringere Kosten<br/>pro Rad', 'stats.co2': 'CO₂-Reduktion<br/>modelliert',
     'about.title': 'Über mich',
     'about.bio1': 'Maschinenbau- und Clean-Energy-Ingenieur (M.Sc., FAU Erlangen, Abschlussnote 1,8) mit praktischer Bandbreite in <strong>Brennstoffzellen-Stack-Tests, DVP&amp;R-Validierung und Fertigungsprozessentwicklung</strong>. Bei Freudenberg e-Power Systems entwickelte ich einen manuellen Klebeprozess zu einem validierten <strong>12-Stationen-Fertigungslayout</strong> weiter und steigerte den Durchsatz um das 7-Fache — inklusive der zugehörigen Prüfstandsarbeit: Dichtheitsprüfung, Scherzugversuch, chemische Beständigkeit und strukturierte Prüfberichte.',
     'about.quote': '&bdquo;Seine schnelle Auffassungsgabe und sein Denkvermögen ließen ihn selbst schwierige Situationen sofort überblicken und stets das Wesentliche erkennen&hellip; Herr Nikumbh war immer äußerst zuverlässig und genoss stets unser volles Vertrauen.&ldquo;',
@@ -86,7 +86,7 @@
     'impact.clickHint': 'Zum Entdecken klicken →',
     'impact.cnc.title': 'CNC-Durchsatz', 'impact.cnc.sub': 'NC-Programmoptimierung · Freudenberg e-Power Systems',
     'impact.co2.title': 'CO₂-Reduktion', 'impact.co2.sub': 'Städtisches Energiewende-Modell · Jena',
-    'impact.cost.title': 'Kosteneinsparung', 'impact.cost.sub': 'Spritzgussform-Neukonstruktion · Pragati Udyog',
+    'impact.cost.title': 'Kosteneinsparung', 'impact.cost.sub': 'Spritzgussform-Konstruktion · Pragati Udyog',
     'impact.bpp.title': 'BPP-Skalierung', 'impact.bpp.sub': 'Bipolarplatten-Verklebung &amp; -Abdichtung · Freudenberg',
     'skills.title': 'Skills', 'skills.sub': 'Auf eine Karte klicken, um alle Skills zu sehen.',
     'skill.tapFront': 'Antippen für Skills', 'skill.tapBack': 'Zurück antippen',
@@ -112,7 +112,7 @@
     'exp.freudenberg.role': 'Masterand &amp; Praktikant — F&amp;E', 'exp.freudenberg.sum': 'DVP&R-Validierung &amp; Klebeprozess für ~342 Bipolarplatten/Tag. 6-fache CNC-Durchsatzsteigerung.',
     'exp.lkt.role': 'Werkstudent', 'exp.lkt.sum': 'Graphit/PP-Verbund-Bipolarplatten (80% Graphit / 20% PP) im Spritzgussverfahren; MEA-Forschung.',
     'exp.truetech.role': 'Trainee', 'exp.truetech.sum': 'CAD-basierte Werkzeugentwicklung und Prozessplanung für die Fertigung.',
-    'exp.pragati.role': 'Praktikant Abschlussarbeit — Konstruktion', 'exp.pragati.sum': 'Spritzgussform-Design mit ~80% Kostensenkung für ein Nylon-Radbauteil.',
+    'exp.pragati.role': 'Praktikant Abschlussarbeit — Konstruktion', 'exp.pragati.sum': 'Spritzgussform für ein Nylonrad: 75% geringere Kosten pro Rad bei 45 Rädern pro Stunde.',
     'exp.shreyas.role': 'Trainee-Ingenieur', 'exp.shreyas.sum': 'Prozessablaufplanung und Qualitätsprüfungen in der Fertigung nach ISO-Normen.',
     'exp.kalpataru.role': 'Fertigungspraktikant', 'exp.kalpataru.sum': 'Oberflächenbearbeitung und Maßgenauigkeit beim Bohren, Gewindeschneiden und Drehen.',
     'edu.title': 'Ausbildung',
@@ -547,13 +547,13 @@ document.addEventListener('DOMContentLoaded', function () {
     'pragati': {
       role: 'Thesis Intern — Design Engineer', co: 'Pragati Udyog',
       date: 'Jun 2019 – Apr 2020',
-      thesis: 'B.E. Thesis: Design and Manufacturing of Wheel Mould — full lifecycle from design intent to production-ready tooling.',
+      thesis: 'B.E. Group Project: Design and Manufacturing of Wheel Mould, taken from CAD model to a tested, production ready injection mould for a solar panel cleaning trolley wheel.',
       bullets: [
-        'Designed wheel mould geometry in CATIA V5 with GD&amp;T tolerancing',
-        'Performed material selection and draft angle optimization for de-moulding',
-        'Coordinated CNC machining of mould cavity and core inserts',
-        'Conducted dimensional inspection and fit-check testing',
-        'Authored full thesis: literature review, design rationale, manufacturing process'
+        '<strong>75% lower cost per wheel</strong> (Rs. 27.5 against a Rs. 110 market price) at 45 wheels per hour, with the mould paying back its cost in 16 hours of production',
+        'Modelled the complete mould in PTC Creo 4.0 and produced manufacturing drawings for every part',
+        'Sized the sprue (5.2 mm) and runner (8.5 mm) by calculation for nylon',
+        'Traced injection defects to trapped air and fixed them by redesigning the runner and venting',
+        'Validated the mould through a 3 phase trial before production'
       ]
     },
     'shreyas': {
@@ -635,13 +635,13 @@ document.addEventListener('DOMContentLoaded', function () {
     'pragati': {
       role: 'Praktikant Abschlussarbeit — Konstruktion', co: 'Pragati Udyog',
       date: 'Jun 2019 – Apr 2020',
-      thesis: 'Bachelorarbeit: Entwurf und Fertigung einer Radform — vollständiger Lebenszyklus von der Entwurfsidee bis zum produktionsreifen Werkzeug.',
+      thesis: 'Bachelor Gruppenprojekt: Entwurf und Fertigung einer Radform, vom CAD-Modell bis zur getesteten, serienreifen Spritzgussform für das Rad eines Solarpanel Reinigungswagens.',
       bullets: [
-        'Radform-Geometrie in CATIA V5 mit GD&amp;T-Tolerierung entworfen',
-        'Materialauswahl und Optimierung des Entformungswinkels durchgeführt',
-        'CNC-Bearbeitung von Formkavität und Formkernen koordiniert',
-        'Maßprüfung und Passungstests durchgeführt',
-        'Vollständige Abschlussarbeit verfasst: Literaturrecherche, Konstruktionsbegründung, Fertigungsprozess'
+        '<strong>75% geringere Kosten pro Rad</strong> (Rs. 27,5 gegenüber einem Marktpreis von Rs. 110) bei 45 Rädern pro Stunde; die Form hatte ihre Kosten nach 16 Stunden Produktion wieder eingespielt',
+        'Komplette Form in PTC Creo 4.0 modelliert und Fertigungszeichnungen für jedes Bauteil erstellt',
+        'Anguss (5,2 mm) und Verteilerkanal (8,5 mm) für Nylon rechnerisch ausgelegt',
+        'Spritzfehler auf eingeschlossene Luft zurückgeführt und durch Neugestaltung von Verteilerkanal und Entlüftung behoben',
+        'Form in einer dreistufigen Erprobung vor der Serienproduktion validiert'
       ]
     },
     'shreyas': {
@@ -842,17 +842,17 @@ document.addEventListener('DOMContentLoaded', function () {
       chartType: 'bar', chartLabel: 'CO&#8322; emissions (tons/year)', chartLabels: ['Before', 'After'], chartValues: [158789, 124789]
     },
     'cost': {
-      tag: 'Design Engineering &middot; Pragati Udyog (B.E. Thesis)',
-      title: 'Injection Mould Redesign &mdash; ~80% Tooling Cost Reduction',
-      date: 'Jun 2019 &ndash; Apr 2020',
-      intro: 'Full-lifecycle redesign of a wheel injection mould, from design intent to production-ready tooling, aimed at cutting tooling cost without compromising part quality.',
+      tag: 'Mould Design &amp; Manufacturing &middot; Pragati Udyog (B.E. Group Project)',
+      title: 'Wheel Injection Mould: 75% Lower Cost per Wheel',
+      intro: 'A manufacturer needed a steady supply of nylon wheels for a solar panel cleaning trolley, but machining them was slow and expensive, and the market price was Rs.&nbsp;110 per wheel. In a 4 person B.E. group project with Pragati Group of Industries, we compared 3D printing, CNC machining and injection moulding, chose injection moulding for high volume production, and took the mould from CAD model to a tested, production ready tool.',
       bullets: [
-        '<strong>~80% tooling cost reduction</strong> versus the legacy mould design',
-        'Designed mould geometry in CATIA V5 with full GD&amp;T tolerancing',
-        'Performed material selection and draft-angle optimisation for reliable de-moulding',
-        'Coordinated CNC machining of the cavity and core inserts, then ran dimensional inspection and fit-check testing'
+        '<strong>Rs.&nbsp;27.5</strong> per wheel from the finished mould, against a <strong>Rs.&nbsp;110</strong> market price (<strong>75% lower</strong>), at <strong>45 wheels per hour</strong>, with the mould paying back its full cost in <strong>16 hours</strong> of production',
+        'Modelled the complete mould in PTC Creo 4.0 from the company&rsquo;s 2D wheel drawing, covering the upper and lower cavity, ejector plates and pins, sprue, runner and cooling circuit, and produced manufacturing drawings for every part',
+        'Sized the feed system by calculation: a <strong>5.2&nbsp;mm</strong> sprue (the 6.5&nbsp;mm standard diameter corrected by nylon&rsquo;s 0.8 factor) and an <strong>8.5&nbsp;mm</strong> runner derived from the part weight and runner length',
+        'Found injection defects in the first trial and traced the root cause to trapped air: with no way out, it was compressed by the incoming nylon and stopped the melt from filling the cavity. Fixed it by redesigning the runner and the venting at the parting line so the air could escape ahead of the melt',
+        'Validated the mould through a 3 phase trial: mould closing, cooling and clean part release; then the wheel&rsquo;s dimensions, shape and function; and finally a full run on the optimised mould before production'
       ],
-      chartType: 'bar', chartLabel: 'Relative tooling cost (%)', chartLabels: ['Legacy', 'Optimised'], chartValues: [100, 20]
+      chartType: 'bar', chartLabel: 'Cost per wheel (Rs.)', chartLabels: ['Market price', 'Moulded'], chartValues: [110, 27.5]
     },
     'bpp': {
       tag: 'Bonding &amp; Sealing Process &middot; Freudenberg e-Power Systems (M.Sc. Thesis)',
@@ -899,17 +899,17 @@ document.addEventListener('DOMContentLoaded', function () {
       chartType: 'bar', chartLabel: 'CO&#8322;-Emissionen (Tonnen/Jahr)', chartLabels: ['Vorher', 'Nachher'], chartValues: [158789, 124789]
     },
     'cost': {
-      tag: 'Konstruktion &middot; Pragati Udyog (Bachelorarbeit)',
-      title: 'Spritzgussform-Neukonstruktion &mdash; ~80% Werkzeugkostensenkung',
-      date: 'Jun 2019 &ndash; Apr 2020',
-      intro: 'Vollst&auml;ndige Neukonstruktion einer Rad-Spritzgussform, vom Entwurfsgedanken bis zum produktionsreifen Werkzeug, mit dem Ziel, die Werkzeugkosten ohne Qualit&auml;tseinbu&szlig;en zu senken.',
+      tag: 'Formenbau &amp; Fertigung &middot; Pragati Udyog (Bachelor Gruppenprojekt)',
+      title: 'Spritzgussform f&uuml;r R&auml;der: 75% geringere Kosten pro Rad',
+      intro: 'Ein Hersteller ben&ouml;tigte eine st&auml;ndige Versorgung mit Nylonr&auml;dern f&uuml;r einen Solarpanel Reinigungswagen, doch die spanende Fertigung war langsam und teuer, und der Marktpreis lag bei Rs.&nbsp;110 pro Rad. In einem Gruppenprojekt zu viert im Bachelorstudium, gemeinsam mit der Pragati Group of Industries, haben wir 3D-Druck, CNC-Bearbeitung und Spritzguss verglichen, uns f&uuml;r den Spritzguss als Verfahren f&uuml;r hohe St&uuml;ckzahlen entschieden und die Form vom CAD-Modell bis zum getesteten, serienreifen Werkzeug umgesetzt.',
       bullets: [
-        '<strong>~80% Werkzeugkostensenkung</strong> gegen&uuml;ber dem bisherigen Formdesign',
-        'Formgeometrie in CATIA V5 mit vollst&auml;ndiger GD&amp;T-Tolerierung entworfen',
-        'Materialauswahl und Optimierung des Entformungswinkels f&uuml;r zuverl&auml;ssige Entformung durchgef&uuml;hrt',
-        'CNC-Bearbeitung von Kavit&auml;t und Formkernen koordiniert, anschlie&szlig;end Ma&szlig;pr&uuml;fung und Passungstests durchgef&uuml;hrt'
+        '<strong>Rs.&nbsp;27,5</strong> pro Rad aus der fertigen Form, gegen&uuml;ber einem Marktpreis von <strong>Rs.&nbsp;110</strong> (<strong>75% g&uuml;nstiger</strong>), bei <strong>45 R&auml;dern pro Stunde</strong>; die Form hatte ihre gesamten Kosten nach <strong>16 Stunden</strong> Produktion wieder eingespielt',
+        'Die komplette Form in PTC Creo 4.0 auf Basis der 2D-Radzeichnung des Unternehmens modelliert, einschlie&szlig;lich oberer und unterer Kavit&auml;t, Auswerferplatten und Auswerferstiften, Anguss, Verteilerkanal und K&uuml;hlkreislauf, und Fertigungszeichnungen f&uuml;r jedes Bauteil erstellt',
+        'Das Angusssystem rechnerisch ausgelegt: ein <strong>5,2&nbsp;mm</strong> Anguss (der Standarddurchmesser von 6,5&nbsp;mm, korrigiert um den Nylonfaktor 0,8) und ein <strong>8,5&nbsp;mm</strong> Verteilerkanal, abgeleitet aus Bauteilgewicht und Kanall&auml;nge',
+        'Im ersten Versuch Spritzfehler festgestellt und die Ursache auf eingeschlossene Luft zur&uuml;ckgef&uuml;hrt: Ohne Austrittsm&ouml;glichkeit wurde sie von der einstr&ouml;menden Nylonschmelze komprimiert und verhinderte die vollst&auml;ndige F&uuml;llung der Kavit&auml;t. Behoben durch eine Neugestaltung des Verteilerkanals und der Entl&uuml;ftung an der Trennebene, sodass die Luft vor der Schmelze entweichen konnte',
+        'Die Form in einer dreistufigen Erprobung validiert: Schlie&szlig;en der Form, K&uuml;hlung und saubere Entformung; dann Ma&szlig;e, Form und Funktion des Rades; und abschlie&szlig;end ein kompletter Lauf mit der optimierten Form vor der Serienproduktion'
       ],
-      chartType: 'bar', chartLabel: 'Relative Werkzeugkosten (%)', chartLabels: ['Bisher', 'Optimiert'], chartValues: [100, 20]
+      chartType: 'bar', chartLabel: 'Kosten pro Rad (Rs.)', chartLabels: ['Marktpreis', 'Spritzguss'], chartValues: [110, 27.5]
     },
     'bpp': {
       tag: 'Verklebung &amp; Abdichtung &middot; Freudenberg e-Power Systems (Masterarbeit)',
@@ -1035,9 +1035,9 @@ document.addEventListener('DOMContentLoaded', function () {
       new Chart(costEl, {
         type: 'bar',
         data: {
-          labels: ['Legacy', 'Optimised'],
+          labels: ['Market price', 'Moulded'],
           datasets: [{
-            data: [100, 20],
+            data: [110, 27.5],
             backgroundColor: ['rgba(255,80,80,.35)', 'rgba(100,255,218,.6)'],
             borderColor: ['#ff5050', '#64ffda'],
             borderWidth: 1.5, borderRadius: 6
@@ -1046,7 +1046,7 @@ document.addEventListener('DOMContentLoaded', function () {
         options: Object.assign({}, baseOpts, {
           scales: {
             x: { grid: { display: false }, ticks: { color: '#ccd6f6', font: { size: 10 } } },
-            y: { grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 10 }, callback: function (v) { return v + '%'; } } }
+            y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,.05)' }, ticks: { color: '#8892b0', font: { size: 10 }, callback: function (v) { return 'Rs ' + v; } } }
           }
         })
       });
